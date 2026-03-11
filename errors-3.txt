@@ -1,0 +1,17 @@
+src/app/careers-open-roles/page.tsx(16,331): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/client-portal-dashboard-overview/page.tsx(16,224): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/client-portal-dashboard-overview/page.tsx(121,174): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/client-portal-dashboard-overview/page.tsx(128,167): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/client-portal-finance-overview/page.tsx(15,168): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/client-portal-light-mode/page.tsx(15,168): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/enterprise-solutions-page/page.tsx(14,362): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/homepage-light-mode/page.tsx(14,410): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/in-depth-case-study-page/page.tsx(23,264): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/mobile-live-whiteboard/page.tsx(14,163): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/mobile-live-whiteboard/page.tsx(18,167): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/mobile-live-whiteboard/page.tsx(21,167): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/mobile-live-whiteboard/page.tsx(56,151): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/portal-user-settings-customization/page.tsx(15,209): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/portal-user-settings-customization/page.tsx(59,199): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/tech-insights-blog-hub/page.tsx(14,272): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.
+src/app/tech-insights-blog-hub/page.tsx(45,196): error TS2353: Object literal may only specify known properties, and 'https' does not exist in type 'Properties<string | number, string & {}>'.

@@ -1,0 +1,183 @@
+import React from 'react';
+
+export default function AfritechxHomepageLandingPage() {
+    return (
+        <div className="w-full flex-col flex bg-[#080d12]">
+            <div className="relative flex min-h-screen w-full flex-col overflow-hidden">
+
+                {/* Animated Background Orbs */}
+                <div className="absolute top-0 right-0 -z-10 h-[600px] w-[600px] translate-x-1/3 -translate-y-1/4 rounded-full bg-primary/20 blur-[120px] opacity-60 animate-blob mix-blend-screen pointer-events-none"></div>
+                <div className="absolute top-40 left-0 -z-10 h-[500px] w-[500px] -translate-x-1/3 translate-y-1/4 rounded-full bg-purple-500/20 blur-[120px] opacity-50 animate-blob mix-blend-screen animation-delay-2000 pointer-events-none"></div>
+
+                <main className="flex-1 mt-24">
+
+                    {/* Hero Section */}
+                    <section className="relative px-6 py-12 md:py-24 lg:px-20 lg:py-32 overflow-hidden flex flex-col items-center justify-center text-center">
+
+                        <div className="mx-auto max-w-4xl z-10 flex flex-col items-center">
+
+                            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md px-4 py-1.5 text-xs font-semibold text-white shadow-lg shadow-black/20 mb-8 hover:bg-white/10 transition-colors cursor-pointer group">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                                </span>
+                                <span className="text-slate-300 group-hover:text-white transition-colors tracking-wide uppercase">Now accepting new enterprise partners</span>
+                            </div>
+
+                            <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl lg:leading-[1.1] mb-6 drop-shadow-2xl">
+                                Forging the <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-purple-500 animate-gradient-x">Future</span><br className="hidden sm:block" /> with Enterprise Solutions
+                            </h1>
+
+                            <p className="text-lg leading-relaxed text-slate-400 max-w-2xl mx-auto mb-10">
+                                Afritechx delivers cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development for global enterprises ready to scale infinitely.
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row gap-5 justify-center w-full sm:w-auto">
+                                <button className="inline-flex h-12 md:h-14 items-center justify-center rounded-full bg-white px-8 text-sm md:text-base font-bold text-slate-900 transition-all hover:bg-slate-200 focus:outline-none focus:ring-4 focus:ring-white/20 shadow-[0_0_30px_rgba(255,255,255,0.15)] hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95">
+                                    Start a Project
+                                </button>
+                                <button className="inline-flex h-12 md:h-14 items-center justify-center rounded-full border border-slate-700 bg-white/5 backdrop-blur-md px-8 text-sm md:text-base font-bold text-white hover:bg-white/10 hover:border-slate-500 transition-all focus:outline-none hover:scale-105 active:scale-95 group">
+                                    <span className="mr-2">Explore Platform</span>
+                                    <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Application Mockup Preview */}
+                        <div className="relative mt-20 md:mt-24 w-full max-w-5xl mx-auto rounded-xl border border-white/10 bg-[#0c1218]/80 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
+                            <div className="h-10 border-b border-white/5 flex items-center px-4 gap-2 bg-white/5">
+                                <div className="size-3 rounded-full bg-slate-700"></div>
+                                <div className="size-3 rounded-full bg-slate-700"></div>
+                                <div className="size-3 rounded-full bg-slate-700"></div>
+                            </div>
+                            <div className="relative aspect-[16/9] bg-gradient-to-b from-transparent to-black/20 flex p-6 gap-6">
+                                {/* Fake Sidebar */}
+                                <div className="w-1/4 h-full bg-white/5 rounded-lg border border-white/5 flex flex-col gap-3 p-4">
+                                    <div className="w-full h-8 bg-white/10 rounded-md"></div>
+                                    <div className="w-3/4 h-4 bg-white/5 rounded-md mt-4"></div>
+                                    <div className="w-1/2 h-4 bg-white/5 rounded-md"></div>
+                                    <div className="w-5/6 h-4 bg-white/5 rounded-md"></div>
+                                </div>
+                                {/* Fake Main Content */}
+                                <div className="flex-1 h-full flex flex-col gap-6">
+                                    <div className="w-full h-32 bg-gradient-to-tr from-primary/20 to-purple-500/20 rounded-lg border border-white/10"></div>
+                                    <div className="w-full flex-1 flex gap-6">
+                                        <div className="flex-1 bg-white/5 rounded-lg border border-white/5"></div>
+                                        <div className="flex-1 bg-white/5 rounded-lg border border-white/5"></div>
+                                        <div className="flex-1 bg-white/5 rounded-lg border border-white/5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Trusted By Client Logos */}
+                    <section className="py-10 relative overflow-hidden">
+                        <div className="absolute inset-x-0 top-0 h-[100px] bg-gradient-to-b from-[#080d12] to-transparent z-10 pointer-events-none"></div>
+                        <div className="absolute inset-y-0 left-0 w-32 md:w-64 bg-gradient-to-r from-[#080d12] to-transparent z-10 pointer-events-none"></div>
+                        <div className="absolute inset-y-0 right-0 w-32 md:w-64 bg-gradient-to-l from-[#080d12] to-transparent z-10 pointer-events-none"></div>
+
+                        <div className="mx-auto max-w-7xl px-6 relative z-0">
+                            <p className="text-center text-xs font-bold text-slate-500 uppercase tracking-widest mb-8">Trusted by World-Class Engineering Teams</p>
+                            <div className="flex flex-wrap justify-between items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                                <div className="flex items-center gap-2 text-xl font-bold text-white"><span className="material-symbols-outlined text-2xl">diamond</span> ACME Corp</div>
+                                <div className="flex items-center gap-2 text-xl font-bold text-white"><span className="material-symbols-outlined text-2xl">view_in_ar</span> Globex</div>
+                                <div className="flex items-center gap-2 text-xl font-bold text-white"><span className="material-symbols-outlined text-2xl">rocket_launch</span> StarTech</div>
+                                <div className="flex items-center gap-2 text-xl font-bold text-white"><span className="material-symbols-outlined text-2xl">public</span> OmniNet</div>
+                                <div className="flex items-center gap-2 text-xl font-bold text-white hidden md:flex"><span className="material-symbols-outlined text-2xl">bolt</span> VoltSystems</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Bento Box Features Section */}
+                    <section className="py-24 px-6 lg:px-20 relative">
+                        <div className="mx-auto max-w-7xl">
+
+                            <div className="text-center max-w-3xl mx-auto mb-16">
+                                <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-3">Our Platform</h2>
+                                <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">Engineered for Scale</h3>
+                                <p className="text-slate-400 text-lg leading-relaxed">
+                                    We don't just build software. We construct resilient, high-performance digital ecosystems designed to handle limitless growth and complexity.
+                                </p>
+                            </div>
+
+                            {/* Bento Grid layout */}
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+
+                                {/* Large Cell */}
+                                <div className="group md:col-span-2 md:row-span-2 relative overflow-hidden rounded-3xl border border-slate-800/60 bg-white/[0.02] backdrop-blur-xl p-10 hover:border-slate-600/50 transition-all duration-500 flex flex-col justify-end min-h-[400px]">
+                                    <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <div className="absolute top-10 right-10 size-16 rounded-2xl bg-primary/20 text-primary flex items-center justify-center border border-primary/20 group-hover:scale-110 transition-transform duration-500">
+                                        <span className="material-symbols-outlined text-3xl">cloud_queue</span>
+                                    </div>
+                                    <div className="relative z-10 mt-auto">
+                                        <h4 className="text-3xl font-bold text-white mb-4">Cloud Native Infrastructure</h4>
+                                        <p className="text-lg text-slate-400 max-w-md">Scalable, multi-region cloud architectures ensuring robust high availability and automated disaster recovery globally.</p>
+                                    </div>
+                                </div>
+
+                                {/* Normal Cell */}
+                                <div className="group relative overflow-hidden rounded-3xl border border-slate-800/60 bg-white/[0.02] backdrop-blur-xl p-8 hover:border-slate-600/50 hover:-translate-y-2 transition-all duration-500">
+                                    <div className="size-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center border border-purple-500/20 mb-6">
+                                        <span className="material-symbols-outlined text-2xl">psychology</span>
+                                    </div>
+                                    <h4 className="text-xl font-bold text-white mb-3">Artificial Intelligence</h4>
+                                    <p className="text-sm leading-relaxed text-slate-400">Deep learning and proprietary LLMs integrated natively into your operational workflows.</p>
+                                </div>
+
+                                {/* Normal Cell */}
+                                <div className="group relative overflow-hidden rounded-3xl border border-slate-800/60 bg-white/[0.02] backdrop-blur-xl p-8 hover:border-slate-600/50 hover:-translate-y-2 transition-all duration-500">
+                                    <div className="size-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center border border-teal-500/20 mb-6">
+                                        <span className="material-symbols-outlined text-2xl">security</span>
+                                    </div>
+                                    <h4 className="text-xl font-bold text-white mb-3">Zero-Trust Security</h4>
+                                    <p className="text-sm leading-relaxed text-slate-400">Military-grade encryption and access controls protecting sensitive enterprise data automatically.</p>
+                                </div>
+
+                                {/* Wide Cell */}
+                                <div className="group md:col-span-3 relative overflow-hidden rounded-3xl border border-slate-800/60 bg-white/[0.02] backdrop-blur-xl p-10 hover:border-slate-600/50 transition-all duration-500 flex flex-col md:flex-row items-center gap-10">
+                                    <div className="flex-1">
+                                        <div className="size-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center border border-indigo-500/20 mb-6 group-hover:scale-110 transition-transform duration-500">
+                                            <span className="material-symbols-outlined text-2xl">terminal</span>
+                                        </div>
+                                        <h4 className="text-2xl font-bold text-white mb-3">Custom DevOps & CI/CD</h4>
+                                        <p className="text-base text-slate-400 max-w-xl">Accelerate shipping cycles with automated testing pipelines and zero-downtime deployments. We write the code that deploys your code.</p>
+                                    </div>
+                                    <div className="w-full md:w-1/3 h-32 bg-slate-900 rounded-xl border border-white/5 relative overflow-hidden p-4 flex flex-col gap-2 font-mono text-xs text-slate-500">
+                                        <p><span className="text-green-400">$</span> npm run build</p>
+                                        <p className="text-slate-400">Building production server components...</p>
+                                        <p className="text-blue-400">✓ Compiled successfully</p>
+                                        <p className="text-primary mt-auto">Deploying to edge network...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Call To Action */}
+                    <section className="py-24 px-6 lg:px-20">
+                        <div className="mx-auto max-w-6xl rounded-3xl overflow-hidden relative isolate p-12 md:p-20 text-center flex flex-col items-center">
+
+                            {/* Background gradient for CTA */}
+                            <div className="absolute inset-0 -z-10 bg-gradient-to-b from-primary/10 to-transparent"></div>
+                            <div className="absolute inset-0 -z-10 border border-white/10 rounded-3xl bg-white/[0.01] backdrop-blur-xl"></div>
+
+                            <h3 className="text-4xl md:text-5xl font-black text-white mb-6 max-w-2xl">Transform your infrastructure today.</h3>
+                            <p className="text-slate-400 text-lg max-w-xl mb-10">
+                                Stop maintaining legacy systems. Partner with Afritechx to accelerate your digital trajectory and focus on actual growth.
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <button className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-base font-bold text-slate-900 transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+                                    Contact Engineering
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </div>
+    );
+}
