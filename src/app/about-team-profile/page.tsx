@@ -387,7 +387,7 @@ export default function AfrixtechAboutTeamProfile() {
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
                       <Link
                         className="inline-flex h-13 items-center justify-center rounded-xl bg-primary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:bg-primary/90 transition-all duration-300"
-                        href="#"
+                        href="."
                       >
                         Start a Project
                       </Link>

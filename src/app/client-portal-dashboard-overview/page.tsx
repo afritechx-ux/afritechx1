@@ -79,7 +79,7 @@ export default async function AfrixtechClientPortalDashboardOverview() {
                       </div>
                     </div>
                     <nav className="flex flex-col gap-2">
-                      <a className="flex items-center gap-3 px-3 py-3 rounded-lg bg-primary/20 text-primary border-l-4 border-primary" href="#">
+                      <a className="flex items-center gap-3 px-3 py-3 rounded-lg bg-primary/20 text-primary border-l-4 border-primary" href=".">
                         <span className="material-symbols-outlined text-xl">folder_open</span>
                         <p className="text-sm font-medium leading-normal">Active Projects</p>
                       </a>

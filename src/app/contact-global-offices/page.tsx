@@ -285,7 +285,7 @@ export default function AfrixtechContactGlobalOffices() {
 
                         <p className="text-[10px] text-slate-600 text-center mt-1 leading-relaxed">
                           By submitting, you agree to our{' '}
-                          <Link href="#" className="text-primary/60 hover:text-primary transition-colors">Privacy Policy</Link>.
+                          <Link href="." className="text-primary/60 hover:text-primary transition-colors">Privacy Policy</Link>.
                         </p>
                       </form>
                     </div>

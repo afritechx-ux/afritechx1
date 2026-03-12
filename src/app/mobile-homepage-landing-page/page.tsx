@@ -53,7 +53,7 @@ export default function AfrixtechMobileHomepageLandingPage() {
 <section className="py-10 px-4">
 <div className="flex items-center justify-between mb-6">
 <h2 className="text-2xl font-bold">Our Services</h2>
-<a className="text-sm font-semibold text-primary flex items-center" href="#">
+<a className="text-sm font-semibold text-primary flex items-center" href=".">
                             See all <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
 </a>
 </div>

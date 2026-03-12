@@ -22,29 +22,29 @@ export default function AfrixtechClientPortalLightMode() {
 </div>
 <nav className="flex flex-col gap-1">
 <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 px-3">Menu</div>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-slate-900 font-medium transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-slate-900 font-medium transition-colors" href=".">
 <span className="material-symbols-outlined text-[20px] text-primary">grid_view</span>
 <span className="text-sm">Overview</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href=".">
 <span className="material-symbols-outlined text-[20px]">folder_open</span>
 <span className="text-sm">Active Projects</span>
 <span className="ml-auto bg-slate-100 text-slate-600 text-xs py-0.5 px-2 rounded-full">3</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href=".">
 <span className="material-symbols-outlined text-[20px]">task_alt</span>
 <span className="text-sm">Tasks</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href=".">
 <span className="material-symbols-outlined text-[20px]">chat</span>
 <span className="text-sm">Messages</span>
 <span className="ml-auto bg-primary text-slate-900 text-xs py-0.5 px-2 rounded-full font-bold">5</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href=".">
 <span className="material-symbols-outlined text-[20px]">description</span>
 <span className="text-sm">Documents</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#050505] text-slate-600 hover:text-slate-900 transition-colors" href=".">
 <span className="material-symbols-outlined text-[20px]">receipt_long</span>
 <span className="text-sm">Invoices</span>
 </a>

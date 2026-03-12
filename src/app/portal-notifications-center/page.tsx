@@ -19,22 +19,22 @@ export default function AfrixtechPortalNotificationsCenter() {
 <p className="text-slate-500 text-sm leading-relaxed">Stay updated with your latest projects, invoices, and system alerts at Afrixtech.</p>
 </div>
 <nav className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/10 text-primary font-medium transition-colors whitespace-nowrap" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/10 text-primary font-medium transition-colors whitespace-nowrap" href=".">
 <span className="material-symbols-outlined text-[20px]">notifications</span>
 <span>All Notifications</span>
 <span className="ml-auto bg-primary text-slate-900 text-xs font-bold px-2 py-0.5 rounded-full">12</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-primary/5 text-slate-400 font-light font-medium transition-colors whitespace-nowrap" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-primary/5 text-slate-400 font-light font-medium transition-colors whitespace-nowrap" href=".">
 <span className="material-symbols-outlined text-[20px]">view_kanban</span>
 <span>Project Updates</span>
 <span className="ml-auto text-xs font-bold px-2 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800">4</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-primary/5 text-slate-400 font-light font-medium transition-colors whitespace-nowrap" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-primary/5 text-slate-400 font-light font-medium transition-colors whitespace-nowrap" href=".">
 <span className="material-symbols-outlined text-[20px]">attach_money</span>
 <span>Finance</span>
 <span className="ml-auto text-xs font-bold px-2 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800">1</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-primary/5 text-slate-400 font-light font-medium transition-colors whitespace-nowrap" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-primary/5 text-slate-400 font-light font-medium transition-colors whitespace-nowrap" href=".">
 <span className="material-symbols-outlined text-[20px]">desktop_windows</span>
 <span>System</span>
 <span className="ml-auto text-xs font-bold px-2 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800">7</span>

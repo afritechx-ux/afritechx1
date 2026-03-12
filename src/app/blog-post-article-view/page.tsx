@@ -25,11 +25,11 @@ export default function AfrixtechBlogPostArticleView() {
 </div>
 
 <div className="flex flex-wrap gap-2 py-4 items-center">
-<a className="text-slate-500 hover:text-primary text-sm font-medium transition-colors" href="#">Home</a>
+<a className="text-slate-500 hover:text-primary text-sm font-medium transition-colors" href=".">Home</a>
 <span className="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
-<a className="text-slate-500 hover:text-primary text-sm font-medium transition-colors" href="#">Blog</a>
+<a className="text-slate-500 hover:text-primary text-sm font-medium transition-colors" href=".">Blog</a>
 <span className="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
-<a className="text-slate-500 hover:text-primary text-sm font-medium transition-colors" href="#">Engineering</a>
+<a className="text-slate-500 hover:text-primary text-sm font-medium transition-colors" href=".">Engineering</a>
 <span className="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
 <span className="text-slate-900 dark:text-slate-100 text-sm font-medium truncate max-w-[200px] md:max-w-none">Building Scalable APIs</span>
 </div>
@@ -108,8 +108,8 @@ app.<span className="text-blue-500 dark:text-blue-400">use</span>((req, res, nex
                                         John specializes in distributed systems and cloud-native architectures. When he's not optimizing database queries, he enjoys hiking and contributing to open-source Node.js projects.
                                     </p>
 <div className="flex gap-4 mt-4 justify-center sm:justify-start">
-<a className="text-slate-400 hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-xl">language</span></a>
-<a className="text-slate-400 hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-xl">alternate_email</span></a>
+<a className="text-slate-400 hover:text-primary transition-colors" href="."><span className="material-symbols-outlined text-xl">language</span></a>
+<a className="text-slate-400 hover:text-primary transition-colors" href="."><span className="material-symbols-outlined text-xl">alternate_email</span></a>
 </div>
 </div>
 </div>
@@ -140,7 +140,7 @@ app.<span className="text-blue-500 dark:text-blue-400">use</span>((req, res, nex
                                 </h3>
 <div className="flex flex-col gap-4">
 
-<a className="group flex gap-4 items-center bg-transparent hover:bg-[#050505] dark:hover:bg-slate-800/30 p-2 -mx-2 rounded-xl transition-colors" href="#">
+<a className="group flex gap-4 items-center bg-transparent hover:bg-[#050505] dark:hover:bg-slate-800/30 p-2 -mx-2 rounded-xl transition-colors" href=".">
 <div className="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-slate-200 dark:bg-slate-700">
 <img alt="Code on screen" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Abstract code on computer monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdGgALPdUmPpoqRIabW9rijYbrMWCOtu6kgYYSPS7I7NQR4Kn-6ywSuFbNKvlAYkLNFS4ViMS9uNa6r8NiTZXl8XSO0WtDC58-JW_KUdOERrraAVKLWI1ombONLjw4DKRlR1rvFyXUJMWePa6yHSkmiXTA8R06b1MfvcyKdG1ec7xerz2Z_BdwH2O7zJVjzny0gXawgDMKVWJuymSSaA1mfNfWXFUn68Ux_QZuB_l3X4FRfnwSdyC7yRKfYsicWn24smaWW2Q1cP4" />
 </div>
@@ -151,7 +151,7 @@ app.<span className="text-blue-500 dark:text-blue-400">use</span>((req, res, nex
 </div>
 </a>
 
-<a className="group flex gap-4 items-center bg-transparent hover:bg-[#050505] dark:hover:bg-slate-800/30 p-2 -mx-2 rounded-xl transition-colors" href="#">
+<a className="group flex gap-4 items-center bg-transparent hover:bg-[#050505] dark:hover:bg-slate-800/30 p-2 -mx-2 rounded-xl transition-colors" href=".">
 <div className="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-slate-200 dark:bg-slate-700">
 <img alt="Cyber security" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Digital security lock concept" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHPOJd9rXFsGFK7Ons8xIG_b651sOUjdSMJtnL_SioacczohPkDyhMKsJ2oc-a20ZFdF3aDgm3-v1DH0hNfvdsh4XvUWODgoETkVYdbw7VtPsK5oYyobihdpoByV8TUGTc195RaHZ6CrrO00njtPoXYXYZtyhvv4zxPt6-HV3_-ETHVH-gd5ymF1x0MsmRJnc3Rx-rkHfkoRDRYOrUNupwzuXWOHUYLip_f5QmkzOuFGHml5IiPh7v0MQRN12j34_hTjclx-K2qF4" />
 </div>
@@ -162,7 +162,7 @@ app.<span className="text-blue-500 dark:text-blue-400">use</span>((req, res, nex
 </div>
 </a>
 
-<a className="group flex gap-4 items-center bg-transparent hover:bg-[#050505] dark:hover:bg-slate-800/30 p-2 -mx-2 rounded-xl transition-colors" href="#">
+<a className="group flex gap-4 items-center bg-transparent hover:bg-[#050505] dark:hover:bg-slate-800/30 p-2 -mx-2 rounded-xl transition-colors" href=".">
 <div className="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-slate-200 dark:bg-slate-700">
 <img alt="Cloud computing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Earth view from space cloud computing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXMggT_W8wuAq0qGCTJ8JZyXDLNA7NGR4S5QkdhtD5kZ8kN3PYKUuUUd44Nf2jDdsM_ONTf6DMuWRkmsqOiNN6HoRe5w1sYbb4GXa6jCMqGmt3fgj4RkfB1uTcIcEl9wMckFx9o2-qhFTyMSe9fnTeombAC7FVtIBomsGVFKQ7Wpt-3UfvxRYXsLYGrh2K4vKQwRhZiy5_yZVfRQe-IJnts8ENPUVM7EWAEeZI7H__oXQgSOFfPo-OEvP2FyFMzx5y7_gwpIBf6oQ" />
 </div>

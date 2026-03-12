@@ -20,16 +20,16 @@ export default function AfrixtechTechnologyStackExpertise() {
                         </p>
 </section>
 <nav className="flex border-b border-primary/20 mb-8 overflow-x-auto no-scrollbar">
-<a className="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4 px-6 min-w-fit" href="#">
+<a className="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4 px-6 min-w-fit" href=".">
 <p className="text-sm font-bold leading-normal tracking-[0.015em]">Frontend</p>
 </a>
-<a className="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 pb-[13px] pt-4 px-6 min-w-fit transition-colors" href="#">
+<a className="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 pb-[13px] pt-4 px-6 min-w-fit transition-colors" href=".">
 <p className="text-sm font-bold leading-normal tracking-[0.015em]">Backend</p>
 </a>
-<a className="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 pb-[13px] pt-4 px-6 min-w-fit transition-colors" href="#">
+<a className="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 pb-[13px] pt-4 px-6 min-w-fit transition-colors" href=".">
 <p className="text-sm font-bold leading-normal tracking-[0.015em]">Cloud &amp; DevOps</p>
 </a>
-<a className="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 pb-[13px] pt-4 px-6 min-w-fit transition-colors" href="#">
+<a className="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 pb-[13px] pt-4 px-6 min-w-fit transition-colors" href=".">
 <p className="text-sm font-bold leading-normal tracking-[0.015em]">AI &amp; Machine Learning</p>
 </a>
 </nav>

@@ -119,7 +119,7 @@ export default function AfrixtechMobileClientPortalDashboard() {
 
 <nav className="fixed bottom-0 w-full max-w-md bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden border-t border-white/10 pb-safe z-50">
 <div className="flex justify-around items-center h-16 px-2">
-<a className="flex flex-col items-center justify-center w-full h-full text-primary gap-1" href="#">
+<a className="flex flex-col items-center justify-center w-full h-full text-primary gap-1" href=".">
 <div className="relative">
 <span className="material-symbols-outlined pb-1">dashboard</span>
 
@@ -127,15 +127,15 @@ export default function AfrixtechMobileClientPortalDashboard() {
 </div>
 <span className="text-[10px] font-medium">Dashboard</span>
 </a>
-<a className="flex flex-col items-center justify-center w-full h-full text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 transition-colors gap-1" href="#">
+<a className="flex flex-col items-center justify-center w-full h-full text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 transition-colors gap-1" href=".">
 <span className="material-symbols-outlined pb-1">folder_open</span>
 <span className="text-[10px] font-medium">Projects</span>
 </a>
-<a className="flex flex-col items-center justify-center w-full h-full text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 transition-colors gap-1" href="#">
+<a className="flex flex-col items-center justify-center w-full h-full text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 transition-colors gap-1" href=".">
 <span className="material-symbols-outlined pb-1">payments</span>
 <span className="text-[10px] font-medium">Finance</span>
 </a>
-<a className="flex flex-col items-center justify-center w-full h-full text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 transition-colors gap-1" href="#">
+<a className="flex flex-col items-center justify-center w-full h-full text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 transition-colors gap-1" href=".">
 <span className="material-symbols-outlined pb-1">support_agent</span>
 <span className="text-[10px] font-medium">Support</span>
 </a>

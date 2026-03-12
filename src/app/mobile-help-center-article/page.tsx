@@ -14,9 +14,9 @@ export default function AfrixtechMobileHelpCenterArticle() {
 <main className="flex flex-col flex-1 pb-10">
 
 <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 py-4">
-<a className="text-slate-500 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Help Center</a>
+<a className="text-slate-500 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href=".">Help Center</a>
 <span className="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
-<a className="text-slate-500 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">API Guides</a>
+<a className="text-slate-500 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href=".">API Guides</a>
 <span className="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
 <span aria-current="page" className="text-white tracking-tight text-sm font-medium">Authentication</span>
 </nav>
@@ -76,21 +76,21 @@ export default function AfrixtechMobileHelpCenterArticle() {
 <div className="mt-10">
 <h3 className="text-white tracking-tight text-lg font-bold mb-4">Related Articles</h3>
 <div className="flex flex-col gap-2">
-<a className="group flex items-center justify-between p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary dark:hover:border-primary transition-colors" href="#">
+<a className="group flex items-center justify-between p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary dark:hover:border-primary transition-colors" href=".">
 <div className="flex items-center gap-3">
 <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">article</span>
 <span className="text-slate-700 dark:text-slate-300 font-medium group-hover:text-primary transition-colors">Handling Rate Limits</span>
 </div>
 <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">arrow_forward</span>
 </a>
-<a className="group flex items-center justify-between p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary dark:hover:border-primary transition-colors" href="#">
+<a className="group flex items-center justify-between p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary dark:hover:border-primary transition-colors" href=".">
 <div className="flex items-center gap-3">
 <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">article</span>
 <span className="text-slate-700 dark:text-slate-300 font-medium group-hover:text-primary transition-colors">Pagination Guide</span>
 </div>
 <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">arrow_forward</span>
 </a>
-<a className="group flex items-center justify-between p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary dark:hover:border-primary transition-colors" href="#">
+<a className="group flex items-center justify-between p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary dark:hover:border-primary transition-colors" href=".">
 <div className="flex items-center gap-3">
 <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">article</span>
 <span className="text-slate-700 dark:text-slate-300 font-medium group-hover:text-primary transition-colors">Webhooks Setup</span>

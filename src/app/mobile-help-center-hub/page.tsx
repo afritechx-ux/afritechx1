@@ -18,25 +18,25 @@ export default function AfrixtechMobileHelpCenterHub() {
 </div>
 </section>
 <section className="grid grid-cols-2 gap-4">
-<a className="flex flex-col items-center justify-center p-6 rounded-xl bg-black/50 dark:bg-background-dark/50 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all group" href="#">
+<a className="flex flex-col items-center justify-center p-6 rounded-xl bg-black/50 dark:bg-background-dark/50 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all group" href=".">
 <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
 <span className="material-symbols-outlined text-primary text-2xl">flight_takeoff</span>
 </div>
 <h3 className="font-bold text-sm">Onboarding</h3>
 </a>
-<a className="flex flex-col items-center justify-center p-6 rounded-xl bg-black/50 dark:bg-background-dark/50 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all group" href="#">
+<a className="flex flex-col items-center justify-center p-6 rounded-xl bg-black/50 dark:bg-background-dark/50 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all group" href=".">
 <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
 <span className="material-symbols-outlined text-primary text-2xl">description</span>
 </div>
 <h3 className="font-bold text-sm">Tech Docs</h3>
 </a>
-<a className="flex flex-col items-center justify-center p-6 rounded-xl bg-black/50 dark:bg-background-dark/50 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all group" href="#">
+<a className="flex flex-col items-center justify-center p-6 rounded-xl bg-black/50 dark:bg-background-dark/50 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all group" href=".">
 <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
 <span className="material-symbols-outlined text-primary text-2xl">credit_card</span>
 </div>
 <h3 className="font-bold text-sm">Billing</h3>
 </a>
-<a className="flex flex-col items-center justify-center p-6 rounded-xl bg-black/50 dark:bg-background-dark/50 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all group" href="#">
+<a className="flex flex-col items-center justify-center p-6 rounded-xl bg-black/50 dark:bg-background-dark/50 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all group" href=".">
 <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
 <span className="material-symbols-outlined text-primary text-2xl">code</span>
 </div>
@@ -49,19 +49,19 @@ export default function AfrixtechMobileHelpCenterHub() {
 <span>Live Chat</span>
 </button>
 <nav className="fixed bottom-0 left-0 right-0 z-30 bg-black border-t border-primary/20 px-6 py-3 flex justify-between items-center max-w-md mx-auto sm:max-w-full">
-<a className="flex flex-col items-center gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<a className="flex flex-col items-center gap-1 text-slate-500 hover:text-primary transition-colors" href=".">
 <span className="material-symbols-outlined text-xl">grid_view</span>
 <span className="text-xs font-medium">Dashboard</span>
 </a>
-<a className="flex flex-col items-center gap-1 text-primary" href="#">
+<a className="flex flex-col items-center gap-1 text-primary" href=".">
 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: `'FILL' 1` }}>help</span>
 <span className="text-xs font-medium">Support</span>
 </a>
-<a className="flex flex-col items-center gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<a className="flex flex-col items-center gap-1 text-slate-500 hover:text-primary transition-colors" href=".">
 <span className="material-symbols-outlined text-xl">folder</span>
 <span className="text-xs font-medium">Projects</span>
 </a>
-<a className="flex flex-col items-center gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<a className="flex flex-col items-center gap-1 text-slate-500 hover:text-primary transition-colors" href=".">
 <span className="material-symbols-outlined text-xl">settings</span>
 <span className="text-xs font-medium">Settings</span>
 </a>

@@ -21,19 +21,19 @@ export default function AfrixtechPortalUserSettingsCustomization() {
 </div>
 </div>
 <nav className="flex flex-col gap-1">
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors text-slate-700 dark:text-slate-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors text-slate-700 dark:text-slate-300" href=".">
 <span className="material-symbols-outlined text-[20px]">dashboard</span>
 <p className="text-sm font-medium leading-normal">Dashboard</p>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors text-slate-700 dark:text-slate-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors text-slate-700 dark:text-slate-300" href=".">
 <span className="material-symbols-outlined text-[20px]">work</span>
 <p className="text-sm font-medium leading-normal">Projects</p>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary dark:bg-primary/20 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary dark:bg-primary/20 transition-colors" href=".">
 <span className="material-symbols-outlined text-[20px]">settings</span>
 <p className="text-sm font-medium leading-normal">Settings</p>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors text-slate-700 dark:text-slate-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors text-slate-700 dark:text-slate-300" href=".">
 <span className="material-symbols-outlined text-[20px]">help</span>
 <p className="text-sm font-medium leading-normal">Help</p>
 </a>

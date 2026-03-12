@@ -121,20 +121,20 @@ export default function AfrixtechMobileLightModeHomepage() {
 </main>
 
 <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex h-16 items-center justify-around bg-white border-t border-navy-100 px-2 pb-safe shadow-[0_-4px_20px_-10px_rgba(0,0,0,0.1)]">
-<a className="flex flex-col items-center justify-center w-16 h-full text-primary gap-1 relative" href="#">
+<a className="flex flex-col items-center justify-center w-16 h-full text-primary gap-1 relative" href=".">
 <span className="absolute top-0 w-8 h-1 bg-primary rounded-b-full"></span>
 <span className="material-symbols-outlined text-2xl font-light">home</span>
 <span className="text-[10px] font-bold">Home</span>
 </a>
-<a className="flex flex-col items-center justify-center w-16 h-full text-navy-400 hover:text-navy-900 transition-colors gap-1" href="#">
+<a className="flex flex-col items-center justify-center w-16 h-full text-navy-400 hover:text-navy-900 transition-colors gap-1" href=".">
 <span className="material-symbols-outlined text-2xl font-light">grid_view</span>
 <span className="text-[10px] font-medium">Services</span>
 </a>
-<a className="flex flex-col items-center justify-center w-16 h-full text-navy-400 hover:text-navy-900 transition-colors gap-1" href="#">
+<a className="flex flex-col items-center justify-center w-16 h-full text-navy-400 hover:text-navy-900 transition-colors gap-1" href=".">
 <span className="material-symbols-outlined text-2xl font-light">work</span>
 <span className="text-[10px] font-medium">Portfolio</span>
 </a>
-<a className="flex flex-col items-center justify-center w-16 h-full text-navy-400 hover:text-navy-900 transition-colors gap-1" href="#">
+<a className="flex flex-col items-center justify-center w-16 h-full text-navy-400 hover:text-navy-900 transition-colors gap-1" href=".">
 <span className="material-symbols-outlined text-2xl font-light">mail</span>
 <span className="text-[10px] font-medium">Contact</span>
 </a>

@@ -130,19 +130,19 @@ export default function AfrixtechMobileOnboardingChecklist() {
 </main>
 
 <nav className="fixed bottom-0 w-full max-w-md bg-white dark:bg-[#151b2b] border-t border-white/10 pb-safe pt-2 px-6 flex justify-between items-center z-20">
-<a className="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<a className="flex flex-col items-center gap-1 p-2 text-primary" href=".">
 <span className="material-symbols-outlined">rocket_launch</span>
 <span className="text-[10px] font-medium">Onboarding</span>
 </a>
-<a className="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors" href="#">
+<a className="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors" href=".">
 <span className="material-symbols-outlined">task_alt</span>
 <span className="text-[10px] font-medium">Tasks</span>
 </a>
-<a className="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors" href="#">
+<a className="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors" href=".">
 <span className="material-symbols-outlined">description</span>
 <span className="text-[10px] font-medium">Docs</span>
 </a>
-<a className="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors" href="#">
+<a className="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors" href=".">
 <span className="material-symbols-outlined">support_agent</span>
 <span className="text-[10px] font-medium">Support</span>
 </a>

@@ -360,13 +360,13 @@ export default function AfrixtechCaseStudiesPortfolio() {
                   <div className="flex items-center justify-center gap-4 flex-col sm:flex-row">
                     <Link
                       className="inline-flex h-13 items-center justify-center rounded-xl bg-primary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:bg-primary/90 transition-all duration-300"
-                      href="#"
+                      href="."
                     >
                       Start a Project
                     </Link>
                     <Link
                       className="inline-flex h-13 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-all gap-2"
-                      href="#"
+                      href="."
                     >
                       Contact Sales
                       <span className="material-symbols-outlined text-sm">arrow_forward</span>

@@ -21,30 +21,30 @@ export default function AfrixtechClientPortalFinanceOverview() {
 </div>
 </div>
 <nav className="flex flex-col gap-1">
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href=".">
 <span className="material-symbols-outlined" style={{ fontSize: `22px` }}>dashboard</span>
 <span className="text-sm font-medium leading-normal">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href=".">
 <span className="material-symbols-outlined" style={{ fontSize: `22px` }}>folder_open</span>
 <span className="text-sm font-medium leading-normal">Projects</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary" href=".">
 <span className="material-symbols-outlined" style={{ fontSize: `22px` }}>payments</span>
 <span className="text-sm font-medium leading-normal">Finance &amp; Invoicing</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href=".">
 <span className="material-symbols-outlined" style={{ fontSize: `22px` }}>description</span>
 <span className="text-sm font-medium leading-normal">Contracts</span>
 </a>
 </nav>
 </div>
 <nav className="flex flex-col gap-1 mt-auto">
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href=".">
 <span className="material-symbols-outlined" style={{ fontSize: `22px` }}>settings</span>
 <span className="text-sm font-medium leading-normal">Settings</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-900/20 dark:hover:text-red-400 transition-colors" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 font-light hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-900/20 dark:hover:text-red-400 transition-colors" href=".">
 <span className="material-symbols-outlined" style={{ fontSize: `22px` }}>logout</span>
 <span className="text-sm font-medium leading-normal">Log Out</span>
 </a>

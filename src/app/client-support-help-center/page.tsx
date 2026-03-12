@@ -48,7 +48,7 @@ export default function AfrixtechClientSupportHelpCenter() {
 <p className="text-slate-400 font-light text-base font-normal leading-normal max-w-[720px]">Browse our help topics to find the information you need.</p>
 </div>
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-<a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href="#">
+<a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href=".">
 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
 <span className="material-symbols-outlined text-[28px]">rocket_launch</span>
 </div>
@@ -57,7 +57,7 @@ export default function AfrixtechClientSupportHelpCenter() {
 <p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Getting started with your new Afrixtech project.</p>
 </div>
 </a>
-<a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href="#">
+<a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href=".">
 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
 <span className="material-symbols-outlined text-[28px]">description</span>
 </div>
@@ -66,7 +66,7 @@ export default function AfrixtechClientSupportHelpCenter() {
 <p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Detailed guides on our software stack and architecture.</p>
 </div>
 </a>
-<a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href="#">
+<a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href=".">
 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
 <span className="material-symbols-outlined text-[28px]">receipt_long</span>
 </div>
@@ -75,7 +75,7 @@ export default function AfrixtechClientSupportHelpCenter() {
 <p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Managing your account, invoices, and payments.</p>
 </div>
 </a>
-<a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href="#">
+<a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href=".">
 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
 <span className="material-symbols-outlined text-[28px]">code_blocks</span>
 </div>
