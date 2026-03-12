@@ -46,9 +46,7 @@ export default function Footer() {
                         </div>
 
                         <div className="flex gap-4 mt-4">
-                            <a className="text-slate-500 hover:text-white transition-colors" href="/developer-api-documentation-portal"><span className="material-symbols-outlined">data_object</span></a>
                             <a className="text-slate-500 hover:text-white transition-colors" href="/services-solutions"><span className="material-symbols-outlined">hub</span></a>
-                            <a className="text-slate-500 hover:text-white transition-colors" href="/developer-api-documentation-portal"><span className="material-symbols-outlined">api</span></a>
                         </div>
                     </div>
 
@@ -66,7 +64,6 @@ export default function Footer() {
                         <div className="flex flex-col gap-3">
                             <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/about-team-profile">About</a>
                             <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/careers-open-roles">Careers</a>
-                            <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/developer-api-documentation-portal">Developers</a>
                             <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/contact-global-offices">Contact</a>
                         </div>
                     </div>

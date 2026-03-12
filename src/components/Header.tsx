@@ -7,7 +7,6 @@ const navLinks = [
     { label: 'Platform', href: '/services-solutions' },
     { label: 'Customers', href: '/case-studies-portfolio' },
     { label: 'Company', href: '/about-team-profile' },
-    { label: 'Developers', href: '/developer-api-documentation-portal' },
 ];
 
 export default function Header() {
