@@ -234,7 +234,7 @@ export default function AfrixtechAboutTeamProfile() {
 
             {/* ═══ Hero Section ═══ */}
             <section className="mt-8 md:mt-12">
-              <div className="flex flex-col gap-8 py-6 md:flex-row md:items-center md:gap-16">
+              <div className="flex flex-col gap-6 py-6 md:flex-row md:items-center md:gap-16">
                 {/* Left: Text */}
                 <div className="flex flex-col gap-6 md:w-1/2">
                   <div className="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary ring-1 ring-inset ring-primary/20">
@@ -271,7 +271,7 @@ export default function AfrixtechAboutTeamProfile() {
                 </div>
 
                 {/* Right: Hero image */}
-                <div className="w-full md:w-1/2 relative group">
+                <div className="w-full md:w-1/2 relative group -mt-2 md:mt-0">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-500/20 rounded-2xl rotate-2 transform scale-[1.02]" />
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                     <Image

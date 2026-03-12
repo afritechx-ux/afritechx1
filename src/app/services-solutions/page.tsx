@@ -290,7 +290,7 @@ export default function AfrixtechServicesSolutions() {
         <main className="flex-grow">
 
           {/* ═══ Hero Section ═══ */}
-          <section className="relative px-4 py-12 md:px-10 md:py-20 lg:py-28">
+          <section className="relative px-4 py-8 md:px-10 md:py-20 lg:py-28">
             <div className="mx-auto max-w-7xl">
               <div className="flex flex-col gap-6 items-center text-center">
                 {/* Badge */}
@@ -332,7 +332,7 @@ export default function AfrixtechServicesSolutions() {
                 </div>
 
                 {/* Trust metrics */}
-                <div className="flex items-center gap-8 mt-8 pt-8 border-t border-white/5">
+                <div className="flex items-center gap-6 md:gap-8 mt-6 pt-6 md:mt-8 md:pt-8 border-t border-white/5">
                   <div className="text-center">
                     <p className="text-2xl font-black text-white">50+</p>
                     <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mt-0.5">Projects Delivered</p>

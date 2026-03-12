@@ -103,7 +103,7 @@ export default function AfrixtechContactGlobalOffices() {
           <div className="flex flex-col w-full max-w-[1200px]">
 
             {/* ═══ Hero ═══ */}
-            <section className="mb-14">
+            <section className="mb-10 md:mb-14">
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary ring-1 ring-inset ring-primary/20 mb-6">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />

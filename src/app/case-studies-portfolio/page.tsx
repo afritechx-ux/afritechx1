@@ -272,7 +272,7 @@ export default function AfrixtechCaseStudiesPortfolio() {
           <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
             {/* Hero header */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6 mb-12 md:mb-16">
               <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary ring-1 ring-inset ring-primary/20 mb-6">
                   <span className="relative flex h-2 w-2">

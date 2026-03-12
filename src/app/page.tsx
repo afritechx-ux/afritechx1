@@ -94,7 +94,7 @@ export default function AfrixtechHomepageLandingPage() {
           {/* ═══ Hero Section ═══ */}
           <section className="relative px-6 py-12 md:py-20 lg:px-20 lg:py-28 overflow-hidden">
             <div className="mx-auto max-w-7xl">
-              <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+              <div className="grid gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                 {/* Left: Copy */}
                 <div className="flex flex-col gap-6 text-center lg:text-left z-10">
                   {/* Badge */}
@@ -153,7 +153,7 @@ export default function AfrixtechHomepageLandingPage() {
                 </div>
 
                 {/* Right: Hero visual */}
-                <div className="relative w-full flex items-center justify-center z-0">
+                <div className="relative w-full flex items-center justify-center z-0 -mt-4 md:mt-0">
                   <div className="relative w-full max-w-[540px]">
                     {/* Main image card */}
                     <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-primary/10">
