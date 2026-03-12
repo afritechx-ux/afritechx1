@@ -31,16 +31,16 @@ export default function Footer() {
 
                         {/* Contact info */}
                         <div className="flex flex-col gap-2 mt-4">
-                            <a href="mailto:afritechx@gmail.com" className="text-sm text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
-                                <span className="material-symbols-outlined text-[16px]">mail</span>
+                            <a href="mailto:afritechx@gmail.com" className="text-base md:text-sm text-slate-400 hover:text-primary transition-colors flex items-center gap-2 py-1">
+                                <span className="material-symbols-outlined text-[18px] md:text-[16px]">mail</span>
                                 afritechx@gmail.com
                             </a>
-                            <a href="tel:+233245171589" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2">
-                                <span className="material-symbols-outlined text-[16px]">call</span>
+                            <a href="tel:+233245171589" className="text-base md:text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2 py-1">
+                                <span className="material-symbols-outlined text-[18px] md:text-[16px]">call</span>
                                 +233 245 171 589
                             </a>
-                            <a href="tel:+233209624647" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2">
-                                <span className="material-symbols-outlined text-[16px]">call</span>
+                            <a href="tel:+233209624647" className="text-base md:text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2 py-1">
+                                <span className="material-symbols-outlined text-[18px] md:text-[16px]">call</span>
                                 +233 209 624 647
                             </a>
                         </div>
@@ -51,33 +51,33 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-col gap-6">
-                        <h4 className="text-xs font-bold text-white tracking-widest uppercase">Infrastructure</h4>
-                        <div className="flex flex-col gap-3">
-                            <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/services-solutions">Edge Computing</a>
-                            <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/enterprise-tech-architecture">Global Database</a>
-                            <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/case-studies-portfolio">Security Layer</a>
+                        <h4 className="text-sm md:text-xs font-bold text-white tracking-widest uppercase mb-2">Infrastructure</h4>
+                        <div className="flex flex-col gap-4 md:gap-3">
+                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/services-solutions">Edge Computing</a>
+                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/enterprise-tech-architecture">Global Database</a>
+                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/case-studies-portfolio">Security Layer</a>
                         </div>
                     </div>
 
                     <div className="flex flex-col gap-6">
-                        <h4 className="text-xs font-bold text-white tracking-widest uppercase">Company</h4>
-                        <div className="flex flex-col gap-3">
-                            <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/about-team-profile">About</a>
-                            <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/careers-open-roles">Careers</a>
-                            <a className="text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/contact-global-offices">Contact</a>
+                        <h4 className="text-sm md:text-xs font-bold text-white tracking-widest uppercase mb-2">Company</h4>
+                        <div className="flex flex-col gap-4 md:gap-3">
+                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/about-team-profile">About</a>
+                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/careers-open-roles">Careers</a>
+                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/contact-global-offices">Contact</a>
                         </div>
                     </div>
                 </div>
 
-                <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="pt-10 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-6">
                     <div className="flex items-center gap-4">
                         <div className="size-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.8)] animate-pulse"></div>
-                        <span className="text-xs font-mono text-slate-400 tracking-wide uppercase">All Systems Operational</span>
+                        <span className="text-xs md:text-xs font-mono text-slate-400 tracking-wide uppercase">All Systems Operational</span>
                     </div>
-                    <div className="flex gap-6">
-                        <a className="text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Privacy Policy</a>
-                        <a className="text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Terms of Service</a>
-                        <span className="text-xs text-slate-600 font-mono tracking-widest">© 2026 AFRIXTECH</span>
+                    <div className="flex flex-wrapjustify-center gap-x-8 gap-y-4 md:gap-6">
+                        <a className="text-sm md:text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Privacy Policy</a>
+                        <a className="text-sm md:text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Terms of Service</a>
+                        <span className="text-sm md:text-xs text-slate-600 font-mono tracking-widest w-full text-center md:w-auto">© 2026 AFRIXTECH</span>
                     </div>
                 </div>
             </div>

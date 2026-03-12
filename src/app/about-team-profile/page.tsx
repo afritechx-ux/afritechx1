@@ -244,7 +244,7 @@ export default function AfrixtechAboutTeamProfile() {
                     </span>
                     Established 2018
                   </div>
-                  <h1 className="text-5xl md:text-6xl font-black tracking-tight text-white leading-[1.05]">
+                  <h1 className="text-4xl md:text-5xl lg:text-[4.25rem] font-black tracking-tight text-white leading-[1.05]">
                     Architecting the<br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-purple-400">
                       Digital Backbone
@@ -309,7 +309,7 @@ export default function AfrixtechAboutTeamProfile() {
             <section className="py-16" id="story">
               <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-14">
                 <p className="text-primary font-bold uppercase tracking-widest text-xs">Our DNA</p>
-                <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
+                <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
                   The Afrixtech{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">Way</span>
                 </h2>
@@ -328,7 +328,7 @@ export default function AfrixtechAboutTeamProfile() {
             <section className="py-16">
               <div className="text-center mb-14">
                 <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">Milestones</p>
-                <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
+                <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
                   Our{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Journey</span>
                 </h2>
@@ -348,7 +348,7 @@ export default function AfrixtechAboutTeamProfile() {
               <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
                 <div>
                   <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">Leadership</p>
-                  <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
+                  <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
                     Meet the{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">Executives</span>
                   </h2>
@@ -382,7 +382,7 @@ export default function AfrixtechAboutTeamProfile() {
                       <span className="material-symbols-outlined text-sm">diversity_3</span>
                       We&apos;re Hiring
                     </div>
-                    <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                    <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white leading-tight">
                       Ready to{' '}
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">build the future</span>?
                     </h2>

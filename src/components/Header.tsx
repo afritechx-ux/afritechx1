@@ -79,7 +79,7 @@ export default function Header() {
                         {navLinks.map((link) => (
                             <a
                                 key={link.href}
-                                className="flex items-center gap-3 px-4 py-3.5 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 text-base font-medium transition-all"
+                                className="flex items-center gap-3 px-4 py-4 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 text-base font-medium transition-all"
                                 href={link.href}
                                 onClick={() => setMobileOpen(false)}
                             >
@@ -91,16 +91,16 @@ export default function Header() {
                     <div className="h-px w-full bg-white/5 my-4" />
 
                     <a
-                        className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm font-medium hover:bg-white/10 transition-all"
+                        className="flex items-center justify-center gap-2 px-4 py-4 rounded-xl bg-white/5 border border-white/10 text-white text-base font-medium hover:bg-white/10 transition-all"
                         href="/client-portal-dashboard-overview"
                         onClick={() => setMobileOpen(false)}
                     >
-                        <span className="material-symbols-outlined text-base">dashboard</span>
+                        <span className="material-symbols-outlined text-lg">dashboard</span>
                         Client Portal
                     </a>
 
                     <a
-                        className="flex items-center justify-center gap-2 mt-3 px-4 py-3 rounded-xl bg-primary text-black text-sm font-bold shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all"
+                        className="flex items-center justify-center gap-2 mt-3 px-4 py-4 rounded-xl bg-primary text-black text-base font-bold shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all"
                         href="/services-solutions"
                         onClick={() => setMobileOpen(false)}
                     >

@@ -281,7 +281,7 @@ export default function AfrixtechCaseStudiesPortfolio() {
                   </span>
                   Case Studies &amp; Portfolio
                 </div>
-                <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-white mb-5 leading-[1.05]">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-5 leading-[1.05]">
                   Projects That{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-purple-400">
                     Deliver Results
@@ -355,7 +355,7 @@ export default function AfrixtechCaseStudiesPortfolio() {
                     <span className="material-symbols-outlined text-sm">rocket_launch</span>
                     Let&apos;s Build Something Great
                   </div>
-                  <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-white mb-5">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white mb-5">
                     Ready to start your{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">next project</span>?
                   </h2>

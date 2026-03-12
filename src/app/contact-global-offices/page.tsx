@@ -111,7 +111,7 @@ export default function AfrixtechContactGlobalOffices() {
                 </span>
                 We Respond Within 2 Hours
               </div>
-              <h1 className="text-5xl md:text-6xl font-black tracking-tight text-white leading-[1.05] mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.05] mb-4">
                 Let&apos;s Build{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-purple-400">
                   Something Great

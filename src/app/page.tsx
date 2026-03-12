@@ -107,7 +107,7 @@ export default function AfrixtechHomepageLandingPage() {
                   </div>
 
                   {/* Heading */}
-                  <h1 className="text-5xl md:text-6xl lg:text-[4.25rem] font-black tracking-tight text-white leading-[1.05]">
+                  <h1 className="text-4xl md:text-5xl lg:text-[4.25rem] font-black tracking-tight text-white leading-[1.05]">
                     Forging the{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-purple-400">
                       Future
@@ -169,7 +169,7 @@ export default function AfrixtechHomepageLandingPage() {
                     </div>
 
                     {/* Floating terminal card */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[55%] bg-black/80 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl p-5 flex flex-col gap-3 transform rotate-[-4deg] hover:rotate-0 transition-transform duration-500">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[85%] h-[60%] md:h-[55%] bg-black/80 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl p-4 md:p-5 flex flex-col gap-2 md:gap-3 transform md:rotate-[-4deg] md:hover:rotate-0 transition-transform duration-500">
                       <div className="flex gap-1.5">
                         <div className="w-3 h-3 rounded-full bg-red-500/80" />
                         <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
@@ -188,7 +188,7 @@ export default function AfrixtechHomepageLandingPage() {
                     </div>
 
                     {/* Floating status card */}
-                    <div className="absolute bottom-8 right-[-16px] w-[200px] p-4 bg-[#050505]/95 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl transform translate-y-2 hover:translate-y-0 transition-transform duration-300">
+                    <div className="absolute bottom-4 md:bottom-8 right-[-8px] md:right-[-16px] w-[180px] md:w-[200px] p-3 md:p-4 bg-[#050505]/95 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl transform md:translate-y-2 md:hover:translate-y-0 transition-transform duration-300">
                       <div className="flex items-center gap-3 mb-3">
                         <div className="p-1.5 bg-emerald-500/15 rounded-lg border border-emerald-500/20">
                           <span className="material-symbols-outlined text-emerald-400 text-sm">trending_up</span>
@@ -233,7 +233,7 @@ export default function AfrixtechHomepageLandingPage() {
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
                 <div className="max-w-2xl">
                   <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">Our Expertise</p>
-                  <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
+                  <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4">
                     Engineering Digital{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">Excellence</span>
                   </h2>
@@ -270,7 +270,7 @@ export default function AfrixtechHomepageLandingPage() {
                         <span className="material-symbols-outlined text-sm">handshake</span>
                         Let&apos;s Collaborate
                       </div>
-                      <h3 className="text-3xl md:text-4xl font-black text-white tracking-tight leading-tight">
+                      <h3 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-tight">
                         Ready to{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">modernize</span>{' '}
                         your infrastructure?

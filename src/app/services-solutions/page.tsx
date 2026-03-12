@@ -303,7 +303,7 @@ export default function AfrixtechServicesSolutions() {
                 </div>
 
                 {/* Heading */}
-                <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-[1.05] max-w-4xl">
+                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white leading-[1.05] max-w-4xl">
                   Building the Future with{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-purple-400">
                     Intelligent Code
@@ -358,7 +358,7 @@ export default function AfrixtechServicesSolutions() {
               <div className="flex flex-col md:flex-row justify-between items-end mb-14 gap-6">
                 <div className="max-w-2xl">
                   <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">Our Expertise</p>
-                  <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
+                  <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4">
                     Six Pillars of{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">
                       Innovation
@@ -445,7 +445,7 @@ export default function AfrixtechServicesSolutions() {
                     <span className="w-8 h-[2px] bg-primary" />
                     <p className="text-primary font-bold uppercase tracking-widest text-xs">How We Work</p>
                   </div>
-                  <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
+                  <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
                     Agile Development for{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">
                       Market-Ready Solutions
@@ -490,7 +490,7 @@ export default function AfrixtechServicesSolutions() {
                       <span className="material-symbols-outlined text-sm">handshake</span>
                       Free Consultation
                     </div>
-                    <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                    <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white leading-tight">
                       Ready to{' '}
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">transform</span>{' '}
                       your business?
