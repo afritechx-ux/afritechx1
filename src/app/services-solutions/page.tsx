@@ -270,6 +270,11 @@ function ProcessStep({ step, isLast }: { step: typeof processSteps[0]; isLast: b
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
+export const metadata = {
+    title: 'Enterprise Services & Solutions',
+    description: 'Explore Afrixtech services including Cloud Infrastructure, Custom App Development, AI Integration, and Cyber Security for global enterprises.',
+};
+
 export default function AfrixtechServicesSolutions() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">

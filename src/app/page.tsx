@@ -50,6 +50,10 @@ const metrics = [
   { value: '24/7', label: 'Expert Support', icon: 'support_agent' },
 ];
 
+export const metadata = {
+  description: "Afrixtech partners with industry leaders to forge the future of digital infrastructure, offering specialized enterprise software development, robust cloud solutions, and scalable AI workflows.",
+};
+
 /* ── Components ────────────────────────────────────────────────── */
 
 function ServiceCard({ service }: { service: typeof services[0] }) {

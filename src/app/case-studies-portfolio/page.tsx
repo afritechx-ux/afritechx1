@@ -248,6 +248,11 @@ function CaseStudyCard({ study }: { study: typeof caseStudies[0] }) {
   );
 }
 
+export const metadata = {
+    title: 'Case Studies & Portfolio',
+    description: 'View Afrixtech enterprise case studies. See how we process millions of transactions and optimize AI workflows for Medicare, LogiTrack, and PayFlow.',
+};
+
 export default function AfrixtechCaseStudiesPortfolio() {
   const featured = caseStudies.find((s) => s.featured)!;
   const rest = caseStudies.filter((s) => !s.featured);

@@ -13,8 +13,50 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Afrixtech | Enterprise Digital Solutions",
-  description: "Cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development.",
+  metadataBase: new URL('https://afrixtech.com'),
+  title: {
+    template: '%s | Afrixtech',
+    default: 'Afrixtech | Enterprise Digital Solutions',
+  },
+  description: "Afrixtech delivers cutting-edge digital transformation through Artificial Intelligence, Cloud Computing, and bespoke software development for global enterprises.",
+  keywords: ["Enterprise Software", "Cloud Infrastructure", "Afrixtech", "Digital Transformation", "Custom Software Development", "AI Solutions"],
+  authors: [{ name: "Afrixtech Engineering", url: "https://afrixtech.com" }],
+  creator: "Afrixtech",
+  publisher: "Afrixtech",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://afrixtech.com",
+    siteName: "Afrixtech",
+    title: "Afrixtech | Enterprise Digital Solutions",
+    description: "Cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development.",
+    images: [
+      {
+        url: "/case-studies/homepage-hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Afrixtech Digital Infrastructure",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Afrixtech | Enterprise Digital Solutions",
+    description: "Cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development.",
+    images: ["/case-studies/homepage-hero.png"],
+    creator: "@afrixtech",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 import Header from "@/components/Header";

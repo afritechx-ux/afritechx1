@@ -82,6 +82,11 @@ function OfficeCard({ office }: { office: typeof offices[0] }) {
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
+export const metadata = {
+    title: 'Contact Global Offices',
+    description: 'Get in touch with the Afrixtech enterprise team. Secure a consultation for your next major digital infrastructure project.',
+};
+
 export default function AfrixtechContactGlobalOffices() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">

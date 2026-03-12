@@ -213,6 +213,11 @@ function TeamCard({ member }: { member: typeof team[0] }) {
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
+export const metadata = {
+    title: 'Company Profile & Vision',
+    description: 'Learn about Afrixtech. We are engineered for scale, driving pan-African digital expansion and global technological innovation from Kumasi to the world.',
+};
+
 export default function AfrixtechAboutTeamProfile() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
