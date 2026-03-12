@@ -78,7 +78,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black font-sans text-slate-100 overflow-x-hidden selection:bg-primary selection:text-white`}>
         {/* Infinite Architectural Dot Grid Background */}
         <div className="fixed inset-0 -z-50 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-        <div className="relative flex min-h-screen w-full flex-col">
+        <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
           <Header />
           <main className="flex-1">
             {children}
