@@ -18,17 +18,18 @@ export default function Header() {
             <div className="fixed top-0 inset-x-0 z-50 flex justify-center w-full px-4 pt-6 pb-2 pointer-events-none">
                 <header className="pointer-events-auto flex items-center justify-between whitespace-nowrap border-b border-t border-white/5 bg-black/40 backdrop-blur-2xl px-6 py-3 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.5)] transition-all duration-300 w-full max-w-[1100px] ring-1 ring-white/10">
                     <div className="flex items-center gap-3">
-                        <a href="/" className="hover:opacity-80 transition-opacity flex items-center">
-                            <div className="relative h-[32px] w-[140px] overflow-hidden rounded">
+                        <a href="/" className="hover:opacity-80 transition-opacity flex items-center gap-2">
+                            <div className="relative size-8 overflow-hidden rounded">
                                 <Image 
                                     src="/logo.png" 
                                     alt="Afrixtech Logo" 
                                     fill
-                                    className="object-cover object-center scale-[1.7]"
+                                    className="object-cover object-center"
                                     priority
-                                    sizes="140px"
+                                    sizes="32px"
                                 />
                             </div>
+                            <span className="text-white text-lg font-bold tracking-tighter">AFRIXTECH</span>
                         </a>
                     </div>
                     <nav className="hidden md:flex flex-1 justify-center gap-10 items-center">

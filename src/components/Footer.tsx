@@ -14,15 +14,16 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8 border-b border-white/10 pb-16">
                     <div className="col-span-1 md:col-span-2 flex flex-col items-start gap-4">
                         <div className="flex items-center gap-3 text-white mb-4">
-                            <div className="relative h-[40px] w-[170px] overflow-hidden rounded-md">
+                            <div className="relative size-10 overflow-hidden rounded-md shadow-[0_0_15px_rgba(255,255,255,0.1)]">
                                 <Image 
                                     src="/logo.png" 
                                     alt="Afrixtech Logo" 
                                     fill
-                                    className="object-cover object-center scale-[1.7]"
-                                    sizes="170px"
+                                    className="object-cover object-center"
+                                    sizes="40px"
                                 />
                             </div>
+                            <span className="text-xl font-bold tracking-tighter">AFRIXTECH Platform</span>
                         </div>
                         <p className="text-sm text-slate-400 leading-relaxed max-w-sm tracking-wide">
                             The infrastructure layer for modern enterprises. We construct deterministic, high-performance digital ecosystems designed to handle limitless complexity.
