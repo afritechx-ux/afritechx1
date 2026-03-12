@@ -120,7 +120,7 @@ function TimelineItem({ item, index }: { item: typeof timeline[0]; index: number
   return (
     <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between w-full group mb-16 last:mb-0">
       {/* Left content */}
-      <div className={`md:w-5/12 ${isLeft ? 'md:text-right md:pr-12' : 'md:pr-12 hidden md:block'} order-2 md:order-1`}>
+      <div className={`md:w-5/12 ${isLeft ? 'md:text-right md:pr-12 pl-12 md:pl-0 pt-1 pb-4 md:py-0' : 'md:pr-12 hidden md:block'} order-2 md:order-1`}>
         {isLeft && (
           <div className="group/card">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-3">
@@ -154,7 +154,7 @@ function TimelineItem({ item, index }: { item: typeof timeline[0]; index: number
 
       {/* Mobile-only content for right-sided items */}
       {!isLeft && (
-        <div className="md:hidden order-2 pl-12">
+        <div className="md:hidden order-2 pl-12 pt-1 pb-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-3">
             <span className="material-symbols-outlined text-primary text-sm">{item.icon}</span>
             <span className="text-primary font-black text-sm">{item.year}</span>
@@ -249,15 +249,15 @@ export default function AfrixtechAboutTeamProfile() {
                   <p className="text-slate-400 text-lg leading-relaxed max-w-lg">
                     We are a collective of engineers, designers, and strategists obsessed with building scalable software that solves real-world problems.
                   </p>
-                  <div className="flex gap-4">
+                  <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4 md:mt-0">
                     <Link
-                      className="inline-flex h-13 items-center justify-center rounded-xl bg-primary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:bg-primary/90 transition-all duration-300"
+                      className="inline-flex h-13 items-center justify-center rounded-xl bg-primary px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:bg-primary/90 transition-all duration-300 w-full sm:w-auto"
                       href="/careers-open-roles"
                     >
                       Join Our Team
                     </Link>
                     <Link
-                      className="inline-flex h-13 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-8 py-3.5 text-sm font-bold text-white hover:bg-white/10 transition-all duration-300"
+                      className="inline-flex h-13 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-8 py-3.5 text-sm font-bold text-white hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
                       href="#story"
                     >
                       Read Our Story
@@ -288,14 +288,14 @@ export default function AfrixtechAboutTeamProfile() {
             </section>
 
             {/* ═══ Stats Bar ═══ */}
-            <section className="grid grid-cols-2 md:grid-cols-4 gap-6 py-12 border-y border-white/5 my-16">
+            <section className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 py-12 border-y border-white/5 my-16">
               {stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col items-center text-center gap-2 group">
                   <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-1 group-hover:scale-110 transition-transform duration-300">
                     <span className="material-symbols-outlined text-lg">{stat.icon}</span>
                   </div>
                   <h3 className="text-3xl md:text-4xl font-black text-white tracking-tight">{stat.value}</h3>
-                  <p className="text-xs font-bold text-slate-600 uppercase tracking-widest">{stat.label}</p>
+                  <p className="text-[10px] md:text-xs font-bold text-slate-600 uppercase tracking-widest">{stat.label}</p>
                 </div>
               ))}
             </section>

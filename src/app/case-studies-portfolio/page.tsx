@@ -142,12 +142,14 @@ function FeaturedCard({ study }: { study: typeof caseStudies[0] }) {
           </p>
 
           {/* Stats row */}
-          <div className="grid grid-cols-3 gap-4 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
             {study.stats.map((stat) => (
-              <div key={stat.label} className={`rounded-xl ${study.accentBg} border ${study.accentBorder} p-3 text-center`}>
-                <span className={`material-symbols-outlined text-lg ${study.accentColor} mb-1`}>{stat.icon}</span>
-                <p className="text-white font-black text-lg">{stat.value}</p>
-                <p className="text-slate-500 text-[10px] font-medium uppercase tracking-wide">{stat.label}</p>
+              <div key={stat.label} className={`flex sm:block items-center justify-between sm:justify-start rounded-xl ${study.accentBg} border ${study.accentBorder} p-3 sm:text-center text-left`}>
+                <div className="flex items-center gap-2 sm:block">
+                  <span className={`material-symbols-outlined text-base sm:text-lg ${study.accentColor} mb-0 sm:mb-1 block`}>{stat.icon}</span>
+                  <p className="text-slate-500 text-[10px] font-medium uppercase tracking-wide block">{stat.label}</p>
+                </div>
+                <p className="text-white font-black text-base sm:text-lg">{stat.value}</p>
               </div>
             ))}
           </div>
@@ -285,26 +287,26 @@ export default function AfrixtechCaseStudiesPortfolio() {
                 </p>
               </div>
               {/* Aggregate stats */}
-              <div className="flex gap-6 md:gap-8">
-                <div className="text-center">
+              <div className="grid grid-cols-2 sm:flex sm:flex-nowrap gap-6 md:gap-8 mt-6 md:mt-0">
+                <div className="text-center col-span-1">
                   <p className="text-3xl font-black text-white">50+</p>
-                  <p className="text-xs text-slate-500 font-medium uppercase tracking-wide mt-1">Projects</p>
+                  <p className="text-[10px] md:text-xs text-slate-500 font-medium uppercase tracking-wide mt-1">Projects</p>
                 </div>
-                <div className="w-px bg-white/10" />
-                <div className="text-center">
+                <div className="hidden sm:block w-px bg-white/10" />
+                <div className="text-center col-span-1">
                   <p className="text-3xl font-black text-white">98%</p>
-                  <p className="text-xs text-slate-500 font-medium uppercase tracking-wide mt-1">Success Rate</p>
+                  <p className="text-[10px] md:text-xs text-slate-500 font-medium uppercase tracking-wide mt-1">Success Rate</p>
                 </div>
-                <div className="w-px bg-white/10" />
-                <div className="text-center">
+                <div className="hidden sm:block w-px bg-white/10" />
+                <div className="text-center col-span-2 sm:col-span-1 mt-2 sm:mt-0">
                   <p className="text-3xl font-black text-white">12+</p>
-                  <p className="text-xs text-slate-500 font-medium uppercase tracking-wide mt-1">Industries</p>
+                  <p className="text-[10px] md:text-xs text-slate-500 font-medium uppercase tracking-wide mt-1">Industries</p>
                 </div>
               </div>
             </div>
 
             {/* Filter tabs */}
-            <div className="flex flex-wrap gap-2 mb-12 pb-6 border-b border-white/5">
+            <div className="flex overflow-x-auto gap-2 mb-12 pb-6 border-b border-white/5 snap-x [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] -mx-4 px-4 sm:mx-0 sm:px-0">
               {filterTabs.map((tab) => (
                 <button
                   key={tab.label}
