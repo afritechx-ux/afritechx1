@@ -193,7 +193,7 @@ function TeamCard({ member }: { member: typeof team[0] }) {
 
             {/* Social links overlay */}
             <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-              <a className="w-9 h-9 rounded-lg bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all" href="mailto:afrixtech@gmail.com">
+              <a className="w-9 h-9 rounded-lg bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all" href="mailto:afritechx@gmail.com">
                 <span className="material-symbols-outlined text-base">mail</span>
               </a>
             </div>

@@ -32,7 +32,7 @@ const offices = [
 ];
 
 const contactMethods = [
-  { icon: 'mail', label: 'Email Us', value: 'afrixtech@gmail.com', href: 'mailto:afrixtech@gmail.com', color: 'text-primary' },
+  { icon: 'mail', label: 'Email Us', value: 'afritechx@gmail.com', href: 'mailto:afritechx@gmail.com', color: 'text-primary' },
   { icon: 'support_agent', label: 'Support', value: '24/7 Available', href: '#', color: 'text-emerald-400' },
   { icon: 'schedule', label: 'Response Time', value: 'Under 2 Hours', href: '#', color: 'text-orange-400' },
 ];
@@ -158,11 +158,11 @@ export default function AfrixtechContactGlobalOffices() {
                       <div className="relative z-10">
                         <h3 className="text-white font-bold tracking-tight mb-4">Direct Inquiries</h3>
                         <div className="flex flex-col gap-3">
-                          <a className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors" href="mailto:afrixtech@gmail.com">
+                          <a className="flex items-center gap-3 text-slate-300 hover:text-primary transition-colors" href="mailto:afritechx@gmail.com">
                             <div className="w-8 h-8 rounded-lg bg-black/40 border border-white/10 flex items-center justify-center">
                               <span className="material-symbols-outlined text-sm">mail</span>
                             </div>
-                            <span className="text-sm font-medium">afrixtech@gmail.com</span>
+                            <span className="text-sm font-medium">afritechx@gmail.com</span>
                           </a>
                           <div className="flex items-center gap-3 text-slate-300">
                             <div className="w-8 h-8 rounded-lg bg-black/40 border border-white/10 flex items-center justify-center">

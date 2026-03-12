@@ -476,7 +476,7 @@ const gettingStartedItems: GuideItem[] = [
       'Test mode: 100 requests per minute per API key. Live mode: 1,000 requests per minute per API key.',
       'When you exceed the rate limit, the API returns a 429 Too Many Requests status code. The response includes a Retry-After header indicating how many seconds to wait before making another request.',
       'For bulk operations, we recommend using our batch endpoints or implementing exponential backoff with jitter in your retry logic.',
-      'If you need higher rate limits for your use case, please contact our sales team at afrixtech@gmail.com to discuss Enterprise plans.',
+      'If you need higher rate limits for your use case, please contact our sales team at afritechx@gmail.com to discuss Enterprise plans.',
     ],
   },
 ];

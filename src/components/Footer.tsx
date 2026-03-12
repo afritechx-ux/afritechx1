@@ -31,9 +31,9 @@ export default function Footer() {
 
                         {/* Contact info */}
                         <div className="flex flex-col gap-2 mt-4">
-                            <a href="mailto:afrixtech@gmail.com" className="text-sm text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
+                            <a href="mailto:afritechx@gmail.com" className="text-sm text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
                                 <span className="material-symbols-outlined text-[16px]">mail</span>
-                                afrixtech@gmail.com
+                                afritechx@gmail.com
                             </a>
                             <a href="tel:+233245171589" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2">
                                 <span className="material-symbols-outlined text-[16px]">call</span>
