@@ -74,7 +74,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
-export default function AfritechxHomepageLandingPage() {
+export default function AfrixtechHomepageLandingPage() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       {/* Background grid */}
@@ -113,7 +113,7 @@ export default function AfritechxHomepageLandingPage() {
 
                   {/* Subtext */}
                   <p className="text-lg leading-relaxed text-slate-400 max-w-xl mx-auto lg:mx-0">
-                    Afritechx delivers cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development for global enterprises ready to scale.
+                    Afrixtech delivers cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development for global enterprises ready to scale.
                   </p>
 
                   {/* CTAs */}
@@ -172,10 +172,10 @@ export default function AfritechxHomepageLandingPage() {
                         <div className="w-3 h-3 rounded-full bg-green-500/80" />
                       </div>
                       <div className="flex-1 w-full rounded-lg p-3 bg-white/5 font-mono text-xs text-slate-400 overflow-hidden">
-                        <p><span className="text-emerald-400">$</span> afritechx deploy --region africa-west</p>
+                        <p><span className="text-emerald-400">$</span> afrixtech deploy --region africa-west</p>
                         <p className="text-slate-600 mt-1">⠋ Building production bundle...</p>
                         <p className="text-emerald-400 mt-1">✓ Deployed to 4 edge regions</p>
-                        <p className="text-primary mt-1">→ https://api.afritechx.com <span className="text-emerald-400">200 OK</span></p>
+                        <p className="text-primary mt-1">→ https://api.afrixtech.com <span className="text-emerald-400">200 OK</span></p>
                       </div>
                       <div className="h-10 w-full grid grid-cols-3 gap-2">
                         <div className="bg-primary/15 rounded-lg border border-primary/10" />

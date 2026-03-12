@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxLightModeSuccessModal() {
+export default function AfrixtechLightModeSuccessModal() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -29,7 +29,7 @@ export default function AfritechxLightModeSuccessModal() {
 </div>
 <h1 className="text-white tracking-tight tracking-tight text-3xl font-bold leading-tight mb-4">Subscription Successful!</h1>
 <p className="text-slate-400 font-light text-base font-normal leading-relaxed mb-8">
-                        Thank you for subscribing to the Afritechx newsletter. Check your inbox for the latest updates on our enterprise software solutions.
+                        Thank you for subscribing to the Afrixtech newsletter. Check your inbox for the latest updates on our enterprise software solutions.
                     </p>
 
 <div className="w-full bg-[#050505] dark:bg-slate-700/50 rounded-xl p-4 mb-8 flex items-start gap-4 text-left border border-slate-100 dark:border-slate-600">

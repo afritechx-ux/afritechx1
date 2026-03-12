@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxTechnicalResourceLibrary() {
+export default function AfrixtechTechnicalResourceLibrary() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -11,7 +11,7 @@ export default function AfritechxTechnicalResourceLibrary() {
 <main className="flex-1 max-w-[1200px] w-full mx-auto px-6 py-12 flex flex-col gap-10">
 <section className="flex flex-col gap-4 max-w-3xl">
 <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-white tracking-tight">Whitepapers &amp; Resources</h1>
-<p className="text-lg text-slate-400 font-light">Deep-dive technical guides, industry reports, and strategic insights crafted by Afritechx experts to help you navigate modern enterprise software development.</p>
+<p className="text-lg text-slate-400 font-light">Deep-dive technical guides, industry reports, and strategic insights crafted by Afrixtech experts to help you navigate modern enterprise software development.</p>
 </section>
 <nav className="flex gap-3 flex-wrap pb-4 border-b border-white/10">
 <button className="flex h-9 items-center justify-center rounded-full bg-primary text-white px-5 text-sm font-medium shadow-sm">All Resources</button>
@@ -114,7 +114,7 @@ export default function AfritechxTechnicalResourceLibrary() {
 </div>
 <div className="p-6 flex flex-col flex-1 gap-4">
 <h3 className="text-xl font-bold leading-tight text-white tracking-tight line-clamp-2 group-hover:text-primary transition-colors">Modernizing Legacy FinTech Infrastructure</h3>
-<p className="text-sm text-slate-400 font-light line-clamp-3">How Afritechx helped a top-tier regional bank migrate a 15-year-old monolithic core banking system to a containerized microservices architecture with zero downtime.</p>
+<p className="text-sm text-slate-400 font-light line-clamp-3">How Afrixtech helped a top-tier regional bank migrate a 15-year-old monolithic core banking system to a containerized microservices architecture with zero downtime.</p>
 <div className="mt-auto pt-4 flex items-center justify-between border-t border-slate-100 dark:border-slate-700">
 <div className="flex items-center gap-2 text-xs text-slate-500">
 <span className="material-symbols-outlined text-[16px]">picture_as_pdf</span>
@@ -156,7 +156,7 @@ export default function AfritechxTechnicalResourceLibrary() {
 <section className="mt-12 bg-primary/10 dark:bg-primary/20 rounded-2xl p-8 md:p-12 border border-primary/20 text-center flex flex-col items-center gap-6">
 <div className="max-w-2xl flex flex-col gap-4">
 <h2 className="text-3xl font-bold text-white tracking-tight">Need a customized architecture strategy?</h2>
-<p className="text-lg text-slate-400 font-light">Speak with our senior enterprise architects to discuss how Afritechx can accelerate your digital transformation journey.</p>
+<p className="text-lg text-slate-400 font-light">Speak with our senior enterprise architects to discuss how Afrixtech can accelerate your digital transformation journey.</p>
 </div>
 <button className="flex h-12 items-center justify-center rounded-lg bg-primary hover:bg-primary/90 text-white px-8 font-bold shadow-md transition-colors">
                     Consult an Expert

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxMobileApiDocumentationView() {
+export default function AfrixtechMobileApiDocumentationView() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -14,7 +14,7 @@ export default function AfritechxMobileApiDocumentationView() {
 <div className="flex flex-col gap-3 p-4 md:px-10 mt-4">
 <div className="flex flex-col gap-2">
 <p className="text-white tracking-tight tracking-tight text-2xl md:text-[32px] font-bold leading-tight">API Documentation</p>
-<p className="text-slate-400 font-light text-sm font-normal leading-normal">Afritechx Enterprise API v2.0</p>
+<p className="text-slate-400 font-light text-sm font-normal leading-normal">Afrixtech Enterprise API v2.0</p>
 </div>
 </div>
 <div className="flex flex-col p-4 md:px-10 gap-3">
@@ -89,12 +89,12 @@ export default function AfritechxMobileApiDocumentationView() {
 <span className="text-purple-400">let</span> config = &#123;
   method: <span className="text-green-400">'post'</span>,
   maxBodyLength: <span className="text-orange-400">Infinity</span>,
-  url: <span className="text-green-400">'https://api.afritechx.com/v1/auth/login'</span>,
+  url: <span className="text-green-400">'https://api.afrixtech.com/v1/auth/login'</span>,
   headers: &#123; 
     <span className="text-green-400">'Content-Type'</span>: <span className="text-green-400">'application/json'</span>
   &#125;,
   data: &#123;
-    <span className="text-green-400">"username"</span>: <span className="text-green-400">"developer@afritechx.com"</span>,
+    <span className="text-green-400">"username"</span>: <span className="text-green-400">"developer@afrixtech.com"</span>,
     <span className="text-green-400">"password"</span>: <span className="text-green-400">"secure_password"</span>
   &#125;
 &#125;;

@@ -4,7 +4,7 @@ import prisma from '@/lib/prisma'; // Prisma SQLite Connection
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default async function AfritechxClientPortalDashboardOverview() {
+export default async function AfrixtechClientPortalDashboardOverview() {
 
   // 1. Prisma Auto-Seed & Fetch Logic
   let user = await prisma.user.findUnique({

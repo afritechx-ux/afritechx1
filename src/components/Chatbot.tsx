@@ -19,12 +19,12 @@ interface Message {
 }
 
 const botResponses: Record<string, string> = {
-  'project': 'Great! We\'d love to help with your project. You can reach us at afritechx@gmail.com or call +233 245 171 589. Would you like to fill out our contact form instead?',
-  'pricing': 'Our pricing depends on the scope and complexity of your project. For a detailed quote, please email us at afritechx@gmail.com or visit our Contact page. We typically respond within 2 hours!',
-  'call': 'We\'d be happy to schedule a call! Please reach out to us at:\n📧 afritechx@gmail.com\n📞 +233 245 171 589\n📞 +233 209 624 647\nOr fill out the contact form and we\'ll get back to you.',
-  'support': 'Our support team is available 24/7. You can:\n📧 Email: afritechx@gmail.com\n📞 Call: +233 245 171 589\n📞 Alt: +233 209 624 647\nWe\'ll respond within 2 hours.',
-  'hello': 'Hello! Welcome to Afritechx. How can I help you today? I can assist with project inquiries, pricing, booking a call, or technical support.',
-  'default': 'Thanks for reaching out! For the best assistance, please contact us directly:\n📧 afritechx@gmail.com\n📞 +233 245 171 589\n📞 +233 209 624 647\nOr try one of the quick options below.',
+  'project': 'Great! We\'d love to help with your project. You can reach us at afrixtech@gmail.com or call +233 245 171 589. Would you like to fill out our contact form instead?',
+  'pricing': 'Our pricing depends on the scope and complexity of your project. For a detailed quote, please email us at afrixtech@gmail.com or visit our Contact page. We typically respond within 2 hours!',
+  'call': 'We\'d be happy to schedule a call! Please reach out to us at:\n📧 afrixtech@gmail.com\n📞 +233 245 171 589\n📞 +233 209 624 647\nOr fill out the contact form and we\'ll get back to you.',
+  'support': 'Our support team is available 24/7. You can:\n📧 Email: afrixtech@gmail.com\n📞 Call: +233 245 171 589\n📞 Alt: +233 209 624 647\nWe\'ll respond within 2 hours.',
+  'hello': 'Hello! Welcome to Afrixtech. How can I help you today? I can assist with project inquiries, pricing, booking a call, or technical support.',
+  'default': 'Thanks for reaching out! For the best assistance, please contact us directly:\n📧 afrixtech@gmail.com\n📞 +233 245 171 589\n📞 +233 209 624 647\nOr try one of the quick options below.',
 };
 
 function getBotResponse(message: string): string {
@@ -44,7 +44,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: 'Hey! 👋 Welcome to Afritechx. How can I help you today?',
+      text: 'Hey! 👋 Welcome to Afrixtech. How can I help you today?',
       sender: 'bot',
       timestamp: new Date(),
     },
@@ -125,7 +125,7 @@ export default function Chatbot() {
                 <span className="material-symbols-outlined text-lg">smart_toy</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-white font-bold text-sm">Afritechx Assistant</h3>
+                <h3 className="text-white font-bold text-sm">Afrixtech Assistant</h3>
                 <div className="flex items-center gap-1.5">
                   <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="text-[10px] text-emerald-400 font-medium">Online Now</span>

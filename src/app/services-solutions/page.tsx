@@ -270,7 +270,7 @@ function ProcessStep({ step, isLast }: { step: typeof processSteps[0]; isLast: b
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
-export default function AfritechxServicesSolutions() {
+export default function AfrixtechServicesSolutions() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       {/* Background grid */}

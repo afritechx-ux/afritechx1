@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxMobileHomepageLandingPage() {
+export default function AfrixtechMobileHomepageLandingPage() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -25,7 +25,7 @@ export default function AfritechxMobileHomepageLandingPage() {
                                     Future-Proof Your <span className="text-primary">Business</span>
 </h1>
 <p className="text-gray-300 text-base sm:text-lg font-medium leading-relaxed max-w-sm mx-auto">
-                                    Afritechx builds scalable, secure, and modern digital solutions tailored for your enterprise.
+                                    Afrixtech builds scalable, secure, and modern digital solutions tailored for your enterprise.
                                 </p>
 </div>
 <div className="w-full flex flex-col gap-3 mt-4 z-10">

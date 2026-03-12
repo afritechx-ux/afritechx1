@@ -59,7 +59,7 @@ const timeline = [
   },
   {
     year: '2024',
-    title: 'Afritechx Academy',
+    title: 'Afrixtech Academy',
     description: 'Launched our internal training program to mentor the next generation of African tech talent and future leaders.',
     icon: 'school',
     side: 'right' as const,
@@ -70,7 +70,7 @@ const team = [
   {
     name: 'Kusi Gabriel Kwaku',
     role: 'Chief Executive Officer & Founder',
-    bio: 'Visionary tech entrepreneur based in Kumasi, Ghana. Leading Afritechx\'s mission to deliver world-class digital solutions across Africa.',
+    bio: 'Visionary tech entrepreneur based in Kumasi, Ghana. Leading Afrixtech\'s mission to deliver world-class digital solutions across Africa.',
     image: '/case-studies/ceo.jpeg',
     isCeo: true,
   },
@@ -193,7 +193,7 @@ function TeamCard({ member }: { member: typeof team[0] }) {
 
             {/* Social links overlay */}
             <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-              <a className="w-9 h-9 rounded-lg bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all" href="mailto:afritechx@gmail.com">
+              <a className="w-9 h-9 rounded-lg bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all" href="mailto:afrixtech@gmail.com">
                 <span className="material-symbols-outlined text-base">mail</span>
               </a>
             </div>
@@ -213,7 +213,7 @@ function TeamCard({ member }: { member: typeof team[0] }) {
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
-export default function AfritechxAboutTeamProfile() {
+export default function AfrixtechAboutTeamProfile() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       {/* Background grid */}
@@ -271,7 +271,7 @@ export default function AfritechxAboutTeamProfile() {
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                     <Image
                       src="/case-studies/about-hero.png"
-                      alt="Afritechx team collaborating in modern office"
+                      alt="Afrixtech team collaborating in modern office"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -305,7 +305,7 @@ export default function AfritechxAboutTeamProfile() {
               <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-14">
                 <p className="text-primary font-bold uppercase tracking-widest text-xs">Our DNA</p>
                 <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
-                  The Afritechx{' '}
+                  The Afrixtech{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">Way</span>
                 </h2>
                 <p className="text-slate-400 text-lg leading-relaxed">

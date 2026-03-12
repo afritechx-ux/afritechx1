@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxBrandIdentityUiKit() {
+export default function AfrixtechBrandIdentityUiKit() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -19,7 +19,7 @@ export default function AfritechxBrandIdentityUiKit() {
 <div className="bg-white flex flex-col gap-4 rounded-3xl border border-slate-200 dark:border-none justify-center items-center p-8 aspect-video relative group">
 <div className="flex items-center gap-3 text-slate-900">
 <span className="material-symbols-outlined text-4xl text-primary">developer_board</span>
-<span className="text-2xl font-bold tracking-tight">Afritechx</span>
+<span className="text-2xl font-bold tracking-tight">Afrixtech</span>
 </div>
 <div className="absolute bottom-4 left-4">
 <p className="text-slate-500 text-sm font-medium">Full Logo Light</p>
@@ -28,7 +28,7 @@ export default function AfritechxBrandIdentityUiKit() {
 <div className="bg-background-dark flex flex-col gap-4 rounded-3xl border border-slate-800 justify-center items-center p-8 aspect-video relative group">
 <div className="flex items-center gap-3 text-white">
 <span className="material-symbols-outlined text-4xl text-primary">developer_board</span>
-<span className="text-2xl font-bold tracking-tight">Afritechx</span>
+<span className="text-2xl font-bold tracking-tight">Afrixtech</span>
 </div>
 <div className="absolute bottom-4 left-4">
 <p className="text-slate-400 text-sm font-medium">Full Logo Dark</p>

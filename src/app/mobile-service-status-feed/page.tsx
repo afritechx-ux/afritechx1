@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxMobileServiceStatusFeed() {
+export default function AfrixtechMobileServiceStatusFeed() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -23,7 +23,7 @@ export default function AfritechxMobileServiceStatusFeed() {
 </div>
 <div className="flex flex-col gap-2 max-w-md">
 <h1 className="text-2xl font-bold leading-tight">All Systems Go</h1>
-<p className="text-sm text-slate-400">Current system status for all Afritechx services. Last updated 2 minutes ago.</p>
+<p className="text-sm text-slate-400">Current system status for all Afrixtech services. Last updated 2 minutes ago.</p>
 </div>
 </section>
 <section className="flex flex-col gap-4">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxMobileLightModeHomepage() {
+export default function AfrixtechMobileLightModeHomepage() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -21,7 +21,7 @@ export default function AfritechxMobileLightModeHomepage() {
 <span className="text-xs font-bold text-primary uppercase tracking-wider">Enterprise Solutions</span>
 </div>
 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-white">
-                            Innovate Your Business With Afritechx
+                            Innovate Your Business With Afrixtech
                         </h1>
 <p className="text-base md:text-lg font-medium leading-relaxed text-slate-300 md:max-w-lg">
                             We build modern, scalable web and mobile applications to propel your business into the digital future.
@@ -94,7 +94,7 @@ export default function AfritechxMobileLightModeHomepage() {
 <p className="text-xs text-navy-800/60">CEO, TechCorp</p>
 </div>
 </div>
-<p className="text-sm text-navy-800/80 italic">"Afritechx transformed our legacy systems with cutting-edge cloud solutions. Their professionalism is unmatched."</p>
+<p className="text-sm text-navy-800/80 italic">"Afrixtech transformed our legacy systems with cutting-edge cloud solutions. Their professionalism is unmatched."</p>
 </div>
 <div className="flex-none w-80 snap-start flex flex-col rounded-xl bg-white p-6 shadow-sm border border-navy-100">
 <div className="flex items-center gap-4 mb-4">

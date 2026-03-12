@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxDetailedInvoiceView() {
+export default function AfrixtechDetailedInvoiceView() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -76,7 +76,7 @@ export default function AfritechxDetailedInvoiceView() {
 <div className="flex flex-col md:flex-row justify-between items-end gap-8 pt-4 border-t border-white/10">
 <div className="w-full md:w-1/2 text-sm text-slate-500">
 <p className="mb-2 font-semibold">Payment Instructions:</p>
-<p>Please make payment to Afritechx LLC via wire transfer. Include invoice number in payment notes.</p>
+<p>Please make payment to Afrixtech LLC via wire transfer. Include invoice number in payment notes.</p>
 </div>
 <div className="w-full md:w-1/3 flex flex-col gap-3">
 <div className="flex justify-between items-center text-sm">

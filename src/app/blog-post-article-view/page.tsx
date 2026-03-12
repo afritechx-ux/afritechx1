@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxBlogPostArticleView() {
+export default function AfrixtechBlogPostArticleView() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -103,7 +103,7 @@ app.<span className="text-blue-500 dark:text-blue-400">use</span>((req, res, nex
 <img alt="John Doe" className="w-20 h-20 rounded-full shadow-md border-2 border-primary/20" data-alt="Portrait of John Doe author" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6TW1wxGCGmNQ6nvDWeT60Vj5ELS50WXycyIR_01JMpNiZpQvUgLg85aJapjoEOYfvZEePUEy0NS8tTBpreErvwNotb7NT47zWjKNH3JqJm_tTRrNkCjiudgut7We6ocloy7llcR5TWxWgq060Tirq9TcyOuZ6kZetF_28rsNsMXuqsrfOU_fq_bUMDY5Ce2zLhS48BbO2bUmIuRq6SBfVrdxxAxTGGC65b-td-0qvtqmITwiLnbTneCmBAQVGPOIERzwDddQz4ME" />
 <div className="text-center sm:text-left">
 <h4 className="text-lg font-bold text-white tracking-tight mb-1">John Doe</h4>
-<p className="text-primary text-sm font-medium mb-3">Senior Backend Engineer at Afritechx</p>
+<p className="text-primary text-sm font-medium mb-3">Senior Backend Engineer at Afrixtech</p>
 <p className="text-sm text-slate-400 font-light leading-relaxed max-w-lg">
                                         John specializes in distributed systems and cloud-native architectures. When he's not optimizing database queries, he enjoys hiking and contributing to open-source Node.js projects.
                                     </p>
@@ -124,7 +124,7 @@ app.<span className="text-blue-500 dark:text-blue-400">use</span>((req, res, nex
 <span className="material-symbols-outlined text-primary">mail</span>
 <h3 className="text-lg font-bold text-white tracking-tight">Stay Updated</h3>
 </div>
-<p className="text-sm text-slate-400 font-light mb-5">Get the latest engineering insights from Afritechx delivered directly to your inbox.</p>
+<p className="text-sm text-slate-400 font-light mb-5">Get the latest engineering insights from Afrixtech delivered directly to your inbox.</p>
 <form className="flex flex-col gap-3">
 <input className="w-full bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-100 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-slate-500" placeholder="Your work email" required={true} type="email" />
 <button className="w-full bg-primary hover:bg-primary/90 text-background-dark font-bold py-2.5 rounded-lg text-sm transition-colors shadow-sm shadow-primary/20" type="submit">Subscribe</button>

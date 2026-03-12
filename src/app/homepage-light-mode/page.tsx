@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxHomepageLightMode() {
+export default function AfrixtechHomepageLightMode() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -78,7 +78,7 @@ export default function AfritechxHomepageLightMode() {
 </div>
 <div className="bg-[#050505]/50 py-16 px-4 rounded-3xl my-8">
 <div className="text-center mb-10">
-<h2 className="text-2xl font-bold text-white tracking-tight">Why Choose Afritechx</h2>
+<h2 className="text-2xl font-bold text-white tracking-tight">Why Choose Afrixtech</h2>
 </div>
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
 <div className="flex flex-col gap-4 rounded-xl bg-white dark:bg-slate-800 p-6 shadow-sm border border-slate-100 dark:border-slate-700 hover:-translate-y-1 transition-transform">
@@ -127,7 +127,7 @@ export default function AfritechxHomepageLightMode() {
                                     Ready to transform your business?
                                 </h2>
 <p className="text-slate-300 text-lg font-normal leading-relaxed max-w-2xl">
-                                    Partner with Afritechx today and experience enterprise-standard tech solutions that drive real results. Let's build something extraordinary together.
+                                    Partner with Afrixtech today and experience enterprise-standard tech solutions that drive real results. Let's build something extraordinary together.
                                 </p>
 </div>
 <div className="relative z-10 flex justify-center mt-4">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxClientSupportHelpCenter() {
+export default function AfrixtechClientSupportHelpCenter() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -54,7 +54,7 @@ export default function AfritechxClientSupportHelpCenter() {
 </div>
 <div className="flex flex-col gap-2">
 <h3 className="text-lg font-bold leading-tight group-hover:text-primary transition-colors">Project Onboarding</h3>
-<p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Getting started with your new Afritechx project.</p>
+<p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Getting started with your new Afrixtech project.</p>
 </div>
 </a>
 <a className="group flex flex-col gap-4 rounded-3xl border border-primary/10 bg-black dark:bg-[#152b2b] p-6 hover:border-primary/50 hover:shadow-md transition-all" href="#">
@@ -81,7 +81,7 @@ export default function AfritechxClientSupportHelpCenter() {
 </div>
 <div className="flex flex-col gap-2">
 <h3 className="text-lg font-bold leading-tight group-hover:text-primary transition-colors">API Guides</h3>
-<p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Comprehensive documentation for Afritechx APIs.</p>
+<p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Comprehensive documentation for Afrixtech APIs.</p>
 </div>
 </a>
 </div>

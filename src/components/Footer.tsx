@@ -15,7 +15,7 @@ export default function Footer() {
                             <div className="size-8 rounded bg-white text-black flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                                 <span className="material-symbols-outlined text-[18px]">terminal</span>
                             </div>
-                            <span className="text-xl font-bold tracking-tighter">Afritechx Platform</span>
+                            <span className="text-xl font-bold tracking-tighter">Afrixtech Platform</span>
                         </div>
                         <p className="text-sm text-slate-400 leading-relaxed max-w-sm tracking-wide">
                             The infrastructure layer for modern enterprises. We construct deterministic, high-performance digital ecosystems designed to handle limitless complexity.
@@ -23,9 +23,9 @@ export default function Footer() {
 
                         {/* Contact info */}
                         <div className="flex flex-col gap-2 mt-4">
-                            <a href="mailto:afritechx@gmail.com" className="text-sm text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
+                            <a href="mailto:afrixtech@gmail.com" className="text-sm text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
                                 <span className="material-symbols-outlined text-[16px]">mail</span>
-                                afritechx@gmail.com
+                                afrixtech@gmail.com
                             </a>
                             <a href="tel:+233245171589" className="text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2">
                                 <span className="material-symbols-outlined text-[16px]">call</span>
@@ -72,7 +72,7 @@ export default function Footer() {
                     <div className="flex gap-6">
                         <a className="text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Privacy Policy</a>
                         <a className="text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Terms of Service</a>
-                        <span className="text-xs text-slate-600 font-mono tracking-widest">© 2026 AFRITECHX</span>
+                        <span className="text-xs text-slate-600 font-mono tracking-widest">© 2026 AFRIXTECH</span>
                     </div>
                 </div>
             </div>

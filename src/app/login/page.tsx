@@ -2,8 +2,8 @@ import React from 'react';
 import LoginForm from './LoginForm';
 
 export const metadata = {
-    title: 'Client Portal Login | Afritechx',
-    description: 'Secure access to the Afritechx Client Portal.'
+    title: 'Client Portal Login | Afrixtech',
+    description: 'Secure access to the Afrixtech Client Portal.'
 };
 
 export default function LoginPage() {
@@ -31,7 +31,7 @@ export default function LoginPage() {
                             <div className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary border border-primary/20">
                                 <span className="material-symbols-outlined text-lg">terminal</span>
                             </div>
-                            <span className="text-white text-xl font-bold tracking-tighter">Afritechx</span>
+                            <span className="text-white text-xl font-bold tracking-tighter">Afrixtech</span>
                         </div>
 
                         {/* Welcome text */}

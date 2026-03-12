@@ -94,19 +94,19 @@ const endpoints: Endpoint[] = [
 }` },
     ],
     codeExamples: {
-      curl: `curl -X GET https://api.afritechx.com/v2/users?limit=10 \\
+      curl: `curl -X GET https://api.afrixtech.com/v2/users?limit=10 \\
   -H "Authorization: Bearer sk_test_12345" \\
   -H "Content-Type: application/json"`,
       python: `import requests
 
 response = requests.get(
-    "https://api.afritechx.com/v2/users",
+    "https://api.afrixtech.com/v2/users",
     headers={"Authorization": "Bearer sk_test_12345"},
     params={"limit": 10}
 )
 print(response.json())`,
       nodejs: `const response = await fetch(
-  "https://api.afritechx.com/v2/users?limit=10",
+  "https://api.afrixtech.com/v2/users?limit=10",
   {
     headers: {
       "Authorization": "Bearer sk_test_12345",
@@ -116,7 +116,7 @@ print(response.json())`,
 );
 const data = await response.json();`,
       go: `req, _ := http.NewRequest("GET",
-  "https://api.afritechx.com/v2/users?limit=10", nil)
+  "https://api.afrixtech.com/v2/users?limit=10", nil)
 req.Header.Set("Authorization", "Bearer sk_test_12345")
 resp, _ := http.DefaultClient.Do(req)
 defer resp.Body.Close()`,
@@ -177,7 +177,7 @@ defer resp.Body.Close()`,
 }` },
     ],
     codeExamples: {
-      curl: `curl -X POST https://api.afritechx.com/v2/users \\
+      curl: `curl -X POST https://api.afrixtech.com/v2/users \\
   -H "Authorization: Bearer sk_test_12345" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -192,7 +192,7 @@ defer resp.Body.Close()`,
       python: `import requests
 
 response = requests.post(
-    "https://api.afritechx.com/v2/users",
+    "https://api.afrixtech.com/v2/users",
     headers={"Authorization": "Bearer sk_test_12345"},
     json={
         "email": "alex.developer@example.com",
@@ -204,7 +204,7 @@ response = requests.post(
 )
 print(response.json())`,
       nodejs: `const response = await fetch(
-  "https://api.afritechx.com/v2/users",
+  "https://api.afrixtech.com/v2/users",
   {
     method: "POST",
     headers: {
@@ -228,7 +228,7 @@ const data = await response.json();`,
   "role": "developer"
 }\`)
 req, _ := http.NewRequest("POST",
-  "https://api.afritechx.com/v2/users", body)
+  "https://api.afrixtech.com/v2/users", body)
 req.Header.Set("Authorization", "Bearer sk_test_12345")
 req.Header.Set("Content-Type", "application/json")
 resp, _ := http.DefaultClient.Do(req)`,
@@ -269,17 +269,17 @@ resp, _ := http.DefaultClient.Do(req)`,
 }` },
     ],
     codeExamples: {
-      curl: `curl -X GET https://api.afritechx.com/v2/users/usr_9abc123 \\
+      curl: `curl -X GET https://api.afrixtech.com/v2/users/usr_9abc123 \\
   -H "Authorization: Bearer sk_test_12345"`,
       python: `import requests
 
 response = requests.get(
-    "https://api.afritechx.com/v2/users/usr_9abc123",
+    "https://api.afrixtech.com/v2/users/usr_9abc123",
     headers={"Authorization": "Bearer sk_test_12345"}
 )
 print(response.json())`,
       nodejs: `const response = await fetch(
-  "https://api.afritechx.com/v2/users/usr_9abc123",
+  "https://api.afrixtech.com/v2/users/usr_9abc123",
   {
     headers: {
       "Authorization": "Bearer sk_test_12345"
@@ -288,7 +288,7 @@ print(response.json())`,
 );
 const data = await response.json();`,
       go: `req, _ := http.NewRequest("GET",
-  "https://api.afritechx.com/v2/users/usr_9abc123", nil)
+  "https://api.afrixtech.com/v2/users/usr_9abc123", nil)
 req.Header.Set("Authorization", "Bearer sk_test_12345")
 resp, _ := http.DefaultClient.Do(req)`,
     },
@@ -325,20 +325,20 @@ resp, _ := http.DefaultClient.Do(req)`,
 }` },
     ],
     codeExamples: {
-      curl: `curl -X PATCH https://api.afritechx.com/v2/users/usr_9abc123 \\
+      curl: `curl -X PATCH https://api.afrixtech.com/v2/users/usr_9abc123 \\
   -H "Authorization: Bearer sk_test_12345" \\
   -H "Content-Type: application/json" \\
   -d '{"role": "admin", "full_name": "Alex Senior Developer"}'`,
       python: `import requests
 
 response = requests.patch(
-    "https://api.afritechx.com/v2/users/usr_9abc123",
+    "https://api.afrixtech.com/v2/users/usr_9abc123",
     headers={"Authorization": "Bearer sk_test_12345"},
     json={"role": "admin", "full_name": "Alex Senior Developer"}
 )
 print(response.json())`,
       nodejs: `const response = await fetch(
-  "https://api.afritechx.com/v2/users/usr_9abc123",
+  "https://api.afrixtech.com/v2/users/usr_9abc123",
   {
     method: "PATCH",
     headers: {
@@ -354,7 +354,7 @@ print(response.json())`,
 const data = await response.json();`,
       go: `body := strings.NewReader(\`{"role":"admin","full_name":"Alex Senior Developer"}\`)
 req, _ := http.NewRequest("PATCH",
-  "https://api.afritechx.com/v2/users/usr_9abc123", body)
+  "https://api.afrixtech.com/v2/users/usr_9abc123", body)
 req.Header.Set("Authorization", "Bearer sk_test_12345")
 req.Header.Set("Content-Type", "application/json")
 resp, _ := http.DefaultClient.Do(req)`,
@@ -388,17 +388,17 @@ resp, _ := http.DefaultClient.Do(req)`,
 }` },
     ],
     codeExamples: {
-      curl: `curl -X DELETE https://api.afritechx.com/v2/users/usr_9abc123 \\
+      curl: `curl -X DELETE https://api.afrixtech.com/v2/users/usr_9abc123 \\
   -H "Authorization: Bearer sk_test_12345"`,
       python: `import requests
 
 response = requests.delete(
-    "https://api.afritechx.com/v2/users/usr_9abc123",
+    "https://api.afrixtech.com/v2/users/usr_9abc123",
     headers={"Authorization": "Bearer sk_test_12345"}
 )
 print(response.json())`,
       nodejs: `const response = await fetch(
-  "https://api.afritechx.com/v2/users/usr_9abc123",
+  "https://api.afrixtech.com/v2/users/usr_9abc123",
   {
     method: "DELETE",
     headers: {
@@ -408,7 +408,7 @@ print(response.json())`,
 );
 const data = await response.json();`,
       go: `req, _ := http.NewRequest("DELETE",
-  "https://api.afritechx.com/v2/users/usr_9abc123", nil)
+  "https://api.afrixtech.com/v2/users/usr_9abc123", nil)
 req.Header.Set("Authorization", "Bearer sk_test_12345")
 resp, _ := http.DefaultClient.Do(req)`,
     },
@@ -428,16 +428,16 @@ const gettingStartedItems: GuideItem[] = [
   {
     id: 'overview', label: 'Overview', icon: 'home', title: 'API Overview',
     content: [
-      'The Afritechx API is organized around REST. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.',
+      'The Afrixtech API is organized around REST. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.',
       'The API is designed to have consistent and intuitive endpoints. All responses return data in JSON format. We support CORS (Cross-Origin Resource Sharing) allowing you to interact with our API from a client-side web application.',
-      'Base URL: https://api.afritechx.com/v2',
+      'Base URL: https://api.afrixtech.com/v2',
       'All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.',
     ],
   },
   {
     id: 'authentication', label: 'Authentication', icon: 'key', title: 'Authentication',
     content: [
-      'The Afritechx API uses API keys to authenticate requests. You can view and manage your API keys in the Afritechx Dashboard.',
+      'The Afrixtech API uses API keys to authenticate requests. You can view and manage your API keys in the Afrixtech Dashboard.',
       'Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, or anywhere else that could be compromised.',
       'Authentication is performed via the Authorization header. Provide your API key as the value of the Bearer token: Authorization: Bearer sk_test_YOUR_KEY',
       'All API requests must be authenticated. Requests that are not authenticated will return a 401 Unauthorized error.',
@@ -447,7 +447,7 @@ const gettingStartedItems: GuideItem[] = [
   {
     id: 'errors', label: 'Errors & Status Codes', icon: 'error', title: 'Errors & Status Codes',
     content: [
-      'Afritechx uses conventional HTTP response codes to indicate the success or failure of an API request.',
+      'Afrixtech uses conventional HTTP response codes to indicate the success or failure of an API request.',
       '200 OK — Request succeeded. The response body contains the requested data.',
       '201 Created — A new resource was successfully created.',
       '400 Bad Request — The request was unacceptable, often due to missing required parameters or invalid data format.',
@@ -462,21 +462,21 @@ const gettingStartedItems: GuideItem[] = [
     id: 'sdks', label: 'SDKs & Libraries', icon: 'deployed_code', title: 'SDKs & Libraries',
     content: [
       'We provide official SDKs for the most popular programming languages to make integration as smooth as possible.',
-      'JavaScript / TypeScript: npm install @afritechx/sdk — Full-featured SDK with TypeScript support, request validation, and automatic retries.',
-      'Python: pip install afritechx — Pythonic SDK with async support, comprehensive type hints, and built-in pagination helpers.',
-      'Go: go get github.com/afritechx/afritechx-go — Idiomatic Go client with context support, structured logging, and connection pooling.',
-      'Ruby: gem install afritechx — Ruby SDK with ActiveRecord-style models and Rails integration.',
+      'JavaScript / TypeScript: npm install @afrixtech/sdk — Full-featured SDK with TypeScript support, request validation, and automatic retries.',
+      'Python: pip install afrixtech — Pythonic SDK with async support, comprehensive type hints, and built-in pagination helpers.',
+      'Go: go get github.com/afrixtech/afrixtech-go — Idiomatic Go client with context support, structured logging, and connection pooling.',
+      'Ruby: gem install afrixtech — Ruby SDK with ActiveRecord-style models and Rails integration.',
       'All SDKs are open source and available on GitHub. We welcome contributions and bug reports from the community.',
     ],
   },
   {
     id: 'rate-limits', label: 'Rate Limits', icon: 'speed', title: 'Rate Limits',
     content: [
-      'The Afritechx API enforces rate limits to ensure fair usage and maintain platform stability for all users.',
+      'The Afrixtech API enforces rate limits to ensure fair usage and maintain platform stability for all users.',
       'Test mode: 100 requests per minute per API key. Live mode: 1,000 requests per minute per API key.',
       'When you exceed the rate limit, the API returns a 429 Too Many Requests status code. The response includes a Retry-After header indicating how many seconds to wait before making another request.',
       'For bulk operations, we recommend using our batch endpoints or implementing exponential backoff with jitter in your retry logic.',
-      'If you need higher rate limits for your use case, please contact our sales team at afritechx@gmail.com to discuss Enterprise plans.',
+      'If you need higher rate limits for your use case, please contact our sales team at afrixtech@gmail.com to discuss Enterprise plans.',
     ],
   },
 ];
@@ -540,7 +540,7 @@ function ParamRow({ param }: { param: Param }) {
    ██  PAGE COMPONENT
    ═══════════════════════════════════════════════════════════════ */
 
-export default function AfritechxDeveloperApiDocumentationPortal() {
+export default function AfrixtechDeveloperApiDocumentationPortal() {
   // ── State ──
   const [activeView, setActiveView] = useState<'endpoint' | 'guide'>('endpoint');
   const [activeGuideId, setActiveGuideId] = useState('overview');

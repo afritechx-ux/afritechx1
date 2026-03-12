@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxMobileHelpCenterArticle() {
+export default function AfrixtechMobileHelpCenterArticle() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -30,7 +30,7 @@ export default function AfritechxMobileHelpCenterArticle() {
 
 <article className="prose prose-slate dark:prose-invert max-w-none text-slate-700 dark:text-slate-300">
 <p className="text-base leading-relaxed mb-6">
-                Authentication is the process of verifying the identity of a user or system. Afritechx uses API keys to authenticate requests. You can view and manage your API keys in the Developer Dashboard under the 'Settings' tab.
+                Authentication is the process of verifying the identity of a user or system. Afrixtech uses API keys to authenticate requests. You can view and manage your API keys in the Developer Dashboard under the 'Settings' tab.
               </p>
 <h2 className="text-white tracking-tight text-xl font-semibold mt-8 mb-4">Bearer Token Authentication</h2>
 <p className="text-base leading-relaxed mb-6">
@@ -44,7 +44,7 @@ export default function AfritechxMobileHelpCenterArticle() {
 </button>
 </div>
 <div className="p-4 overflow-x-auto">
-<pre className="text-sm font-mono text-slate-800 dark:text-slate-200"><code>curl -X GET https://api.afritechx.com/v1/users \
+<pre className="text-sm font-mono text-slate-800 dark:text-slate-200"><code>curl -X GET https://api.afrixtech.com/v1/users \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json"</code></pre>
 </div>

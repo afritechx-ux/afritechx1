@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxMobileNotificationsFeed() {
+export default function AfrixtechMobileNotificationsFeed() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -33,7 +33,7 @@ export default function AfritechxMobileNotificationsFeed() {
 <p className="text-base font-medium leading-normal line-clamp-1 text-slate-900 dark:text-slate-100 pr-2">New Project Created</p>
 <span className="text-xs text-slate-500 shrink-0 whitespace-nowrap mt-1">2m ago</span>
 </div>
-<p className="text-sm font-normal leading-relaxed line-clamp-2 text-slate-400 font-light">You created a new project 'Afritechx Web App' in the Enterprise workspace.</p>
+<p className="text-sm font-normal leading-relaxed line-clamp-2 text-slate-400 font-light">You created a new project 'Afrixtech Web App' in the Enterprise workspace.</p>
 </div>
 <div className="shrink-0 flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
 <button className="text-slate-400 hover:text-primary p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxClientPortalDocumentRepository() {
+export default function AfrixtechClientPortalDocumentRepository() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>

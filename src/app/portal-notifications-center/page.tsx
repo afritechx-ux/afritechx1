@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxPortalNotificationsCenter() {
+export default function AfrixtechPortalNotificationsCenter() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -16,7 +16,7 @@ export default function AfritechxPortalNotificationsCenter() {
 <aside className="w-full lg:w-64 shrink-0 flex flex-col gap-6">
 <div>
 <h1 className="text-2xl md:text-[32px] font-bold leading-tight mb-2">Notifications Center</h1>
-<p className="text-slate-500 text-sm leading-relaxed">Stay updated with your latest projects, invoices, and system alerts at Afritechx.</p>
+<p className="text-slate-500 text-sm leading-relaxed">Stay updated with your latest projects, invoices, and system alerts at Afrixtech.</p>
 </div>
 <nav className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
 <a className="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/10 text-primary font-medium transition-colors whitespace-nowrap" href="#">

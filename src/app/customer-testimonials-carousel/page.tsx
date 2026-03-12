@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxCustomerTestimonialsCarousel() {
+export default function AfrixtechCustomerTestimonialsCarousel() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -18,7 +18,7 @@ export default function AfritechxCustomerTestimonialsCarousel() {
                                     Trusted by Industry Leaders
                                 </h1>
 <p className="text-lg text-slate-400 font-light">
-                                    See how Afritechx has transformed businesses across the globe with our innovative enterprise software solutions.
+                                    See how Afrixtech has transformed businesses across the globe with our innovative enterprise software solutions.
                                 </p>
 </div>
 <div className="flex gap-3 hidden md:flex">
@@ -38,7 +38,7 @@ export default function AfritechxCustomerTestimonialsCarousel() {
 <div>
 <span className="material-symbols-outlined text-4xl text-primary/40 mb-4">format_quote</span>
 <p className="text-xl md:text-2xl font-serif italic text-slate-800 dark:text-slate-200 mb-6 leading-relaxed">
-                                            "Afritechx completely revolutionized our backend infrastructure. Their team didn't just write code; they partnered with us to rethink our entire operational architecture, resulting in a 40% efficiency boost."
+                                            "Afrixtech completely revolutionized our backend infrastructure. Their team didn't just write code; they partnered with us to rethink our entire operational architecture, resulting in a 40% efficiency boost."
                                         </p>
 </div>
 <div className="flex items-center justify-between mt-auto border-t border-white/5 pt-4">
@@ -59,7 +59,7 @@ export default function AfritechxCustomerTestimonialsCarousel() {
 <div>
 <span className="material-symbols-outlined text-4xl text-primary/40 mb-4">format_quote</span>
 <p className="text-xl md:text-2xl font-serif italic text-slate-800 dark:text-slate-200 mb-6 leading-relaxed">
-                                            "Finding a development partner who truly understands enterprise-scale security and scalability is rare. Afritechx delivered our cloud migration project ahead of schedule and with zero downtime."
+                                            "Finding a development partner who truly understands enterprise-scale security and scalability is rare. Afrixtech delivered our cloud migration project ahead of schedule and with zero downtime."
                                         </p>
 </div>
 <div className="flex items-center justify-between mt-auto border-t border-white/5 pt-4">

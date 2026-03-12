@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxClientOnboardingChecklistOverview() {
+export default function AfrixtechClientOnboardingChecklistOverview() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -16,7 +16,7 @@ export default function AfritechxClientOnboardingChecklistOverview() {
 <div className="flex flex-col gap-6">
 <div className="flex flex-col gap-2">
 <h1 className="text-3xl md:text-4xl font-black tracking-tight text-white tracking-tight">Client Onboarding</h1>
-<p className="text-slate-500 text-base">Complete your setup to begin your software development journey with Afritechx.</p>
+<p className="text-slate-500 text-base">Complete your setup to begin your software development journey with Afrixtech.</p>
 </div>
 <div className="flex flex-col gap-3 bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden/40 border border-white/10/60 rounded-xl p-6">
 <div className="flex justify-between items-end">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxNewsletterSuccessModal() {
+export default function AfrixtechNewsletterSuccessModal() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -24,7 +24,7 @@ export default function AfritechxNewsletterSuccessModal() {
 <div className="flex flex-col items-center gap-3 w-full text-center">
 <h2 className="text-slate-900 dark:text-slate-100 text-3xl font-bold leading-tight tracking-tight">You're on the list!</h2>
 <p className="text-slate-400 font-light text-base font-normal leading-relaxed max-w-[320px]">
-                        Thanks for subscribing to Afritechx. You'll receive the latest tech insights and exclusive updates directly in your inbox.
+                        Thanks for subscribing to Afrixtech. You'll receive the latest tech insights and exclusive updates directly in your inbox.
                     </p>
 </div>
 <div className="w-full flex flex-col gap-4 mt-2">

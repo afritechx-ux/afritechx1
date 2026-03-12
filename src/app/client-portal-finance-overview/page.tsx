@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxClientPortalFinanceOverview() {
+export default function AfrixtechClientPortalFinanceOverview() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -14,9 +14,9 @@ export default function AfritechxClientPortalFinanceOverview() {
 <aside className="hidden md:flex w-64 flex-col justify-between bg-white dark:bg-[#152a2b] border-r border-white/10 p-4 shrink-0">
 <div className="flex flex-col gap-6">
 <div className="flex items-center gap-3 px-2 py-3 border-b border-white/10">
-<div className="bg-center bg-no-repeat aspect-square bg-cover rounded-md size-12" data-alt="Company logo Afritechx placeholder" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdqEIydWTHSWaf5wUzvO-mvINXNBeFYgSlGF0fjdJ7sRADy6t6az4R2RL-XLUfzoNhzVrktk-188GfAK3hRhKTeMNmMjJBFB0uA8yqDLtb0DUU8g_Vc-nA4Ox-7-mSw9VBUaMV7e2eKMx_M4EmyzCl2YPaA6IMhX7rBQGpmUPc_YkmuQpXJ_1K6XCliT5AiX84LZNR06sDvUy08IkSrFOYeMH71MxyJBoIgiqeD2FsrtXXpjBMUUm3832IMeoBtXvTtJD-ckBftvI')` }}></div>
+<div className="bg-center bg-no-repeat aspect-square bg-cover rounded-md size-12" data-alt="Company logo Afrixtech placeholder" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdqEIydWTHSWaf5wUzvO-mvINXNBeFYgSlGF0fjdJ7sRADy6t6az4R2RL-XLUfzoNhzVrktk-188GfAK3hRhKTeMNmMjJBFB0uA8yqDLtb0DUU8g_Vc-nA4Ox-7-mSw9VBUaMV7e2eKMx_M4EmyzCl2YPaA6IMhX7rBQGpmUPc_YkmuQpXJ_1K6XCliT5AiX84LZNR06sDvUy08IkSrFOYeMH71MxyJBoIgiqeD2FsrtXXpjBMUUm3832IMeoBtXvTtJD-ckBftvI')` }}></div>
 <div className="flex flex-col overflow-hidden">
-<h1 className="text-white tracking-tight text-base font-semibold leading-normal truncate">Afritechx</h1>
+<h1 className="text-white tracking-tight text-base font-semibold leading-normal truncate">Afrixtech</h1>
 <p className="text-slate-500 text-xs font-medium leading-normal uppercase tracking-wider">Client Portal</p>
 </div>
 </div>
@@ -57,7 +57,7 @@ export default function AfritechxClientPortalFinanceOverview() {
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
 <div className="flex flex-col gap-2 max-w-2xl">
 <h2 className="text-white tracking-tight text-3xl font-bold leading-tight">Finance &amp; Invoicing</h2>
-<p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Overview of your financial history, upcoming payments, and corporate billing methods with Afritechx.</p>
+<p className="text-slate-400 font-light text-sm font-normal leading-relaxed">Overview of your financial history, upcoming payments, and corporate billing methods with Afrixtech.</p>
 </div>
 <button className="bg-primary hover:bg-primary/90 text-[#102122] px-6 py-2.5 rounded-lg font-medium text-sm transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2 whitespace-nowrap self-start md:self-auto">
 <span className="material-symbols-outlined" style={{ fontSize: `20px` }}>add</span>

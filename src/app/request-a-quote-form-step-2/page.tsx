@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxRequestAQuoteFormStep2() {
+export default function AfrixtechRequestAQuoteFormStep2() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -15,7 +15,7 @@ export default function AfritechxRequestAQuoteFormStep2() {
 
 <div className="w-full lg:w-80 flex flex-col gap-6 p-6 rounded-xl bg-slate-100 dark:bg-slate-800/50 border border-white/10 shrink-0 h-fit">
 <div className="flex items-center gap-4 border-b border-white/10 pb-6">
-<div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 shadow-sm border border-white/10" data-alt="Afritechx company logo placeholder" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5oAcyEcvh26fhdOhcofh_63hEE4GE3AgZTaH1pkzmGHkr79FiLB64bp4sgyxsvEpZBpqOkuMY0ohulShJsUpaMmhkCY-mokisbC6w9Y_xpqTc9bjNlcbSHTriL7exf-qlEHU_qdkLzSfSaA_WSxPLfbDppjyT7w8iOSjV-pT41fVcp5AL6_n0maW4Vxp3a97GXHPPQSGT5F5iUa-f3nxqS-E0B246gPTOjpEwLsqy0IAPGJ7JbnU60LoHsbXYPQYe6NEldz88gbs')` }}></div>
+<div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 shadow-sm border border-white/10" data-alt="Afrixtech company logo placeholder" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5oAcyEcvh26fhdOhcofh_63hEE4GE3AgZTaH1pkzmGHkr79FiLB64bp4sgyxsvEpZBpqOkuMY0ohulShJsUpaMmhkCY-mokisbC6w9Y_xpqTc9bjNlcbSHTriL7exf-qlEHU_qdkLzSfSaA_WSxPLfbDppjyT7w8iOSjV-pT41fVcp5AL6_n0maW4Vxp3a97GXHPPQSGT5F5iUa-f3nxqS-E0B246gPTOjpEwLsqy0IAPGJ7JbnU60LoHsbXYPQYe6NEldz88gbs')` }}></div>
 <div className="flex flex-col">
 <h1 className="text-base font-bold leading-normal text-slate-900 dark:text-slate-100">Quote Progress</h1>
 <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2 mt-2">

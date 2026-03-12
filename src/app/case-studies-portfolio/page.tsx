@@ -246,7 +246,7 @@ function CaseStudyCard({ study }: { study: typeof caseStudies[0] }) {
   );
 }
 
-export default function AfritechxCaseStudiesPortfolio() {
+export default function AfrixtechCaseStudiesPortfolio() {
   const featured = caseStudies.find((s) => s.featured)!;
   const rest = caseStudies.filter((s) => !s.featured);
 

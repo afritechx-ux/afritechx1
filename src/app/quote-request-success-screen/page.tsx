@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxQuoteRequestSuccessScreen() {
+export default function AfrixtechQuoteRequestSuccessScreen() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -17,7 +17,7 @@ export default function AfritechxQuoteRequestSuccessScreen() {
 <div className="flex max-w-[560px] flex-col items-center gap-3">
 <h1 className="text-3xl font-bold leading-tight tracking-[-0.015em] text-center">Request Received Successfully</h1>
 <p className="text-base font-normal leading-relaxed text-slate-400 font-light text-center">
-                            Thank you for reaching out to Afritechx. Our team is reviewing your project details and will be in touch within 24 hours.
+                            Thank you for reaching out to Afrixtech. Our team is reviewing your project details and will be in touch within 24 hours.
                         </p>
 </div>
 <button className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">

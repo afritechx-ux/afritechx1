@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxMobileTestimonialsSection() {
+export default function AfrixtechMobileTestimonialsSection() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -17,7 +17,7 @@ export default function AfritechxMobileTestimonialsSection() {
 <span className="material-symbols-outlined text-5xl">format_quote</span>
 </div>
 <h2 className="text-[22px] md:text-3xl font-bold leading-tight tracking-[-0.015em] text-center mb-10 px-4">
-                                "Afritechx delivered an exceptional software solution that completely transformed our daily business operations. Highly recommended for any enterprise seeking reliable tech partners!"
+                                "Afrixtech delivered an exceptional software solution that completely transformed our daily business operations. Highly recommended for any enterprise seeking reliable tech partners!"
                             </h2>
 <div className="flex flex-col items-center gap-4 mb-10">
 <div className="w-16 h-16 bg-center bg-no-repeat bg-cover rounded-full border-2 border-primary/20" data-alt="Client headshot portrait profile picture" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvhNqA6ai8OxgKK0ZzfTq8JPJ19ajriBlnhhgXU-zhB4jmduSZ8rdnRjNYj1wtLou4FLotA6ABhUnXoS54ERRgB9uUg97GWctRx7mJ1tZ_nMDBA1zQk5eh2uIHpMHBdVoQE8tAG1lE1Tc4auGLFunJl8RewRnqYUkjqJDbyeabAnUZfFaXGBFrjik9Wq9n1NsniGvLhm8Z4R2rZPJthImkNNoINV-b2RsUCHd1AOb1Vs-FAVz46o2dGVZCn_zlX9p2OMVhONlhLis')` }}>

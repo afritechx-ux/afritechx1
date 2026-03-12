@@ -20,7 +20,7 @@ export default function Header() {
                         <div className="flex size-8 items-center justify-center rounded-lg bg-white/10 text-white border border-white/10">
                             <span className="material-symbols-outlined text-[16px]">terminal</span>
                         </div>
-                        <a href="/" className="text-white text-lg font-bold tracking-tighter hover:opacity-80 transition-opacity">Afritechx</a>
+                        <a href="/" className="text-white text-lg font-bold tracking-tighter hover:opacity-80 transition-opacity">Afrixtech</a>
                     </div>
                     <nav className="hidden md:flex flex-1 justify-center gap-10 items-center">
                         {navLinks.map((link) => (
@@ -101,7 +101,7 @@ export default function Header() {
                     {/* Contact info at bottom */}
                     <div className="mt-auto pt-6 border-t border-white/5">
                         <p className="text-[10px] text-slate-600 font-bold uppercase tracking-widest mb-3">Contact</p>
-                        <a href="mailto:afritechx@gmail.com" className="text-xs text-slate-500 hover:text-primary transition-colors block mb-1">afritechx@gmail.com</a>
+                        <a href="mailto:afrixtech@gmail.com" className="text-xs text-slate-500 hover:text-primary transition-colors block mb-1">afrixtech@gmail.com</a>
                         <a href="tel:+233245171589" className="text-xs text-slate-500 hover:text-primary transition-colors block mb-1">+233 245 171 589</a>
                         <a href="tel:+233209624647" className="text-xs text-slate-500 hover:text-primary transition-colors block">+233 209 624 647</a>
                     </div>

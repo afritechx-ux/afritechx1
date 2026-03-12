@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxPortalUserSettingsCustomization() {
+export default function AfrixtechPortalUserSettingsCustomization() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -14,9 +14,9 @@ export default function AfritechxPortalUserSettingsCustomization() {
 <aside className="flex h-full w-64 flex-col justify-between border-r border-white/10 bg-black/50 dark:bg-background-dark/50 p-4 sticky top-[65px] h-[calc(100vh-65px)] overflow-y-auto">
 <div className="flex flex-col gap-6">
 <div className="flex gap-3 items-center">
-<div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-300 dark:border-slate-700" data-alt="Afritechx company logo mark" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD33DYLuE-Eein6B9rrhU8M_tG6wcEEPXgnZ-B2cgZPf4XnHciiV-fPvpVIfAiFU6xlXosYt5bM7vEXDurAyKaKhQmxCGJhWD2KMvf7rZMqqppgPtJF0tUgFR2JbFkMdKjHklYdUs3IM3Xay4C7MN1Efeqx0rLX1EAWtQDTtqO9J65xnzTmH7ou03ogcjT6rWfmVUvHAVpSZKIFzhCy-z2NQdKd3sjHyfc6OhpCJ9DaFSicw_18qIVPeYXNxr0xpfy0I3ZWKIIy8Jk')` }}></div>
+<div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-300 dark:border-slate-700" data-alt="Afrixtech company logo mark" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD33DYLuE-Eein6B9rrhU8M_tG6wcEEPXgnZ-B2cgZPf4XnHciiV-fPvpVIfAiFU6xlXosYt5bM7vEXDurAyKaKhQmxCGJhWD2KMvf7rZMqqppgPtJF0tUgFR2JbFkMdKjHklYdUs3IM3Xay4C7MN1Efeqx0rLX1EAWtQDTtqO9J65xnzTmH7ou03ogcjT6rWfmVUvHAVpSZKIFzhCy-z2NQdKd3sjHyfc6OhpCJ9DaFSicw_18qIVPeYXNxr0xpfy0I3ZWKIIy8Jk')` }}></div>
 <div className="flex flex-col">
-<h1 className="text-slate-900 dark:text-slate-100 text-base font-medium leading-normal">Afritechx</h1>
+<h1 className="text-slate-900 dark:text-slate-100 text-base font-medium leading-normal">Afrixtech</h1>
 <p className="text-slate-500 text-xs font-normal leading-normal">Enterprise Portal</p>
 </div>
 </div>
@@ -81,7 +81,7 @@ export default function AfritechxPortalUserSettingsCustomization() {
 </div>
 <div className="space-y-2">
 <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Email Address</label>
-<input className="w-full rounded-2xl border border-slate-300 dark:border-slate-600 bg-[#050505] dark:bg-slate-800/50 px-4 py-2.5 text-sm text-slate-500 outline-none cursor-not-allowed" disabled={true} type="email" value="jane.doe@afritechx.com" />
+<input className="w-full rounded-2xl border border-slate-300 dark:border-slate-600 bg-[#050505] dark:bg-slate-800/50 px-4 py-2.5 text-sm text-slate-500 outline-none cursor-not-allowed" disabled={true} type="email" value="jane.doe@afrixtech.com" />
 </div>
 <div className="space-y-2 md:col-span-2">
 <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Bio</label>

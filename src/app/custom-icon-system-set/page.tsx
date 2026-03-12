@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxCustomIconSystemSet() {
+export default function AfrixtechCustomIconSystemSet() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -21,7 +21,7 @@ export default function AfritechxCustomIconSystemSet() {
 <span className="size-2 rounded-full bg-primary shadow-[0_0_8px_rgba(13,242,242,0.8)]"></span>
                             Design System v2.0
                         </div>
-<h1 className="text-white tracking-tight text-5xl font-black leading-tight tracking-[-0.033em]">Afritechx Custom <br />Icon System &amp; Set</h1>
+<h1 className="text-white tracking-tight text-5xl font-black leading-tight tracking-[-0.033em]">Afrixtech Custom <br />Icon System &amp; Set</h1>
 <p className="text-slate-400 font-light text-lg font-normal leading-relaxed mt-2">
                             A modern, enterprise-standard icon set featuring Duotone and Neon Glow styles. Engineered with thin, sharp lines and geometric precision for next-gen interfaces.
                         </p>

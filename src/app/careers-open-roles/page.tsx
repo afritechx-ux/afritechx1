@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AfritechxCareersOpenRoles() {
+export default function AfrixtechCareersOpenRoles() {
   return (
     <div className="w-full relative min-h-screen bg-black pt-32 pb-24">
       <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -36,7 +36,7 @@ export default function AfritechxCareersOpenRoles() {
 <div className="flex flex-col gap-8 px-4 py-12 @container">
 <div className="flex flex-col gap-3 text-center items-center">
 <h2 className="text-white tracking-tight tracking-tight text-[32px] font-bold leading-tight @[480px]:text-4xl max-w-[720px]">
-                                Why Join Afritechx?
+                                Why Join Afrixtech?
                             </h2>
 <p className="text-slate-400 font-light text-base font-normal leading-normal max-w-[600px]">
                                 We offer more than just a job; we provide a career path full of growth, innovation, and purpose.

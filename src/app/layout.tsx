@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Afritechx | Enterprise Digital Solutions",
+  title: "Afrixtech | Enterprise Digital Solutions",
   description: "Cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development.",
 };
 
