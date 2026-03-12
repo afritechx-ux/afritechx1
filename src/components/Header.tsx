@@ -19,14 +19,16 @@ export default function Header() {
                 <header className="pointer-events-auto flex items-center justify-between whitespace-nowrap border-b border-t border-white/5 bg-black/40 backdrop-blur-2xl px-6 py-3 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.5)] transition-all duration-300 w-full max-w-[1100px] ring-1 ring-white/10">
                     <div className="flex items-center gap-3">
                         <a href="/" className="hover:opacity-80 transition-opacity flex items-center">
-                            <Image 
-                                src="/logo.png" 
-                                alt="Afrixtech Logo" 
-                                width={140} 
-                                height={40} 
-                                className="object-contain"
-                                priority
-                            />
+                            <div className="relative h-[32px] w-[140px] overflow-hidden rounded">
+                                <Image 
+                                    src="/logo.png" 
+                                    alt="Afrixtech Logo" 
+                                    fill
+                                    className="object-cover object-center scale-[1.7]"
+                                    priority
+                                    sizes="140px"
+                                />
+                            </div>
                         </a>
                     </div>
                     <nav className="hidden md:flex flex-1 justify-center gap-10 items-center">
