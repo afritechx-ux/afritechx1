@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import ContactForm from './ContactForm';
 
 /* ── Data ───────────────────────────────────────────────────────── */
 
@@ -220,79 +221,7 @@ export default function AfrixtechContactGlobalOffices() {
                         <p className="text-slate-500 text-sm">We&apos;ll get back to you within 2 business hours.</p>
                       </div>
 
-                      <form className="flex flex-col gap-4">
-                        <div className="grid grid-cols-2 gap-3">
-                          <div className="flex flex-col gap-1.5">
-                            <label className="text-[10px] font-black text-slate-600 uppercase tracking-[0.15em]" htmlFor="firstName">First Name</label>
-                            <input
-                              className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-slate-700 focus:border-primary/40 focus:ring-2 focus:ring-primary/20 outline-none transition-all hover:border-white/15"
-                              id="firstName"
-                              placeholder="Jane"
-                              required
-                              type="text"
-                            />
-                          </div>
-                          <div className="flex flex-col gap-1.5">
-                            <label className="text-[10px] font-black text-slate-600 uppercase tracking-[0.15em]" htmlFor="lastName">Last Name</label>
-                            <input
-                              className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-slate-700 focus:border-primary/40 focus:ring-2 focus:ring-primary/20 outline-none transition-all hover:border-white/15"
-                              id="lastName"
-                              placeholder="Doe"
-                              required
-                              type="text"
-                            />
-                          </div>
-                        </div>
-
-                        <div className="flex flex-col gap-1.5">
-                          <label className="text-[10px] font-black text-slate-600 uppercase tracking-[0.15em]" htmlFor="email">Work Email</label>
-                          <input
-                            className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-slate-700 focus:border-primary/40 focus:ring-2 focus:ring-primary/20 outline-none transition-all hover:border-white/15"
-                            id="email"
-                            placeholder="jane@company.com"
-                            required
-                            type="email"
-                          />
-                        </div>
-
-                        <div className="flex flex-col gap-1.5">
-                          <label className="text-[10px] font-black text-slate-600 uppercase tracking-[0.15em]" htmlFor="subject">Subject</label>
-                          <select
-                            className="rounded-xl border border-white/10 bg-[#050505] px-4 py-3 text-sm text-white focus:border-primary/40 focus:ring-2 focus:ring-primary/20 outline-none transition-all appearance-none hover:border-white/15"
-                            id="subject"
-                          >
-                            <option value="general">General Inquiry</option>
-                            <option value="project">Start a Project</option>
-                            <option value="partnership">Partnership Opportunity</option>
-                            <option value="careers">Careers</option>
-                            <option value="press">Press &amp; Media</option>
-                          </select>
-                        </div>
-
-                        <div className="flex flex-col gap-1.5">
-                          <label className="text-[10px] font-black text-slate-600 uppercase tracking-[0.15em]" htmlFor="message">Message</label>
-                          <textarea
-                            className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-slate-700 focus:border-primary/40 focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none hover:border-white/15"
-                            id="message"
-                            placeholder="Tell us about your project..."
-                            required
-                            rows={4}
-                          />
-                        </div>
-
-                        <button
-                          className="mt-2 w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-black font-bold py-3.5 rounded-xl transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-primary/40"
-                          type="submit"
-                        >
-                          <span className="material-symbols-outlined text-lg">send</span>
-                          Send Message
-                        </button>
-
-                        <p className="text-[10px] text-slate-600 text-center mt-1 leading-relaxed">
-                          By submitting, you agree to our{' '}
-                          <Link href="." className="text-primary/60 hover:text-primary transition-colors">Privacy Policy</Link>.
-                        </p>
-                      </form>
+                      <ContactForm />
                     </div>
                   </div>
                 </div>
