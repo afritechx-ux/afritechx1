@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
     return (
         <footer className="relative mt-32 border-t border-white/10 bg-black pt-20 pb-12 overflow-hidden selection:bg-white selection:text-black">
@@ -12,10 +14,13 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8 border-b border-white/10 pb-16">
                     <div className="col-span-1 md:col-span-2 flex flex-col items-start gap-4">
                         <div className="flex items-center gap-3 text-white mb-4">
-                            <div className="size-8 rounded bg-white text-black flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                                <span className="material-symbols-outlined text-[18px]">terminal</span>
-                            </div>
-                            <span className="text-xl font-bold tracking-tighter">Afrixtech Platform</span>
+                            <Image 
+                                src="/logo.png" 
+                                alt="Afrixtech Logo" 
+                                width={160} 
+                                height={45} 
+                                className="object-contain"
+                            />
                         </div>
                         <p className="text-sm text-slate-400 leading-relaxed max-w-sm tracking-wide">
                             The infrastructure layer for modern enterprises. We construct deterministic, high-performance digital ecosystems designed to handle limitless complexity.

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 const navLinks = [
     { label: 'Platform', href: '/services-solutions' },
@@ -17,10 +18,16 @@ export default function Header() {
             <div className="fixed top-0 inset-x-0 z-50 flex justify-center w-full px-4 pt-6 pb-2 pointer-events-none">
                 <header className="pointer-events-auto flex items-center justify-between whitespace-nowrap border-b border-t border-white/5 bg-black/40 backdrop-blur-2xl px-6 py-3 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.5)] transition-all duration-300 w-full max-w-[1100px] ring-1 ring-white/10">
                     <div className="flex items-center gap-3">
-                        <div className="flex size-8 items-center justify-center rounded-lg bg-white/10 text-white border border-white/10">
-                            <span className="material-symbols-outlined text-[16px]">terminal</span>
-                        </div>
-                        <a href="/" className="text-white text-lg font-bold tracking-tighter hover:opacity-80 transition-opacity">Afrixtech</a>
+                        <a href="/" className="hover:opacity-80 transition-opacity flex items-center">
+                            <Image 
+                                src="/logo.png" 
+                                alt="Afrixtech Logo" 
+                                width={140} 
+                                height={40} 
+                                className="object-contain"
+                                priority
+                            />
+                        </a>
                     </div>
                     <nav className="hidden md:flex flex-1 justify-center gap-10 items-center">
                         {navLinks.map((link) => (
