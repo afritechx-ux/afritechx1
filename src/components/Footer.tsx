@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
     return (
@@ -46,25 +47,25 @@ export default function Footer() {
                         </div>
 
                         <div className="flex gap-4 mt-4">
-                            <a className="text-slate-500 hover:text-white transition-colors" href="/services-solutions"><span className="material-symbols-outlined">hub</span></a>
+                            <Link className="text-slate-500 hover:text-white transition-colors" href="/services-solutions"><span className="material-symbols-outlined">hub</span></Link>
                         </div>
                     </div>
 
                     <div className="flex flex-col gap-6">
                         <h4 className="text-sm md:text-xs font-bold text-white tracking-widest uppercase mb-2">Infrastructure</h4>
                         <div className="flex flex-col gap-4 md:gap-3">
-                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/services-solutions">Edge Computing</a>
-                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/enterprise-tech-architecture">Global Database</a>
-                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/case-studies-portfolio">Security Layer</a>
+                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/services-solutions">Edge Computing</Link>
+                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/enterprise-tech-architecture">Global Database</Link>
+                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/case-studies-portfolio">Security Layer</Link>
                         </div>
                     </div>
 
                     <div className="flex flex-col gap-6">
                         <h4 className="text-sm md:text-xs font-bold text-white tracking-widest uppercase mb-2">Company</h4>
                         <div className="flex flex-col gap-4 md:gap-3">
-                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/about-team-profile">About</a>
-                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/careers-open-roles">Careers</a>
-                            <a className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/contact-global-offices">Contact</a>
+                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/about-team-profile">About</Link>
+                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/careers-open-roles">Careers</Link>
+                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/contact-global-offices">Contact</Link>
                         </div>
                     </div>
                 </div>
@@ -74,9 +75,9 @@ export default function Footer() {
                         <div className="size-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.8)] animate-pulse"></div>
                         <span className="text-xs md:text-xs font-mono text-slate-400 tracking-wide uppercase">All Systems Operational</span>
                     </div>
-                    <div className="flex flex-wrapjustify-center gap-x-8 gap-y-4 md:gap-6">
-                        <a className="text-sm md:text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Privacy Policy</a>
-                        <a className="text-sm md:text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Terms of Service</a>
+                    <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 md:gap-6">
+                        <Link className="text-sm md:text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Privacy Policy</Link>
+                        <Link className="text-sm md:text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Terms of Service</Link>
                         <span className="text-sm md:text-xs text-slate-600 font-mono tracking-widest w-full text-center md:w-auto">© 2026 AFRIXTECH</span>
                     </div>
                 </div>

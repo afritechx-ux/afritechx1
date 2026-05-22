@@ -1,15 +1,23 @@
 import React from 'react';
 import prisma from '@/lib/prisma';
 import Link from 'next/link';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
+import { redirect } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function AfrixtechClientPortalBillingInvoices() {
 
-    // Fetch user and related invoices
+    const session = await getServerSession(authOptions);
+    if (!session?.user?.email) {
+        redirect('/login');
+    }
+
+    // Fetch user and related invoices using session email
     const user = await prisma.user.findUnique({
-        where: { email: 'client@acmecorp.com' },
+        where: { email: session.user.email },
         include: {
             invoices: {
                 orderBy: { dueDate: 'desc' }
@@ -18,7 +26,7 @@ export default async function AfrixtechClientPortalBillingInvoices() {
     });
 
     if (!user) {
-        throw new Error("User session not found in database.");
+        redirect('/login');
     }
 
     const invoices = user.invoices || [];

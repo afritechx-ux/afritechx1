@@ -1,4 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
+
+export const metadata = {
+    title: 'Careers — Open Roles',
+    description: 'Join the Afrixtech team. Explore open engineering, design, and data science roles. We offer remote work, continuous learning, and competitive benefits.',
+};
 
 export default function AfrixtechCareersOpenRoles() {
   return (
@@ -44,7 +50,7 @@ export default function AfrixtechCareersOpenRoles() {
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-<div className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden p-6 hover:border-primary/50 transition-colors group">
+<div className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-black hover:border-primary/50 transition-colors relative overflow-hidden p-6 group">
 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
 <span className="material-symbols-outlined" style={{ fontSize: `28px` }}>public</span>
 </div>
@@ -54,7 +60,7 @@ export default function AfrixtechCareersOpenRoles() {
 </div>
 </div>
 
-<div className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden p-6 hover:border-primary/50 transition-colors group">
+<div className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-black hover:border-primary/50 transition-colors relative overflow-hidden p-6 group">
 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
 <span className="material-symbols-outlined" style={{ fontSize: `28px` }}>health_and_safety</span>
 </div>
@@ -64,7 +70,7 @@ export default function AfrixtechCareersOpenRoles() {
 </div>
 </div>
 
-<div className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden p-6 hover:border-primary/50 transition-colors group">
+<div className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-black hover:border-primary/50 transition-colors relative overflow-hidden p-6 group">
 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
 <span className="material-symbols-outlined" style={{ fontSize: `28px` }}>school</span>
 </div>
@@ -81,11 +87,11 @@ export default function AfrixtechCareersOpenRoles() {
 <h2 className="text-white tracking-tight text-2xl font-bold leading-tight tracking-[-0.015em]">Open Roles</h2>
 <div className="w-full sm:w-auto min-w-[300px]">
 <label className="flex flex-col w-full h-11">
-<div className="flex w-full flex-1 items-stretch rounded-lg h-full border border-slate-300 dark:border-slate-700 bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden overflow-hidden focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all">
+<div className="flex w-full flex-1 items-stretch rounded-lg h-full border border-white/10 bg-black hover:border-white/20 transition-colors relative overflow-hidden focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all">
 <div className="text-slate-400 flex items-center justify-center pl-4">
 <span className="material-symbols-outlined">search</span>
 </div>
-<input className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-white tracking-tight focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-slate-400 px-3 text-sm font-normal leading-normal" placeholder="Search open={true} roles (e.g., Engineer, Designer)" value="" />
+<input className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-white tracking-tight focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-slate-400 px-3 text-sm font-normal leading-normal" placeholder="Search roles (e.g., Engineer, Designer)" />
 </div>
 </label>
 </div>
@@ -93,7 +99,7 @@ export default function AfrixtechCareersOpenRoles() {
 
 <div className="flex flex-col gap-4">
 
-<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 rounded-3xl border border-white/10 bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden/30 hover:bg-[#050505] dark:hover:bg-slate-800/50 transition-colors gap-4">
+<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 rounded-3xl border border-white/10 bg-black hover:border-white/20 hover:bg-[#050505] transition-colors relative overflow-hidden gap-4">
 <div className="flex flex-col gap-2">
 <h3 className="text-white tracking-tight text-lg font-bold">Senior Full-Stack Developer</h3>
 <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">
@@ -104,12 +110,12 @@ export default function AfrixtechCareersOpenRoles() {
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">code</span> Engineering</span>
 </div>
 </div>
-<a href="/contact-global-offices" className="w-full sm:w-auto px-6 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-background-dark font-semibold text-sm transition-colors whitespace-nowrap text-center">
+<Link href="/contact-global-offices" className="w-full sm:w-auto px-6 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-background-dark font-semibold text-sm transition-colors whitespace-nowrap text-center">
                                     Apply Now
-                                </a>
+                                </Link>
 </div>
 
-<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 rounded-3xl border border-white/10 bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden/30 hover:bg-[#050505] dark:hover:bg-slate-800/50 transition-colors gap-4">
+<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 rounded-3xl border border-white/10 bg-black hover:border-white/20 hover:bg-[#050505] transition-colors relative overflow-hidden gap-4">
 <div className="flex flex-col gap-2">
 <h3 className="text-white tracking-tight text-lg font-bold">AI Research Engineer</h3>
 <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">
@@ -120,12 +126,12 @@ export default function AfrixtechCareersOpenRoles() {
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">memory</span> Data Science</span>
 </div>
 </div>
-<a href="/contact-global-offices" className="w-full sm:w-auto px-6 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-background-dark font-semibold text-sm transition-colors whitespace-nowrap text-center">
+<Link href="/contact-global-offices" className="w-full sm:w-auto px-6 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-background-dark font-semibold text-sm transition-colors whitespace-nowrap text-center">
                                     Apply Now
-                                </a>
+                                </Link>
 </div>
 
-<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 rounded-3xl border border-white/10 bg-black border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden/30 hover:bg-[#050505] dark:hover:bg-slate-800/50 transition-colors gap-4">
+<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 rounded-3xl border border-white/10 bg-black hover:border-white/20 hover:bg-[#050505] transition-colors relative overflow-hidden gap-4">
 <div className="flex flex-col gap-2">
 <h3 className="text-white tracking-tight text-lg font-bold">Product Designer (UI/UX)</h3>
 <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">
@@ -136,9 +142,9 @@ export default function AfrixtechCareersOpenRoles() {
 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">design_services</span> Design</span>
 </div>
 </div>
-<a href="/contact-global-offices" className="w-full sm:w-auto px-6 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-background-dark font-semibold text-sm transition-colors whitespace-nowrap text-center">
+<Link href="/contact-global-offices" className="w-full sm:w-auto px-6 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-background-dark font-semibold text-sm transition-colors whitespace-nowrap text-center">
                                     Apply Now
-                                </a>
+                                </Link>
 </div>
 </div>
 </div>
