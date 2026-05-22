@@ -86,36 +86,32 @@ export default async function AfrixtechClientPortalBillingInvoices() {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {invoices.length === 0 ? (
-                                                    <tr>
-                                                        <td colSpan={5} className="py-12 text-center text-slate-400">
-                                                            <span className="material-symbols-outlined text-4xl mb-3 opacity-50 block">receipt</span>
-                                                            No invoices generated yet for this billing cycle.
-                                                        </td>
-                                                    </tr>
-                                                ) : (
-                                                    invoices.map((inv: any) => (
-                                                        <tr key={inv.id} className="border-b border-white/5 hover:bg-primary/5 transition-colors">
-                                                            <td className="px-4 py-4 text-white font-medium">{inv.amount}</td>
-                                                            <td className="px-4 py-4 text-slate-300">{new Date(inv.dueDate).toLocaleDateString()}</td>
-                                                            <td className="px-4 py-4 text-primary font-bold">${inv.status === 'PAID' ? '-----' : 'Active'}</td>
-                                                            <td className="px-4 py-4">
-                                                                <span className={`px-3 py-1 rounded-full text-xs font-bold border ${inv.status === 'PAID' ? 'bg-green-500/20 text-green-400 border-green-500/30' : 'bg-red-500/20 text-red-400 border-red-500/30'}`}>
-                                                                    {inv.status}
-                                                                </span>
-                                                            </td>
-                                                            <td className="px-4 py-4 text-right">
-                                                                {inv.pdfUrl ? (
-                                                                    <a href={inv.pdfUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/20 text-primary font-medium text-sm hover:bg-primary hover:text-black transition-all">
-                                                                        <span className="material-symbols-outlined text-[18px]">download</span> PDF
-                                                                    </a>
-                                                                ) : (
-                                                                    <span className="text-slate-500 text-sm">Processing...</span>
-                                                                )}
-                                                            </td>
-                                                        </tr>
-                                                    ))
-                                                )}
+                                                 {invoices.length === 0 ? (
+                                                     <tr>
+                                                         <td colSpan={5} className="py-12 text-center text-slate-400">
+                                                             <span className="material-symbols-outlined text-4xl mb-3 opacity-50 block">receipt</span>
+                                                             No invoices generated yet for this billing cycle.
+                                                         </td>
+                                                     </tr>
+                                                 ) : (
+                                                     invoices.map((inv: any) => (
+                                                         <tr key={inv.id} className="border-b border-white/5 hover:bg-primary/5 transition-colors">
+                                                             <td className="px-4 py-4 text-white font-medium">INV-{inv.id.substring(0, 8).toUpperCase()}</td>
+                                                             <td className="px-4 py-4 text-slate-300">{new Date(inv.createdAt || inv.dueDate).toLocaleDateString()}</td>
+                                                             <td className="px-4 py-4 text-primary font-bold">${inv.amount.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                                                             <td className="px-4 py-4">
+                                                                 <span className={`px-3 py-1 rounded-full text-xs font-bold border ${inv.status === 'PAID' ? 'bg-green-500/20 text-green-400 border-green-500/30' : 'bg-red-500/20 text-red-400 border-red-500/30'}`}>
+                                                                     {inv.status}
+                                                                 </span>
+                                                             </td>
+                                                             <td className="px-4 py-4 text-right">
+                                                                 <Link href={`/detailed-invoice-view?id=${inv.id}`} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/20 text-primary font-medium text-sm hover:bg-primary hover:text-black transition-all">
+                                                                     <span className="material-symbols-outlined text-[18px]">visibility</span> View
+                                                                 </Link>
+                                                             </td>
+                                                         </tr>
+                                                     ))
+                                                 )}
                                             </tbody>
                                         </table>
                                     </div>

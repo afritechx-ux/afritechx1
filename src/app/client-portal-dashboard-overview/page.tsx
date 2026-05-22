@@ -1,14 +1,23 @@
 import React from 'react';
 import prisma from '@/lib/prisma'; // Prisma SQLite Connection
+import Link from 'next/link';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
+import { redirect } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function AfrixtechClientPortalDashboardOverview() {
 
+  const session = await getServerSession(authOptions);
+  if (!session?.user?.email) {
+    redirect('/login');
+  }
+
   // 1. Prisma Auto-Seed & Fetch Logic
   let user = await prisma.user.findUnique({
-    where: { email: 'client@acmecorp.com' },
+    where: { email: session.user.email },
     include: {
       projects: {
         include: { milestones: true }
@@ -20,11 +29,11 @@ export default async function AfrixtechClientPortalDashboardOverview() {
   if (!user) {
     user = await prisma.user.create({
       data: {
-        email: 'client@acmecorp.com',
-        name: 'Sarah J.',
+        email: session.user.email,
+        name: session.user.name || 'Sarah J.',
         company: 'Acme Corp',
         role: 'CLIENT',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBukJbgNLntsaG3E3Gw_d9OobxyrakX42bBUOxY7LsT10Nhrg9KqRHIeRN75YaFourzPFWt4WcAT1gi_fRqXj1kVUhjuDFQiVkpHGn_JQAS5WqQsityKafPelMNeGd63Vbd5EbFg1VYq_QbNIXlanPnB-_qkJDbbhlNL-SC2d0k6UVW47tzyP2GwzCoPJ9w_0EffB_QdjHWMFsKmBoBPWB8MsOx88fuRJbKigIz0qJVU8khATeTFtRWqh3ZTPdzMLk8euGyg_D15pU',
+        image: session.user.image || 'https://lh3.googleusercontent.com/aida-public/AB6AXuBukJbgNLntsaG3E3Gw_d9OobxyrakX42bBUOxY7LsT10Nhrg9KqRHIeRN75YaFourzPFWt4WcAT1gi_fRqXj1kVUhjuDFQiVkpHGn_JQAS5WqQsityKafPelMNeGd63Vbd5EbFg1VYq_QbNIXlanPnB-_qkJDbbhlNL-SC2d0k6UVW47tzyP2GwzCoPJ9w_0EffB_QdjHWMFsKmBoBPWB8MsOx88fuRJbKigIz0qJVU8khATeTFtRWqh3ZTPdzMLk8euGyg_D15pU',
         projects: {
           create: {
             name: 'Mobile App Development',
@@ -47,11 +56,6 @@ export default async function AfrixtechClientPortalDashboardOverview() {
         }
       }
     });
-  }
-
-  // Extract the live database entity
-  if (!user) {
-    throw new Error('Database Auto-Seeding Failed.');
   }
 
   const activeProject = user.projects?.[0];
@@ -79,18 +83,18 @@ export default async function AfrixtechClientPortalDashboardOverview() {
                       </div>
                     </div>
                     <nav className="flex flex-col gap-2">
-                      <a className="flex items-center gap-3 px-3 py-3 rounded-lg bg-primary/20 text-primary border-l-4 border-primary" href=".">
+                      <Link className="flex items-center gap-3 px-3 py-3 rounded-lg bg-primary/20 text-primary border-l-4 border-primary" href="/client-portal-dashboard-overview">
                         <span className="material-symbols-outlined text-xl">folder_open</span>
                         <p className="text-sm font-medium leading-normal">Active Projects</p>
-                      </a>
-                      <a className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-primary/10 text-slate-400 font-light hover:text-primary transition-colors" href="/client-portal-billing-invoices">
+                      </Link>
+                      <Link className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-primary/10 text-slate-400 font-light hover:text-primary transition-colors" href="/client-portal-billing-invoices">
                         <span className="material-symbols-outlined text-xl">receipt_long</span>
                         <p className="text-sm font-medium leading-normal">Invoices</p>
-                      </a>
-                      <a className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-primary/10 text-slate-400 font-light hover:text-primary transition-colors" href="/client-portal-document-repository">
+                      </Link>
+                      <Link className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-primary/10 text-slate-400 font-light hover:text-primary transition-colors" href="/client-portal-document-repository">
                         <span className="material-symbols-outlined text-xl">description</span>
                         <p className="text-sm font-medium leading-normal">Documents</p>
-                      </a>
+                      </Link>
                     </nav>
                   </aside>
 
