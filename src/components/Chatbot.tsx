@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from 'react';
+import { LogoMark } from './Logo';
 
 /* ── Chatbot Data ──────────────────────────────────────────────── */
 
@@ -123,7 +124,7 @@ export default function Chatbot() {
           <div className="px-5 py-4 border-b border-line bg-surface-raised shrink-0">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center text-primary border border-primary/20">
-                <span className="material-symbols-outlined text-lg">smart_toy</span>
+                <LogoMark className="size-5" />
               </div>
               <div className="flex-1">
                 <h3 className="text-ink font-semibold text-sm">Afrixtech Assistant</h3>

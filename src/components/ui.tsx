@@ -11,14 +11,10 @@ export function Icon({ name, className = '' }: { name: string; className?: strin
   );
 }
 
-export function IconTile({ name, size = 'md' }: { name: string; size?: 'sm' | 'md' | 'lg' }) {
-  const dim = size === 'sm' ? 'size-9' : size === 'lg' ? 'size-14' : 'size-11';
-  const txt = size === 'sm' ? 'text-[18px]' : size === 'lg' ? 'text-[28px]' : 'text-[22px]';
-  return (
-    <span className={`inline-flex ${dim} shrink-0 items-center justify-center rounded-lg border border-line bg-surface-raised text-primary`}>
-      <Icon name={name} className={txt} />
-    </span>
-  );
+/** Decorative icon tiles were removed in the editorial redesign; kept so call sites still compile. */
+export function IconTile(props: { name: string; size?: 'sm' | 'md' | 'lg' }) {
+  void props;
+  return null;
 }
 
 type Cta = { label: string; href: string };
@@ -31,13 +27,12 @@ export function PageHero({
 }) {
   const center = align === 'center';
   return (
-    <section className="relative overflow-hidden border-b border-line pt-28 pb-14 lg:pt-36 lg:pb-20">
-      <div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-0 h-72 w-[800px] -translate-x-1/2 rounded-full bg-primary/10 blur-[110px]" />
-      <div className={`container-x relative ${center ? 'text-center' : ''}`}>
-        <div className={center ? 'mx-auto max-w-3xl' : 'max-w-3xl'}>
+    <section className="border-b border-line pt-32 pb-14 lg:pt-44 lg:pb-20">
+      <div className={`container-x ${center ? 'text-center' : ''}`}>
+        <div className={center ? 'mx-auto max-w-4xl' : 'max-w-4xl'}>
           {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-          <h1 className="h-display mt-3 text-4xl sm:text-5xl">{title}</h1>
-          {description && <p className="mt-5 text-lg leading-relaxed text-ink-muted">{description}</p>}
+          <h1 className="h-display mt-5 text-5xl sm:text-6xl lg:text-7xl">{title}</h1>
+          {description && <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-muted">{description}</p>}
           {(primary || secondary) && (
             <div className={`mt-8 flex flex-col gap-3 sm:flex-row ${center ? 'justify-center' : ''}`}>
               {primary && <Link href={primary.href} className="btn btn-primary h-12 px-6">{primary.label}</Link>}
@@ -58,13 +53,13 @@ export function Section({
   action?: Cta; tone?: 'default' | 'muted'; children: ReactNode;
 }) {
   return (
-    <section id={id} className={`section-y ${tone === 'muted' ? 'border-y border-line bg-surface' : ''}`}>
+    <section id={id} className={`section-y ${tone === 'muted' ? 'bg-surface-raised' : ''}`}>
       <div className="container-x">
         {(title || eyebrow) && (
-          <div className="mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div className="mb-12 flex flex-col justify-between gap-6 border-t border-ink pt-5 md:flex-row md:items-end">
             <div className="max-w-2xl">
               {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-              {title && <h2 className="h-display mt-3 text-3xl sm:text-4xl">{title}</h2>}
+              {title && <h2 className="h-display mt-4 text-3xl sm:text-5xl">{title}</h2>}
               {description && <p className="mt-4 text-lg leading-relaxed text-ink-muted">{description}</p>}
             </div>
             {action && (
@@ -87,11 +82,11 @@ export function Card({ className = '', children }: { className?: string; childre
 
 export function StatRow({ items }: { items: { value: string; label: string }[] }) {
   return (
-    <dl className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
+    <dl className="grid grid-cols-2 gap-px border-y border-line bg-line sm:grid-cols-4">
       {items.map((m) => (
-        <div key={m.label} className="flex flex-col-reverse">
-          <dt className="mt-1 text-xs text-ink-subtle">{m.label}</dt>
-          <dd className="text-2xl font-semibold tracking-tight text-ink">{m.value}</dd>
+        <div key={m.label} className="flex flex-col-reverse bg-canvas px-0 py-6 sm:px-6 sm:first:pl-0">
+          <dt className="mt-2 text-sm text-ink-subtle">{m.label}</dt>
+          <dd className="font-serif text-4xl tracking-tight text-ink sm:text-5xl">{m.value}</dd>
         </div>
       ))}
     </dl>
@@ -105,17 +100,16 @@ export function CtaBanner({
   secondary = { label: 'Read case studies', href: '/case-studies-portfolio' },
 }: { title?: string; description?: string; primary?: Cta; secondary?: Cta }) {
   return (
-    <section className="pb-8">
-      <div className="container-x">
-        <div className="relative overflow-hidden rounded-2xl border border-line-strong bg-surface px-6 py-14 text-center sm:px-12 lg:py-20">
-          <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 -top-24 mx-auto h-48 w-2/3 rounded-full bg-primary/15 blur-[90px]" />
-          <div className="relative mx-auto max-w-2xl">
-            <h2 className="h-display text-3xl sm:text-4xl">{title}</h2>
-            <p className="mt-4 text-lg leading-relaxed text-ink-muted">{description}</p>
-            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href={primary.href} className="btn btn-primary h-12 px-6">{primary.label}</Link>
-              <Link href={secondary.href} className="btn btn-secondary h-12 px-6">{secondary.label}</Link>
-            </div>
+    <section className="pb-0">
+      <div className="bg-ink text-canvas">
+        <div className="container-x grid gap-10 py-20 lg:grid-cols-[1.4fr_1fr] lg:items-end lg:py-28">
+          <div>
+            <h2 className="font-serif text-4xl leading-[1.08] tracking-tight sm:text-6xl">{title}</h2>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed opacity-70">{description}</p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
+            <Link href={primary.href} className="btn h-12 bg-canvas px-6 text-ink hover:opacity-90">{primary.label}</Link>
+            <Link href={secondary.href} className="btn h-12 border border-canvas/30 px-6 text-canvas hover:border-canvas/70">{secondary.label}</Link>
           </div>
         </div>
       </div>
@@ -133,8 +127,8 @@ export function StatusPage({ icon, title, description, primary, secondary }: { i
   return (
     <section className="container-x flex min-h-[70vh] items-center justify-center py-28">
       <div className="max-w-md text-center">
-        <span className="mx-auto inline-flex size-14 items-center justify-center rounded-full bg-success/10 text-success">
-          <Icon name={icon} className="text-[28px]" />
+        <span className="mx-auto inline-flex text-primary">
+          <Icon name={icon} className="text-[40px]" />
         </span>
         <h1 className="h-display mt-6 text-3xl">{title}</h1>
         <p className="mt-3 text-ink-muted">{description}</p>
@@ -174,8 +168,8 @@ export function StatusBadge({ status }: { status: string }) {
 export function EmptyState({ icon, title, text }: { icon: string; title: string; text: string }) {
   return (
     <div className="flex flex-col items-center justify-center px-6 py-14 text-center">
-      <span className="inline-flex size-12 items-center justify-center rounded-full bg-surface-raised text-ink-subtle">
-        <Icon name={icon} className="text-[24px]" />
+      <span className="inline-flex text-ink-subtle">
+        <Icon name={icon} className="text-[28px]" />
       </span>
       <h3 className="mt-4 font-semibold">{title}</h3>
       <p className="mt-1 max-w-sm text-sm text-ink-muted">{text}</p>

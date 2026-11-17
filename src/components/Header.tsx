@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
 
@@ -52,10 +52,7 @@ export default function Header() {
             >
                 <div className="container-x flex h-16 items-center justify-between gap-6">
                     <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="Afrixtech home">
-                        <span className="relative size-8 overflow-hidden rounded-md">
-                            <Image src="/logo.png" alt="" fill className="object-cover" priority sizes="32px" />
-                        </span>
-                        <span className="text-[15px] font-semibold tracking-tight text-ink">Afrixtech</span>
+                        <Logo />
                     </Link>
 
                     <nav aria-label="Primary" className="hidden flex-1 items-center justify-center gap-1 lg:flex">

@@ -31,7 +31,7 @@ export default function ArchitecturePage() {
       <Section eyebrow="Principles" title="Scalable microservices topology">
         <ul className="grid gap-4 md:grid-cols-3">
           {principles.map((p) => (
-            <li key={p.title} className="card p-6">
+            <li key={p.title} className="cell">
               <h3 className="text-lg font-semibold tracking-tight">{p.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">{p.text}</p>
             </li>
@@ -42,7 +42,7 @@ export default function ArchitecturePage() {
       <Section tone="muted" eyebrow="Reference stack" title="The layers we build with">
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {layers.map((l) => (
-            <li key={l.title} className="card p-6">
+            <li key={l.title} className="cell">
               <IconTile name={l.icon} />
               <h3 className="mt-5 font-semibold tracking-tight">{l.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">{l.text}</p>

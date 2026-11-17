@@ -30,7 +30,7 @@ export default function CareersPage() {
       <Section eyebrow="Why Afrixtech" title="A career with room to grow">
         <ul className="grid gap-4 md:grid-cols-3">
           {perks.map((p) => (
-            <li key={p.title} className="card p-6">
+            <li key={p.title} className="cell">
               <IconTile name={p.icon} />
               <h3 className="mt-5 text-lg font-semibold tracking-tight">{p.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">{p.text}</p>

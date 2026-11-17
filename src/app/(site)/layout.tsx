@@ -11,10 +11,6 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       >
         Skip to main content
       </a>
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 -z-50 bg-[linear-gradient(to_right,var(--grid)_1px,transparent_1px),linear-gradient(to_bottom,var(--grid)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]"
-      />
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <Header />
         <main id="main" className="flex-1">

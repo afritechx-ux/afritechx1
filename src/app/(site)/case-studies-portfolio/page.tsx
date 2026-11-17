@@ -4,7 +4,7 @@ import { caseStudies } from './data';
 
 export const metadata = {
   title: 'Case Studies',
-  description: 'Selected Afrixtech projects across fintech, healthcare, e-commerce, SaaS and industrial IoT.',
+  description: 'Live products built by Afrixtech: agribusiness software, a job portal, and food brands.',
 };
 
 export default function CaseStudiesPage() {
@@ -12,8 +12,8 @@ export default function CaseStudiesPage() {
     <>
       <PageHero
         eyebrow="Case studies"
-        title="Projects that deliver measurable results"
-        description="Each engagement represents our commitment to engineering excellence and measurable business impact."
+        title="Work that is live today"
+        description="A selection of products we have designed and built. Each one is running and open to visit."
       />
       <Section>
         <CaseStudyBrowser studies={caseStudies} />

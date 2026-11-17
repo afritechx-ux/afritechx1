@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,10 +12,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const serif = Newsreader({
+  variable: "--font-serif-display",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
+
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f8fa" },
-    { media: "(prefers-color-scheme: dark)", color: "#07090d" },
+    { media: "(prefers-color-scheme: light)", color: "#f6f3ec" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f0e0b" },
   ],
 };
 
@@ -37,20 +43,11 @@ export const metadata: Metadata = {
     siteName: "Afrixtech",
     title: "Afrixtech | Enterprise Digital Solutions",
     description: "Cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development.",
-    images: [
-      {
-        url: "/case-studies/homepage-hero.png",
-        width: 1200,
-        height: 630,
-        alt: "Afrixtech Digital Infrastructure",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Afrixtech | Enterprise Digital Solutions",
     description: "Cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development.",
-    images: ["/case-studies/homepage-hero.png"],
     creator: "@afrixtech",
   },
   robots: {
@@ -74,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${serif.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
         <link href="https://fonts.googleapis.com" rel="preconnect" />

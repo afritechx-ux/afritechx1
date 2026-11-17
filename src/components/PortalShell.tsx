@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import { signOut } from 'next-auth/react';
 import ThemeToggle from './ThemeToggle';
@@ -39,10 +39,7 @@ export default function PortalShell({ children }: { children: React.ReactNode })
     const sidebar = (
         <div className="flex h-full flex-col">
             <Link href="/" className="flex h-16 shrink-0 items-center gap-2.5 border-b border-line px-5" aria-label="Afrixtech website">
-                <span className="relative size-7 overflow-hidden rounded-md">
-                    <Image src="/logo.png" alt="" fill className="object-cover" sizes="28px" />
-                </span>
-                <span className="text-[15px] font-semibold tracking-tight text-ink">Afrixtech</span>
+                <Logo />
                 <span className="badge ml-auto">Client portal</span>
             </Link>
 

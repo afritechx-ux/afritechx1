@@ -26,14 +26,14 @@ export default function ContactPage() {
             <div>
               <h2 className="text-sm font-semibold uppercase tracking-[0.12em] text-ink">Reach us directly</h2>
               <ul className="mt-4 space-y-3">
-                <li className="card flex items-center gap-4 p-4">
+                <li className="row flex items-center gap-4 py-4">
                   <IconTile name="mail" size="sm" />
                   <div>
                     <p className="text-xs text-ink-subtle">Email</p>
                     <a href="mailto:afritechx@gmail.com" className="text-sm font-medium hover:text-primary">afritechx@gmail.com</a>
                   </div>
                 </li>
-                <li className="card flex items-center gap-4 p-4">
+                <li className="row flex items-center gap-4 py-4">
                   <IconTile name="schedule" size="sm" />
                   <div>
                     <p className="text-xs text-ink-subtle">Response time</p>
@@ -47,7 +47,7 @@ export default function ContactPage() {
               <h2 className="text-sm font-semibold uppercase tracking-[0.12em] text-ink">Offices</h2>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {offices.map((o) => (
-                  <li key={o.city} className="card p-5">
+                  <li key={o.city} className="cell">
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold">{o.city}</h3>
                       {o.hq && <span className="badge badge-primary">HQ</span>}

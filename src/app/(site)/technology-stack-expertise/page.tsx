@@ -45,7 +45,7 @@ export default function TechStackPage() {
               <h2 className="text-sm font-semibold uppercase tracking-[0.12em] text-ink">{g.title}</h2>
               <ul className="mt-4 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {g.items.map(([name, text]) => (
-                  <li key={name} className="card p-5">
+                  <li key={name} className="cell">
                     <h3 className="font-semibold tracking-tight">{name}</h3>
                     <p className="mt-1 text-sm leading-relaxed text-ink-muted">{text}</p>
                   </li>

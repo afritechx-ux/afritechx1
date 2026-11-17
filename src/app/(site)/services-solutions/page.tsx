@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CtaBanner, Icon, IconTile, PageHero, Section } from '@/components/ui';
+import { CtaBanner, PageHero, Section } from '@/components/ui';
 
 export const metadata = {
   title: 'Enterprise Services & Solutions',
@@ -60,18 +60,18 @@ export default function ServicesPage() {
         eyebrow="Solutions"
         title="Software engineering for the systems your business runs on"
         description="From scalable cloud architecture to intuitive mobile applications, we deliver enterprise-grade software tailored to your operations."
-        primary={{ label: 'Start a project', href: '/contact-global-offices' }}
+        primary={{ label: 'Start a project', href: '/request-a-quote' }}
         secondary={{ label: 'View case studies', href: '/case-studies-portfolio' }}
       />
 
-      <Section eyebrow="Capabilities" title="Five disciplines, one accountable team" description="Each service is backed by domain expertise and proven delivery methodology.">
-        <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((s) => (
-            <li key={s.title} className="card flex flex-col p-6">
-              <IconTile name={s.icon} />
-              <h3 className="mt-5 text-lg font-semibold tracking-tight">{s.title}</h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{s.description}</p>
-              <ul className="mt-5 flex flex-wrap gap-2 border-t border-line pt-4" aria-label={`${s.title} technologies`}>
+      <Section eyebrow="Capabilities" title="Five disciplines, one accountable team">
+        <ul className="border-t border-line">
+          {services.map((s, i) => (
+            <li key={s.title} className="row grid gap-4 py-8 lg:grid-cols-[3rem_1fr_1.2fr_1fr] lg:gap-8">
+              <span className="font-mono text-xs text-ink-subtle">{String(i + 1).padStart(2, '0')}</span>
+              <h3 className="font-serif text-3xl tracking-tight">{s.title}</h3>
+              <p className="max-w-md text-sm leading-relaxed text-ink-muted">{s.description}</p>
+              <ul className="flex flex-wrap content-start gap-2 lg:justify-end" aria-label={`${s.title} technologies`}>
                 {s.tech.map((t) => (
                   <li key={t} className="badge">{t}</li>
                 ))}
@@ -82,14 +82,11 @@ export default function ServicesPage() {
       </Section>
 
       <Section tone="muted" eyebrow="How we work" title="A predictable path from idea to production">
-        <ol className="grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {steps.map((s, i) => (
-            <li key={s.title} className="bg-surface p-6 lg:p-8">
-              <div className="flex items-center justify-between">
-                <span className="font-mono text-xs text-primary">0{i + 1}</span>
-                <Icon name={s.icon} className="text-[22px] text-ink-subtle" />
-              </div>
-              <h3 className="mt-4 text-lg font-semibold tracking-tight">{s.title}</h3>
+            <li key={s.title} className="cell">
+              <span className="font-serif text-5xl text-primary">{i + 1}</span>
+              <h3 className="mt-5 text-lg font-semibold tracking-tight">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">{s.text}</p>
             </li>
           ))}
@@ -97,15 +94,12 @@ export default function ServicesPage() {
       </Section>
 
       <Section eyebrow="Technology" title="Tools we use every day" action={{ label: 'Full technology stack', href: '/technology-stack-expertise' }}>
-        <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <ul className="flex flex-wrap gap-x-10 gap-y-3 font-serif text-2xl text-ink-muted">
           {stack.map((t) => (
-            <li key={t.name} className="card flex items-center gap-3 px-4 py-3">
-              <Icon name={t.icon} className="text-[20px] text-primary" />
-              <span className="text-sm font-medium">{t.name}</span>
-            </li>
+            <li key={t.name}>{t.name}</li>
           ))}
         </ul>
-        <p className="mt-8 text-sm text-ink-muted">
+        <p className="mt-10 text-sm text-ink-muted">
           Not sure what you need? <Link href="/contact-global-offices" className="font-medium text-primary hover:underline">Talk to an engineer</Link>.
         </p>
       </Section>

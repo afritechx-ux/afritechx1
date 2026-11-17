@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Logo from './Logo';
 
 const columns = [
     {
@@ -34,15 +34,12 @@ const columns = [
 
 export default function Footer() {
     return (
-        <footer className="mt-24 border-t border-line bg-surface">
+        <footer className="border-t border-line bg-canvas">
             <div className="container-x py-14 lg:py-16">
                 <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
                     <div className="max-w-sm">
                         <Link href="/" className="inline-flex items-center gap-2.5" aria-label="Afrixtech home">
-                            <span className="relative size-8 overflow-hidden rounded-md">
-                                <Image src="/logo.png" alt="" fill className="object-cover" sizes="32px" />
-                            </span>
-                            <span className="text-[15px] font-semibold tracking-tight text-ink">Afrixtech</span>
+                            <Logo />
                         </Link>
                         <p className="mt-4 text-sm leading-relaxed text-ink-muted">
                             Software engineering, cloud and AI for enterprises that need systems built to last.

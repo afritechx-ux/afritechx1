@@ -42,7 +42,7 @@ export default function AboutPage() {
       <Section eyebrow="How we work" title="Principles behind every engagement">
         <ul className="grid gap-4 md:grid-cols-3">
           {values.map((v) => (
-            <li key={v.title} className="card p-6">
+            <li key={v.title} className="cell">
               <IconTile name={v.icon} />
               <h3 className="mt-5 text-lg font-semibold tracking-tight">{v.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">{v.text}</p>

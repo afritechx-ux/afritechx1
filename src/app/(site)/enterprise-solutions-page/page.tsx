@@ -34,7 +34,7 @@ export default function EnterpriseSolutionsPage() {
       <Section eyebrow="Capabilities" title="Built for performance, security and scale">
         <ul className="grid gap-4 md:grid-cols-3">
           {capabilities.map((c) => (
-            <li key={c.title} className="card p-6">
+            <li key={c.title} className="cell">
               <IconTile name={c.icon} />
               <h3 className="mt-5 text-lg font-semibold tracking-tight">{c.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">{c.text}</p>
@@ -46,7 +46,7 @@ export default function EnterpriseSolutionsPage() {
       <Section tone="muted" eyebrow="Security" title="How we protect your data" description="The practices we apply on every enterprise engagement.">
         <ul className="grid gap-3 sm:grid-cols-2">
           {practices.map((p) => (
-            <li key={p} className="card flex items-center gap-3 px-4 py-3 text-sm">
+            <li key={p} className="row flex items-center gap-3 py-3 text-sm">
               <Icon name="check_circle" className="text-[20px] text-success" />
               {p}
             </li>

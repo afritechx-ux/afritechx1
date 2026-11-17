@@ -1,192 +1,103 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { caseStudies } from './case-studies-portfolio/data';
+import { CtaBanner, Icon } from '@/components/ui';
 
 /* ── Data ───────────────────────────────────────────────────────── */
 
 const services = [
   {
-    icon: 'cloud_queue',
-    title: 'Cloud Infrastructure',
-    description: 'Scalable architectures built for availability, security and performance in mission-critical workloads.',
+    title: 'Cloud infrastructure',
+    description: 'Architectures built for availability, security and performance in mission-critical workloads.',
   },
   {
-    icon: 'psychology',
-    title: 'Artificial Intelligence',
-    description: 'Machine learning and automation that remove manual work and sharpen complex business decisions.',
+    title: 'Artificial intelligence',
+    description: 'Machine learning and automation that remove manual work and sharpen complex decisions.',
   },
   {
-    icon: 'terminal',
-    title: 'Custom Development',
+    title: 'Custom development',
     description: 'Software designed around your operations and delivered on a modern, maintainable stack.',
   },
   {
-    icon: 'security',
-    title: 'Cyber Security',
-    description: 'Security reviews, hardening and audit pipelines that protect enterprise assets and customer data.',
+    title: 'Cyber security',
+    description: 'Reviews, hardening and audit pipelines that protect enterprise assets and customer data.',
   },
 ];
 
 const metrics = [
-  { value: '99.9%', label: 'Uptime SLA' },
-  { value: '50+', label: 'Enterprise clients' },
-  { value: '<200ms', label: 'Average response' },
-  { value: '24/7', label: 'Expert support' },
+  { value: '2018', label: 'Founded in Kumasi' },
+  { value: '2', label: 'Offices: Kumasi and Accra' },
+  { value: 'Live', label: 'Products in agriculture, recruitment and food' },
 ];
 
 const stack = ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Prisma', 'PostgreSQL'];
 
 const steps = [
-  { step: '01', title: 'Discover', text: 'We map your systems, constraints and goals, then agree on measurable outcomes.' },
-  { step: '02', title: 'Design', text: 'Architecture and UX are specified and reviewed with your team before build starts.' },
-  { step: '03', title: 'Deliver', text: 'Iterative releases with automated testing, observability and clear weekly reporting.' },
-  { step: '04', title: 'Operate', text: 'Ongoing monitoring, security patching and support under a defined SLA.' },
+  { title: 'Discover', text: 'We map your systems, constraints and goals, then agree on measurable outcomes.' },
+  { title: 'Design', text: 'Architecture and UX are specified and reviewed with your team before build starts.' },
+  { title: 'Deliver', text: 'Iterative releases with automated testing, observability and clear weekly reporting.' },
+  { title: 'Operate', text: 'Ongoing monitoring, security patching and support under a defined SLA.' },
 ];
 
-const testimonials = [
-  {
-    quote: 'Afrixtech rebuilt our core infrastructure. The transition was flawless, and global API response times dropped by over 60%.',
-    author: 'Sarah Jenkins',
-    role: 'CTO, CloudScale Systems',
-  },
-  {
-    quote: 'They helped us achieve full SOC 2 compliance and put strong guardrails around our cloud security and audit pipelines.',
-    author: 'Michael Chang',
-    role: 'VP of Infrastructure, FinTechGlobal Group',
-  },
-  {
-    quote: 'The AI automation pipelines they delivered transformed our data processing efficiency. Fast, reliable and highly scalable.',
-    author: 'Amina Diop',
-    role: 'Director of Engineering, AfricaTech Hub',
-  },
-];
 
 /* ── Page ──────────────────────────────────────────────────────── */
 
 export default function AfrixtechHomepageLandingPage() {
   return (
-    <div className="relative">
-      {/* ═══ Hero ═══ */}
-      <section className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute left-1/2 top-0 h-[480px] w-[900px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]"
-        />
-        <div className="container-x relative grid items-center gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
-          <div className="max-w-2xl">
-            <p className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface px-3 py-1 text-xs font-medium text-ink-muted">
-              <span className="size-1.5 rounded-full bg-success" aria-hidden="true" />
-              Now accepting new enterprise partners
+    <div>
+      {/* Hero: headline-led, no decoration */}
+      <section className="pt-32 pb-16 lg:pt-44 lg:pb-24">
+        <div className="container-x">
+          <p className="eyebrow">Afrixtech — Kumasi &amp; Accra, Ghana</p>
+          <h1 className="h-display mt-6 max-w-5xl text-5xl sm:text-7xl lg:text-[5.5rem]">
+            Software, cloud and AI,<br className="hidden sm:block" /> <em className="font-serif italic text-primary">built to last.</em>
+          </h1>
+          <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+            <p className="max-w-xl text-lg leading-relaxed text-ink-muted">
+              We design, build and operate secure digital platforms for growing enterprises, from cloud foundations to
+              intelligent automation.
             </p>
-
-            <h1 className="h-display mt-6 text-4xl sm:text-5xl lg:text-6xl">
-              Enterprise software, cloud and AI —{' '}
-              <span className="text-ink-muted">engineered to scale.</span>
-            </h1>
-
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">
-              Afrixtech partners with growing enterprises to design, build and operate secure digital platforms, from cloud
-              foundations to intelligent automation.
-            </p>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contact-global-offices" className="btn btn-primary h-12 px-6">
-                Talk to our team
-                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link href="/request-a-quote" className="btn btn-primary h-12 px-6">
+                Request a quote
               </Link>
               <Link href="/case-studies-portfolio" className="btn btn-secondary h-12 px-6">
                 View case studies
               </Link>
             </div>
-
-            <dl className="mt-12 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-line pt-8 sm:grid-cols-4">
-              {metrics.map((m) => (
-                <div key={m.label} className="flex flex-col-reverse">
-                  <dt className="mt-1 text-xs text-ink-subtle">{m.label}</dt>
-                  <dd className="text-2xl font-semibold tracking-tight text-ink">{m.value}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
 
-          {/* Product visual */}
-          <div className="relative mx-auto w-full max-w-[560px]">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-line-strong bg-surface shadow-2xl shadow-black/40">
-              <Image
-                src="/case-studies/homepage-hero.png"
-                alt="Afrixtech cloud infrastructure dashboard showing global deployment status"
-                fill
-                priority
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 560px"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-canvas/70 via-transparent to-transparent" />
-            </div>
-
-            <div className="absolute -bottom-6 left-4 w-[min(300px,80%)] rounded-lg border border-line-strong bg-surface/95 p-4 shadow-xl backdrop-blur sm:-left-6">
-              <div className="flex items-center justify-between text-xs">
-                <span className="font-medium text-ink">Production deploy</span>
-                <span className="inline-flex items-center gap-1.5 text-success">
-                  <span className="size-1.5 rounded-full bg-success" aria-hidden="true" />
-                  Healthy
-                </span>
+          <dl className="mt-20 grid grid-cols-1 border-t border-ink sm:grid-cols-3">
+            {metrics.map((m) => (
+              <div key={m.label} className="flex flex-col-reverse border-b border-line py-6 sm:border-b-0 sm:border-r sm:px-6 sm:first:pl-0 sm:last:border-r-0">
+                <dt className="mt-2 text-sm text-ink-subtle">{m.label}</dt>
+                <dd className="font-serif text-4xl tracking-tight sm:text-5xl">{m.value}</dd>
               </div>
-              <p className="mt-2 font-mono text-xs text-ink-muted">
-                <span className="text-success">✓</span> 4 regions · p95 latency 142ms
-              </p>
-              <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-line" role="presentation">
-                <div className="h-full w-[99%] rounded-full bg-success" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══ Technology bar ═══ */}
-      <section aria-label="Technologies we build with" className="border-y border-line bg-surface/60">
-        <div className="container-x flex flex-col items-center gap-5 py-8 md:flex-row md:justify-between">
-          <p className="text-sm text-ink-subtle">Built on technology you already trust</p>
-          <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            {stack.map((t) => (
-              <li key={t} className="text-sm font-semibold tracking-tight text-ink-muted">{t}</li>
             ))}
-          </ul>
+          </dl>
         </div>
       </section>
 
-      {/* ═══ Services ═══ */}
-      <section className="section-y">
-        <div className="container-x">
-          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-            <div className="max-w-2xl">
-              <p className="eyebrow">What we do</p>
-              <h2 className="h-display mt-3 text-3xl sm:text-4xl">Capabilities across the full delivery lifecycle</h2>
-              <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-                One accountable team for strategy, engineering and operations.
-              </p>
-            </div>
-            <Link href="/services-solutions" className="btn btn-secondary shrink-0 self-start md:self-auto">
-              All solutions
-              <span className="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+      {/* Services: ruled list, not cards */}
+      <section className="section-y border-t border-line bg-surface-raised">
+        <div className="container-x grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-20">
+          <div>
+            <p className="eyebrow">01 — What we do</p>
+            <h2 className="h-display mt-4 text-4xl sm:text-5xl">One accountable team, end to end.</h2>
+            <Link href="/services-solutions" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
+              All solutions <Icon name="arrow_forward" className="text-[18px]" />
             </Link>
           </div>
-
-          <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {services.map((s) => (
-              <li key={s.title}>
-                <Link
-                  href="/services-solutions"
-                  className="card card-hover group flex h-full flex-col p-6"
-                >
-                  <span className="inline-flex size-11 items-center justify-center rounded-lg border border-line-strong bg-surface-raised text-primary">
-                    <span className="material-symbols-outlined text-[22px]" aria-hidden="true">{s.icon}</span>
-                  </span>
-                  <h3 className="mt-5 text-lg font-semibold tracking-tight text-ink">{s.title}</h3>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{s.description}</p>
-                  <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-primary">
-                    Learn more
-                    <span className="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-0.5" aria-hidden="true">arrow_forward</span>
-                  </span>
+          <ul className="border-t border-ink">
+            {services.map((s, i) => (
+              <li key={s.title} className="border-b border-line">
+                <Link href="/services-solutions" className="group grid gap-2 py-7 sm:grid-cols-[3rem_1fr_auto] sm:items-baseline sm:gap-6">
+                  <span className="font-mono text-xs text-ink-subtle">{String(i + 1).padStart(2, '0')}</span>
+                  <div>
+                    <h3 className="font-serif text-2xl tracking-tight sm:text-3xl">{s.title}</h3>
+                    <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">{s.description}</p>
+                  </div>
+                  <Icon name="arrow_forward" className="hidden text-[22px] text-ink-subtle transition-transform group-hover:translate-x-1 group-hover:text-primary sm:block" />
                 </Link>
               </li>
             ))}
@@ -194,18 +105,16 @@ export default function AfrixtechHomepageLandingPage() {
         </div>
       </section>
 
-      {/* ═══ How we work ═══ */}
-      <section className="section-y border-y border-line bg-surface/60">
+      {/* Process: numbered columns */}
+      <section className="section-y">
         <div className="container-x">
-          <div className="max-w-2xl">
-            <p className="eyebrow">How we work</p>
-            <h2 className="h-display mt-3 text-3xl sm:text-4xl">A predictable path from idea to production</h2>
-          </div>
-          <ol className="mt-12 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
-            {steps.map((p) => (
-              <li key={p.step} className="bg-surface p-6 lg:p-8">
-                <span className="font-mono text-xs text-primary">{p.step}</span>
-                <h3 className="mt-4 text-lg font-semibold tracking-tight text-ink">{p.title}</h3>
+          <p className="eyebrow">02 — How we work</p>
+          <h2 className="h-display mt-4 max-w-3xl text-4xl sm:text-5xl">A predictable path from idea to production.</h2>
+          <ol className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+            {steps.map((p, i) => (
+              <li key={p.title} className="border-t border-ink pt-5">
+                <span className="font-serif text-5xl text-primary">{i + 1}</span>
+                <h3 className="mt-5 text-lg font-semibold tracking-tight">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-muted">{p.text}</p>
               </li>
             ))}
@@ -213,50 +122,51 @@ export default function AfrixtechHomepageLandingPage() {
         </div>
       </section>
 
-      {/* ═══ Testimonials ═══ */}
-      <section className="section-y">
+      {/* Selected work: real, live projects */}
+      <section className="section-y border-t border-line">
         <div className="container-x">
-          <div className="max-w-2xl">
-            <p className="eyebrow">Customers</p>
-            <h2 className="h-display mt-3 text-3xl sm:text-4xl">Trusted by engineering leaders</h2>
+          <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <div>
+              <p className="eyebrow">03 — Selected work</p>
+              <h2 className="h-display mt-4 max-w-2xl text-4xl sm:text-5xl">Products we have built, live today.</h2>
+            </div>
+            <Link href="/case-studies-portfolio" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
+              All work <Icon name="arrow_forward" className="text-[18px]" />
+            </Link>
           </div>
-          <ul className="mt-12 grid gap-4 lg:grid-cols-3">
-            {testimonials.map((t) => (
-              <li key={t.author} className="card flex flex-col p-6 lg:p-8">
-                <blockquote className="flex-1 text-base leading-relaxed text-ink">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <div className="mt-6 border-t border-line pt-4">
-                  <p className="text-sm font-semibold text-ink">{t.author}</p>
-                  <p className="text-sm text-ink-subtle">{t.role}</p>
-                </div>
+          <ul className="mt-14 grid gap-x-10 gap-y-12 md:grid-cols-2">
+            {caseStudies.map((c) => (
+              <li key={c.id}>
+                <a href={c.url} target="_blank" rel="noopener noreferrer" className="group block border-t border-ink pt-5">
+                  <div className="relative aspect-[16/10] overflow-hidden bg-surface-raised">
+                    <Image src={c.image} alt={`${c.title} website`} fill className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]" sizes="(max-width: 768px) 100vw, 50vw" />
+                  </div>
+                  <p className="eyebrow mt-5">{c.category}</p>
+                  <h3 className="mt-1 font-serif text-3xl tracking-tight">{c.title}</h3>
+                  <p className="mt-2 max-w-md text-sm leading-relaxed text-ink-muted">{c.description}</p>
+                </a>
               </li>
             ))}
           </ul>
         </div>
       </section>
 
-      {/* ═══ CTA ═══ */}
-      <section className="pb-8">
-        <div className="container-x">
-          <div className="relative overflow-hidden rounded-2xl border border-line-strong bg-surface px-6 py-14 text-center sm:px-12 lg:py-20">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-x-0 -top-24 mx-auto h-48 w-2/3 rounded-full bg-primary/20 blur-[90px]"
-            />
-            <div className="relative mx-auto max-w-2xl">
-              <h2 className="h-display text-3xl sm:text-4xl">Ready to modernize your infrastructure?</h2>
-              <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-                Tell us about your project. A senior engineer will respond within one business day.
-              </p>
-              <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-                <Link href="/contact-global-offices" className="btn btn-primary h-12 px-6">Start a project</Link>
-                <Link href="/case-studies-portfolio" className="btn btn-secondary h-12 px-6">Read case studies</Link>
-              </div>
-            </div>
-          </div>
+      {/* Stack */}
+      <section aria-label="Technologies we build with" className="border-y border-line">
+        <div className="container-x flex flex-col gap-4 py-8 md:flex-row md:items-center md:justify-between">
+          <p className="eyebrow">Built with</p>
+          <ul className="flex flex-wrap gap-x-10 gap-y-2 font-serif text-xl text-ink-muted">
+            {stack.map((t) => (
+              <li key={t}>{t}</li>
+            ))}
+          </ul>
         </div>
       </section>
+
+      <CtaBanner
+        title="Tell us what you need to build."
+        description="A senior engineer will respond within one business day."
+      />
     </div>
   );
 }

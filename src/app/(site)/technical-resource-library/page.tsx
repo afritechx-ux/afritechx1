@@ -24,7 +24,7 @@ export default function ResourcesPage() {
       <Section>
         <ul className="grid gap-5 md:grid-cols-2">
           {resources.map((r) => (
-            <li key={r.title} className="card flex flex-col p-6">
+            <li key={r.title} className="cell flex flex-col">
               <span className="badge badge-primary self-start">{r.type}</span>
               <h3 className="mt-4 text-lg font-semibold tracking-tight">{r.title}</h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{r.text}</p>
