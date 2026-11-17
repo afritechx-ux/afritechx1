@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
+import CommandPalette, { OPEN_PALETTE, useModKey } from './CommandPalette';
 
 const navLinks = [
     { label: 'Solutions', href: '/services-solutions' },
@@ -18,6 +19,7 @@ export default function Header() {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
+    const mod = useModKey();
 
     // Elevate the bar once the page scrolls
     useEffect(() => {
@@ -73,6 +75,16 @@ export default function Header() {
                     </nav>
 
                     <div className="flex items-center gap-1.5">
+                        <button
+                            type="button"
+                            onClick={() => window.dispatchEvent(new Event(OPEN_PALETTE))}
+                            aria-label="Open command menu"
+                            className="hidden h-10 items-center gap-2 border border-line-strong px-3 text-sm text-ink-muted transition-colors hover:border-ink hover:text-ink md:inline-flex"
+                        >
+                            <span className="material-symbols-outlined text-[18px]" aria-hidden="true">search</span>
+                            Search
+                            <kbd className="text-[11px] text-ink-subtle">{mod} K</kbd>
+                        </button>
                         <ThemeToggle />
                         <Link href="/client-portal-dashboard-overview" className="btn btn-ghost hidden h-10 lg:inline-flex">
                             Client Portal
@@ -95,6 +107,8 @@ export default function Header() {
                     </div>
                 </div>
             </header>
+
+            <CommandPalette />
 
             {/* Mobile drawer */}
             <div
