@@ -1,7 +1,20 @@
 import type { NextAuthOptions } from "next-auth";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import CredentialsProvider from "next-auth/providers/credentials";
+import { timingSafeEqual } from "crypto";
 import prisma from "@/lib/prisma";
+
+const DEMO_EMAIL = "client@acmecorp.com";
+
+// Only the demo account can sign in, and only with the password from DEMO_PASSWORD.
+// In production DEMO_PASSWORD must be set; without it, sign-in is refused.
+function demoPasswordMatches(given: string): boolean {
+    const expected = process.env.DEMO_PASSWORD ?? (process.env.NODE_ENV === "production" ? "" : "demo");
+    if (!expected) return false;
+    const a = Buffer.from(given);
+    const b = Buffer.from(expected);
+    return a.length === b.length && timingSafeEqual(a, b);
+}
 
 export const authOptions: NextAuthOptions = {
     // adapter: PrismaAdapter(prisma) as any,
@@ -10,13 +23,16 @@ export const authOptions: NextAuthOptions = {
     },
     providers: [
         CredentialsProvider({
-            name: "Client Demo Access",
+            name: "Client Access",
             credentials: {
                 email: { label: "Email", type: "email", placeholder: "client@acmecorp.com" },
-                password: { label: "Password (leave blank for demo)", type: "password" }
+                password: { label: "Password", type: "password" }
             },
             async authorize(credentials) {
-                if (!credentials?.email) return null;
+                if (!credentials?.email || !credentials.password) return null;
+                // No per-user password storage exists yet, so only the demo account is allowed.
+                if (credentials.email !== DEMO_EMAIL) return null;
+                if (!demoPasswordMatches(credentials.password)) return null;
 
                 let user = await prisma.user.findUnique({
                     where: { email: credentials.email }
@@ -51,8 +67,7 @@ export const authOptions: NextAuthOptions = {
                 }
 
                 if (user) {
-                    // Returning the user bypasses real auth for this demo environment
-                    return {
+                                        return {
                         id: user.id,
                         name: user.name,
                         email: user.email,
@@ -68,15 +83,15 @@ export const authOptions: NextAuthOptions = {
     callbacks: {
         async jwt({ token, user }) {
             if (user) {
-                token.role = (user as any).role;
+                token.role = (user as { role?: string }).role;
                 token.id = user.id;
             }
             return token;
         },
         async session({ session, token }) {
             if (session.user) {
-                (session.user as any).role = token.role;
-                (session.user as any).id = token.id;
+                (session.user as { role?: unknown; id?: unknown }).role = token.role;
+                (session.user as { role?: unknown; id?: unknown }).id = token.id;
             }
             return session;
         }

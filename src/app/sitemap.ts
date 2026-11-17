@@ -1,44 +1,13 @@
 import { MetadataRoute } from 'next';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://afrixtech.com';
+const baseUrl = 'https://afrixtech.com';
+const paths = ["","/services-solutions","/enterprise-solutions-page","/enterprise-tech-architecture","/technology-stack-expertise","/case-studies-portfolio","/in-depth-case-study-page","/about-team-profile","/careers-open-roles","/tech-insights-blog-hub","/technical-resource-library","/developer-api-documentation-portal","/client-support-help-center","/service-status-uptime-page","/contact-global-offices","/request-a-quote"];
 
-  return [
-    {
-      url: `${baseUrl}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/services-solutions`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/case-studies-portfolio`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/about-team-profile`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/contact-global-offices`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/developer-api-documentation-portal`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-  ];
+export default function sitemap(): MetadataRoute.Sitemap {
+  return paths.map((p) => ({
+    url: `${baseUrl}${p}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: p === '' ? 1 : 0.7,
+  }));
 }

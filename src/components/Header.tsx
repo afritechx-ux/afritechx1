@@ -1,119 +1,141 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
-    { label: 'Platform', href: '/services-solutions' },
-    { label: 'Customers', href: '/case-studies-portfolio' },
+    { label: 'Solutions', href: '/services-solutions' },
+    { label: 'Case Studies', href: '/case-studies-portfolio' },
+    { label: 'Architecture', href: '/enterprise-tech-architecture' },
+    { label: 'Insights', href: '/tech-insights-blog-hub' },
     { label: 'Company', href: '/about-team-profile' },
 ];
 
 export default function Header() {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
+
+    // Elevate the bar once the page scrolls
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 8);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
+    // Lock body scroll + Escape to close while the drawer is open
+    useEffect(() => {
+        if (!mobileOpen) return;
+        const prev = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setMobileOpen(false); };
+        window.addEventListener('keydown', onKey);
+        return () => {
+            document.body.style.overflow = prev;
+            window.removeEventListener('keydown', onKey);
+        };
+    }, [mobileOpen]);
+
+    const isActive = (href: string) => pathname === href || pathname.startsWith(href + '/');
 
     return (
         <>
-            <div className="fixed top-0 inset-x-0 z-50 flex justify-center w-full px-4 pt-6 pb-2 pointer-events-none">
-                <header className="pointer-events-auto flex items-center justify-between whitespace-nowrap border-b border-t border-white/5 bg-black/40 backdrop-blur-2xl px-6 py-3 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.5)] transition-all duration-300 w-full max-w-[1100px] ring-1 ring-white/10">
-                    <div className="flex items-center gap-3">
-                        <Link href="/" className="hover:opacity-80 transition-opacity flex items-center gap-2">
-                            <div className="relative size-8 overflow-hidden rounded">
-                                <Image 
-                                    src="/logo.png" 
-                                    alt="Afrixtech Logo" 
-                                    fill
-                                    className="object-cover object-center"
-                                    priority
-                                    sizes="32px"
-                                />
-                            </div>
-                            <span className="text-white text-lg font-bold tracking-tighter">AFRIXTECH</span>
-                        </Link>
-                    </div>
-                    <nav className="hidden md:flex flex-1 justify-center gap-10 items-center">
-                        {navLinks.map((link) => (
-                            <Link key={link.href} className="text-slate-400 hover:text-white text-sm font-medium transition-colors tracking-wide" href={link.href}>{link.label}</Link>
-                        ))}
-                    </nav>
-                    <div className="flex items-center gap-3">
-                        <Link href="/client-portal-dashboard-overview" className="hidden lg:flex items-center justify-center rounded-full h-9 px-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white text-sm font-medium transition-colors backdrop-blur-md mr-2">
-                            Client Portal
-                        </Link>
-                        <Link href="/services-solutions" className="hidden lg:flex relative overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 shadow-lg group cursor-pointer">
-                            <span className="absolute inset-[-1000%] animate-border-spin bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                            <span className="inline-flex h-9 items-center justify-center rounded-full bg-white px-6 text-sm font-bold text-black backdrop-blur-3xl transition-transform group-hover:bg-slate-200">
-                                Deploy Now
-                            </span>
-                        </Link>
-                        {/* Mobile menu button */}
-                        <button
-                            className="flex md:hidden text-white items-center justify-center h-10 w-10 bg-white/5 rounded-full hover:bg-white/10 transition-colors border border-white/10"
-                            onClick={() => setMobileOpen(!mobileOpen)}
-                            aria-label="Toggle menu"
-                        >
-                            <span className="material-symbols-outlined text-[20px]">
-                                {mobileOpen ? 'close' : 'menu'}
-                            </span>
-                        </button>
-                    </div>
-                </header>
-            </div>
-
-            {/* Mobile menu overlay */}
-            <div
-                className={`fixed inset-0 z-40 bg-black/80 backdrop-blur-lg transition-opacity duration-300 md:hidden ${
-                    mobileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                }`}
-                onClick={() => setMobileOpen(false)}
-            />
-
-            {/* Mobile menu panel */}
-            <div
-                className={`fixed top-0 right-0 z-40 h-full w-[280px] bg-[#050505] border-l border-white/5 shadow-2xl transition-transform duration-300 ease-out md:hidden ${
-                    mobileOpen ? 'translate-x-0' : 'translate-x-full'
+            <header
+                className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-200 ${
+                    scrolled || mobileOpen
+                        ? 'border-line bg-canvas/85 backdrop-blur-xl'
+                        : 'border-transparent bg-transparent'
                 }`}
             >
-                <div className="flex flex-col h-full pt-24 px-6 pb-8">
-                    <nav className="flex flex-col gap-1">
+                <div className="container-x flex h-16 items-center justify-between gap-6">
+                    <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="Afrixtech home">
+                        <span className="relative size-8 overflow-hidden rounded-md">
+                            <Image src="/logo.png" alt="" fill className="object-cover" priority sizes="32px" />
+                        </span>
+                        <span className="text-[15px] font-semibold tracking-tight text-ink">Afrixtech</span>
+                    </Link>
+
+                    <nav aria-label="Primary" className="hidden flex-1 items-center justify-center gap-1 lg:flex">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
-                                className="flex items-center gap-3 px-4 py-4 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 text-base font-medium transition-all"
                                 href={link.href}
-                                onClick={() => setMobileOpen(false)}
+                                aria-current={isActive(link.href) ? 'page' : undefined}
+                                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+                                    isActive(link.href)
+                                        ? 'bg-surface-raised text-ink'
+                                        : 'text-ink-muted hover:bg-surface-raised hover:text-ink'
+                                }`}
                             >
                                 {link.label}
                             </Link>
                         ))}
                     </nav>
 
-                    <div className="h-px w-full bg-white/5 my-4" />
+                    <div className="flex items-center gap-1.5">
+                        <ThemeToggle />
+                        <Link href="/client-portal-dashboard-overview" className="btn btn-ghost hidden h-10 lg:inline-flex">
+                            Client Portal
+                        </Link>
+                        <Link href="/request-a-quote" className="btn btn-primary hidden h-10 sm:inline-flex">
+                            Request a quote
+                        </Link>
+                        <button
+                            type="button"
+                            className="inline-flex size-10 items-center justify-center rounded-lg border border-line-strong text-ink transition-colors hover:bg-surface-raised lg:hidden"
+                            onClick={() => setMobileOpen((o) => !o)}
+                            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+                            aria-expanded={mobileOpen}
+                            aria-controls="mobile-nav"
+                        >
+                            <span className="material-symbols-outlined text-[22px]" aria-hidden="true">
+                                {mobileOpen ? 'close' : 'menu'}
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </header>
 
-                    <Link
-                        className="flex items-center justify-center gap-2 px-4 py-4 rounded-xl bg-white/5 border border-white/10 text-white text-base font-medium hover:bg-white/10 transition-all"
-                        href="/client-portal-dashboard-overview"
-                        onClick={() => setMobileOpen(false)}
-                    >
-                        <span className="material-symbols-outlined text-lg">dashboard</span>
-                        Client Portal
-                    </Link>
+            {/* Mobile drawer */}
+            <div
+                id="mobile-nav"
+                className={`fixed inset-0 z-40 bg-canvas pt-16 transition-opacity duration-200 lg:hidden ${
+                    mobileOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
+                }`}
+                aria-hidden={!mobileOpen}
+                inert={!mobileOpen}
+            >
+                <div className="container-x flex h-full flex-col overflow-y-auto pb-8 pt-4">
+                    <nav aria-label="Mobile" className="flex flex-col">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                onClick={() => setMobileOpen(false)}
+                                aria-current={isActive(link.href) ? 'page' : undefined}
+                                className={`flex items-center justify-between border-b border-line py-4 text-lg font-medium ${
+                                    isActive(link.href) ? 'text-primary' : 'text-ink'
+                                }`}
+                            >
+                                {link.label}
+                                <span className="material-symbols-outlined text-[20px] text-ink-subtle" aria-hidden="true">chevron_right</span>
+                            </Link>
+                        ))}
+                    </nav>
 
-                    <Link
-                        className="flex items-center justify-center gap-2 mt-3 px-4 py-4 rounded-xl bg-primary text-black text-base font-bold shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all"
-                        href="/services-solutions"
-                        onClick={() => setMobileOpen(false)}
-                    >
-                        Deploy Now
-                    </Link>
+                    <div className="mt-6 flex flex-col gap-3">
+                        <Link href="/request-a-quote" onClick={() => setMobileOpen(false)} className="btn btn-primary h-12">Request a quote</Link>
+                        <Link href="/client-portal-dashboard-overview" onClick={() => setMobileOpen(false)} className="btn btn-secondary h-12">Client Portal</Link>
+                    </div>
 
-                    {/* Contact info at bottom */}
-                    <div className="mt-auto pt-6 border-t border-white/5">
-                        <p className="text-[10px] text-slate-600 font-bold uppercase tracking-widest mb-3">Contact</p>
-                        <a href="mailto:afritechx@gmail.com" className="text-xs text-slate-500 hover:text-primary transition-colors block mb-1">afritechx@gmail.com</a>
-                        <a href="tel:+233245171589" className="text-xs text-slate-500 hover:text-primary transition-colors block mb-1">+233 245 171 589</a>
-                        <a href="tel:+233209624647" className="text-xs text-slate-500 hover:text-primary transition-colors block">+233 209 624 647</a>
+                    <div className="mt-auto border-t border-line pt-6 text-sm text-ink-muted">
+                        <p className="eyebrow mb-3 !text-ink-subtle">Contact</p>
+                        <a href="mailto:afritechx@gmail.com" className="block py-1.5 hover:text-ink">afritechx@gmail.com</a>
+                        <a href="tel:+233245171589" className="block py-1.5 hover:text-ink">+233 245 171 589</a>
+                        <a href="tel:+233209624647" className="block py-1.5 hover:text-ink">+233 209 624 647</a>
                     </div>
                 </div>
             </div>
