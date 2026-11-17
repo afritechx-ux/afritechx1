@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CtaBanner, PageHero, Section } from '@/components/ui';
+import ProcessScroll from '@/components/fx/ProcessScroll';
 
 export const metadata = {
   title: 'Enterprise Services & Solutions',
@@ -82,15 +83,7 @@ export default function ServicesPage() {
       </Section>
 
       <Section tone="muted" eyebrow="How we work" title="A predictable path from idea to production">
-        <ol className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-          {steps.map((s, i) => (
-            <li key={s.title} className="cell">
-              <span className="font-serif text-5xl text-primary">{i + 1}</span>
-              <h3 className="mt-5 text-lg font-semibold tracking-tight">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-muted">{s.text}</p>
-            </li>
-          ))}
-        </ol>
+        <ProcessScroll steps={steps} />
       </Section>
 
       <Section eyebrow="Technology" title="Tools we use every day" action={{ label: 'Full technology stack', href: '/technology-stack-expertise' }}>

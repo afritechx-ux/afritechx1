@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import Reveal from './fx/Reveal';
 
 /* Shared building blocks. Server components, token-based, theme-aware. */
 
@@ -30,11 +31,11 @@ export function PageHero({
     <section className="border-b border-line pt-32 pb-14 lg:pt-44 lg:pb-20">
       <div className={`container-x ${center ? 'text-center' : ''}`}>
         <div className={center ? 'mx-auto max-w-4xl' : 'max-w-4xl'}>
-          {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-          <h1 className="h-display mt-5 text-5xl sm:text-6xl lg:text-7xl">{title}</h1>
-          {description && <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-muted">{description}</p>}
+          {eyebrow && <p className="eyebrow animate-fade-up">{eyebrow}</p>}
+          <h1 className="h-display mt-5 animate-fade-up text-5xl sm:text-6xl lg:text-7xl" style={{ animationDelay: '90ms' }}>{title}</h1>
+          {description && <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-ink-muted" style={{ animationDelay: '200ms' }}>{description}</p>}
           {(primary || secondary) && (
-            <div className={`mt-8 flex flex-col gap-3 sm:flex-row ${center ? 'justify-center' : ''}`}>
+            <div className={`mt-8 flex animate-fade-up flex-col gap-3 sm:flex-row ${center ? 'justify-center' : ''}`} style={{ animationDelay: '300ms' }}>
               {primary && <Link href={primary.href} className="btn btn-primary h-12 px-6">{primary.label}</Link>}
               {secondary && <Link href={secondary.href} className="btn btn-secondary h-12 px-6">{secondary.label}</Link>}
             </div>
@@ -56,7 +57,7 @@ export function Section({
     <section id={id} className={`section-y ${tone === 'muted' ? 'bg-surface-raised' : ''}`}>
       <div className="container-x">
         {(title || eyebrow) && (
-          <div className="mb-12 flex flex-col justify-between gap-6 border-t border-ink pt-5 md:flex-row md:items-end">
+          <Reveal className="mb-12 flex flex-col justify-between gap-6 border-t border-ink pt-5 md:flex-row md:items-end">
             <div className="max-w-2xl">
               {eyebrow && <p className="eyebrow">{eyebrow}</p>}
               {title && <h2 className="h-display mt-4 text-3xl sm:text-5xl">{title}</h2>}
@@ -68,9 +69,9 @@ export function Section({
                 <Icon name="arrow_forward" className="text-[18px]" />
               </Link>
             )}
-          </div>
+          </Reveal>
         )}
-        {children}
+        <Reveal delay={60}>{children}</Reveal>
       </div>
     </section>
   );
