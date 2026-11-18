@@ -310,6 +310,26 @@ export const PROJECTS: Project[] = [
     url: 'https://anytimestew.com',
     liveLabel: 'Live at anytimestew.com',
   },
+  {
+    id: 'higher-life-chapel',
+    title: 'Higher Life Chapel',
+    category: 'Church management',
+    // TODO: confirm the client name and the problem statement below.
+    client: 'Higher Life Chapel (Assemblies of God), Kumasi',
+    summary: 'A church website and a separate admin system for managing the church.',
+    problem:
+      'A growing church needed a clear public home for visitors, sermons, events and giving, and a separate system for its leaders to manage the church.',
+    // TODO: list what the management system covers (for example members, attendance, giving, events).
+    // The admin site at admin.higherlifechapelag.org needs a login, so only the public site is described here.
+    built:
+      'A public church website with service times and a Plan Your Visit page, a sermon library and live streams, upcoming events, ministry pages, giving, a blog and a food bank page, plus a separate admin site at admin.higherlifechapelag.org.',
+    // TODO: add the tech stack.
+    stack: [],
+    result: '',
+    image: '/work/higherlifechapel.png',
+    url: 'https://higherlifechapelag.org',
+    liveLabel: 'Live at higherlifechapelag.org',
+  },
 ];
 
 /* ── Testimonials ──────────────────────────────────────────────── */

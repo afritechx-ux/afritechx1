@@ -11,7 +11,10 @@ export default function WorkGrid({ projects }: { projects: Project[] }) {
   return (
     <ul className="grid gap-x-8 gap-y-14 md:grid-cols-12">
       {projects.map((c, i) => (
-        <li key={c.id} className={spans[i % spans.length]}>
+        <li
+          key={c.id}
+          className={projects.length % 2 === 1 && i === projects.length - 1 ? 'md:col-span-12' : spans[i % spans.length]}
+        >
           <Tile c={c} />
         </li>
       ))}
