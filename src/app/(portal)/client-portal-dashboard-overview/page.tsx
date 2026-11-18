@@ -64,7 +64,7 @@ export default async function DashboardPage() {
 
   return (
     <>
-      <PageHeader title="Overview" description={`Welcome back${user.name ? `, ${user.name}` : ''}. Here's where your projects stand.`}>
+      <PageHeader title="Overview" description={`Welcome back${user.name ? `, ${user.name.replace(/\.$/, '')}` : ''}. Here's where your projects stand.`}>
         <Link href="/contact-global-offices" className="btn btn-secondary">Contact your team</Link>
       </PageHeader>
 

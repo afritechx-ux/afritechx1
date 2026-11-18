@@ -40,7 +40,7 @@ export default function PortalShell({ children }: { children: React.ReactNode })
         <div className="flex h-full flex-col">
             <Link href="/" className="flex h-16 shrink-0 items-center gap-2.5 border-b border-line px-5" aria-label="Afrixtech website">
                 <Logo />
-                <span className="badge ml-auto">Client portal</span>
+                <span className="badge ml-auto whitespace-nowrap">Portal</span>
             </Link>
 
             <nav aria-label="Portal" className="flex-1 overflow-y-auto px-3 py-4">

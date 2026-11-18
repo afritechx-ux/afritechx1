@@ -103,7 +103,7 @@ export default function CommandPalette() {
 
   return (
     <div className="fixed inset-0 z-[90] flex items-start justify-center px-4 pt-[14vh]" onKeyDown={onKeyDown}>
-      <div className="absolute inset-0 bg-ink/40 backdrop-blur-sm" onClick={close} aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={close} aria-hidden="true" />
       <div role="dialog" aria-modal="true" aria-label="Command menu" className="relative w-full max-w-xl overflow-hidden border border-ink bg-canvas shadow-2xl">
         <div className="flex items-center gap-3 border-b border-line px-4">
           <span className="material-symbols-outlined text-[20px] text-ink-subtle" aria-hidden="true">search</span>
