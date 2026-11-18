@@ -1,9 +1,11 @@
 import React from 'react';
 import AfrixtechHomepageLandingPage from './home-client';
+import { SITE } from '@/data/site';
 
 export const metadata = {
-  title: 'Afrixtech | Enterprise Digital Solutions',
-  description: "Afrixtech partners with industry leaders to forge the future of digital infrastructure, offering specialized enterprise software development, robust cloud solutions, and scalable AI workflows.",
+  title: { absolute: SITE.title },
+  description: SITE.description,
+  alternates: { canonical: '/' },
 };
 
 export default function Home() {

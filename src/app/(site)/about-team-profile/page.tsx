@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import { CtaBanner, IconTile, PageHero, Section, StatRow } from '@/components/ui';
+import FounderCard from '@/components/FounderCard';
 
 export const metadata = {
   title: 'About',
-  description: 'Afrixtech is a software engineering company based in Kumasi, Ghana, building secure, scalable digital solutions for enterprises.',
+  description: 'Afrixtech is a software company in Kumasi, Ghana. Meet the founder and the team building websites, online stores and software for Ghanaian businesses.',
 };
 
 const values = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
             { value: '2018', label: 'Founded' },
             { value: 'Kumasi', label: 'Headquarters, Ghana' },
             { value: 'Accra', label: 'Second office' },
-            { value: '24/7', label: 'Support availability' },
+            { value: 'GH₵999', label: 'Corporate websites from' },
           ]}
         />
       </PageHero>
@@ -64,19 +64,8 @@ export default function AboutPage() {
         </ol>
       </Section>
 
-      <Section eyebrow="Leadership" title="Led by its founder">
-        <div className="card flex max-w-3xl flex-col gap-6 p-6 sm:flex-row sm:items-center sm:p-8">
-          <div className="relative size-32 shrink-0 overflow-hidden rounded-xl bg-surface-raised">
-            <Image src="/case-studies/ceo.jpeg" alt="Kusi Gabriel Kwaku, CEO and Founder" fill className="object-cover" sizes="128px" />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold tracking-tight">Kusi Gabriel Kwaku</h3>
-            <p className="text-sm text-primary">Chief Executive Officer &amp; Founder</p>
-            <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-              Tech entrepreneur based in Kumasi, Ghana, leading Afrixtech&apos;s mission to deliver world-class digital solutions across Africa.
-            </p>
-          </div>
-        </div>
+      <Section eyebrow="Team" title="Led by its founder">
+        <FounderCard />
       </Section>
 
       <CtaBanner title="Help us build what's next" description="We're growing the team. See open roles or get in touch about a project." primary={{ label: 'View open roles', href: '/careers-open-roles' }} secondary={{ label: 'Contact us', href: '/contact-global-offices' }} />

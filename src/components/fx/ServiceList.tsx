@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-type Item = { title: string; description: string; points: string[] };
+type Item = { id: string; title: string; description: string; points: readonly string[] };
 
 /** Rows that open on hover or focus to reveal detail. The first row starts open. */
 export default function ServiceList({ items }: { items: Item[] }) {
@@ -16,7 +16,7 @@ export default function ServiceList({ items }: { items: Item[] }) {
         return (
           <li key={s.title} className="border-b border-line" onMouseEnter={() => setActive(i)}>
             <Link
-              href="/services-solutions"
+              href={`/services-solutions#${s.id}`}
               onFocus={() => setActive(i)}
               aria-expanded={open}
               className="group block py-6 sm:py-8"

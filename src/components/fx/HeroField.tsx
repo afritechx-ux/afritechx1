@@ -96,6 +96,10 @@ export default function HeroField({ className = '' }: { className?: string }) {
       ctx.clearRect(0, 0, w, h);
       const elapsed = now - t0;
       const R = Math.min(w, h) * 0.16;
+      // One path per colour, filled once: far cheaper than a style change per particle.
+      const pInk = new Path2D();
+      const pAccent = new Path2D();
+      const pDust = new Path2D();
       for (const p of particles) {
         if (!reduce) {
           if (p.dust) {
@@ -119,17 +123,17 @@ export default function HeroField({ className = '' }: { className?: string }) {
           p.vx *= 0.82; p.vy *= 0.82;
           p.x += p.vx; p.y += p.vy;
         }
-        if (p.dust) {
-          ctx.fillStyle = faint;
-          ctx.globalAlpha = 0.7;
-          ctx.fillRect(p.x, p.y, 2, 2);
-        } else {
-          ctx.globalAlpha = 1;
-          ctx.fillStyle = p.cross ? accent : ink;
-          ctx.fillRect(p.x - cell / 2, p.y - cell / 2, cell, cell);
-        }
+        if (p.dust) pDust.rect(p.x, p.y, 2, 2);
+        else (p.cross ? pAccent : pInk).rect(p.x - cell / 2, p.y - cell / 2, cell, cell);
       }
+      ctx.globalAlpha = 0.7;
+      ctx.fillStyle = faint;
+      ctx.fill(pDust);
       ctx.globalAlpha = 1;
+      ctx.fillStyle = ink;
+      ctx.fill(pInk);
+      ctx.fillStyle = accent;
+      ctx.fill(pAccent);
     };
 
     const loop = (now: number) => {

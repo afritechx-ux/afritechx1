@@ -37,16 +37,13 @@ export default function CommandPalette() {
       } },
       { id: 'portal', label: 'Client portal', hint: 'Go to', icon: 'lock', keywords: 'login sign in invoices', run: go('/client-portal-dashboard-overview') },
       { id: 'home', label: 'Home', hint: 'Go to', icon: 'home', run: go('/') },
+      { id: 'pricing', label: 'Pricing and packages', hint: 'Go to', icon: 'sell', keywords: 'price cost website package', run: go('/#packages') },
       { id: 'solutions', label: 'Solutions', hint: 'Go to', icon: 'deployed_code', keywords: 'services cloud ai software', run: go('/services-solutions') },
       { id: 'work', label: 'Case studies', hint: 'Go to', icon: 'work', keywords: 'projects portfolio work', run: go('/case-studies-portfolio') },
       { id: 'arch', label: 'Architecture', hint: 'Go to', icon: 'account_tree', keywords: 'enterprise', run: go('/enterprise-tech-architecture') },
       { id: 'stack', label: 'Technology stack', hint: 'Go to', icon: 'stack', run: go('/technology-stack-expertise') },
       { id: 'insights', label: 'Insights', hint: 'Go to', icon: 'article', keywords: 'blog articles', run: go('/tech-insights-blog-hub') },
       { id: 'about', label: 'About', hint: 'Go to', icon: 'groups', keywords: 'company team', run: go('/about-team-profile') },
-      { id: 'careers', label: 'Careers', hint: 'Go to', icon: 'badge', keywords: 'jobs roles', run: go('/careers-open-roles') },
-      { id: 'docs', label: 'API documentation', hint: 'Go to', icon: 'code', keywords: 'developer', run: go('/developer-api-documentation-portal') },
-      { id: 'help', label: 'Help center', hint: 'Go to', icon: 'help', keywords: 'support', run: go('/client-support-help-center') },
-      { id: 'status', label: 'Service status', hint: 'Go to', icon: 'monitor_heart', keywords: 'uptime', run: go('/service-status-uptime-page') },
     ];
   }, [router]);
 

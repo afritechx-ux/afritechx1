@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { SITE } from '@/data/site';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,12 +7,21 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
       disallow: [
-        '/client-portal-dashboard-overview/',
-        '/client-portal-document-repository/',
-        '/client-portal-billing-invoices/',
-        '/api/'
+        '/api/',
+        '/login',
+        '/client-portal-dashboard-overview',
+        '/client-portal-document-repository',
+        '/client-portal-billing-invoices',
+        '/client-portal-finance-overview',
+        '/client-portal-project-milestones',
+        '/client-onboarding-checklist-overview',
+        '/portal-notifications-center',
+        '/portal-user-settings-customization',
+        '/detailed-invoice-view',
+        '/payment-success-confirmation',
       ],
     },
-    sitemap: 'https://afrixtech.com/sitemap.xml',
+    sitemap: `${SITE.url}/sitemap.xml`,
+    host: SITE.url,
   };
 }

@@ -5,15 +5,10 @@ import Link from 'next/link';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
+import { CONTACT, NAV_LINKS } from '@/data/site';
 import CommandPalette, { OPEN_PALETTE, useModKey } from './CommandPalette';
 
-const navLinks = [
-    { label: 'Solutions', href: '/services-solutions' },
-    { label: 'Case Studies', href: '/case-studies-portfolio' },
-    { label: 'Architecture', href: '/enterprise-tech-architecture' },
-    { label: 'Insights', href: '/tech-insights-blog-hub' },
-    { label: 'Company', href: '/about-team-profile' },
-];
+const navLinks = NAV_LINKS;
 
 export default function Header() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -82,7 +77,7 @@ export default function Header() {
                             className="hidden h-10 items-center gap-2 border border-line-strong px-3 text-sm text-ink-muted transition-colors hover:border-ink hover:text-ink md:inline-flex"
                         >
                             <span className="material-symbols-outlined text-[18px]" aria-hidden="true">search</span>
-                            Search
+                            <span className="hidden xl:inline">Search</span>
                             <kbd className="text-[11px] text-ink-subtle">{mod} K</kbd>
                         </button>
                         <ThemeToggle />
@@ -144,9 +139,10 @@ export default function Header() {
 
                     <div className="mt-auto border-t border-line pt-6 text-sm text-ink-muted">
                         <p className="eyebrow mb-3 !text-ink-subtle">Contact</p>
-                        <a href="mailto:afritechx@gmail.com" className="block py-1.5 hover:text-ink">afritechx@gmail.com</a>
-                        <a href="tel:+233245171589" className="block py-1.5 hover:text-ink">+233 245 171 589</a>
-                        <a href="tel:+233209624647" className="block py-1.5 hover:text-ink">+233 209 624 647</a>
+                        <a href={`mailto:${CONTACT.email}`} className="block py-1.5 hover:text-ink">{CONTACT.email}</a>
+                        {CONTACT.phones.map((p) => (
+                            <a key={p.e164} href={`tel:${p.e164}`} className="block py-1.5 hover:text-ink">{p.label}: {p.display}</a>
+                        ))}
                     </div>
                 </div>
             </div>

@@ -2,12 +2,13 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { LogoMark } from './Logo';
+import { CONTACT, PACKAGES } from '@/data/site';
 
 /* ── Chatbot Data ──────────────────────────────────────────────── */
 
 const quickReplies = [
   { label: 'Start a Project', message: 'I want to start a new project' },
-  { label: 'Pricing Info', message: 'Can you tell me about pricing?' },
+  { label: 'Packages & pricing', message: 'Can you tell me about packages and pricing?' },
   { label: 'Book a Call', message: 'I\'d like to book a consultation call' },
   { label: 'Support', message: 'I need technical support' },
 ];
@@ -19,13 +20,15 @@ interface Message {
   timestamp: Date;
 }
 
+const phoneLines = CONTACT.phones.map((p) => `📞 ${p.label}: ${p.display}`).join('\n');
+
 const botResponses: Record<string, string> = {
-  'project': 'Great! We\'d love to help with your project. You can reach us at afritechx@gmail.com or call +233 245 171 589. Would you like to fill out our contact form instead?',
-  'pricing': 'Our pricing depends on the scope and complexity of your project. For a detailed quote, please email us at afritechx@gmail.com or visit our Contact page. We typically respond within 2 hours!',
-  'call': 'We\'d be happy to schedule a call! Please reach out to us at:\n📧 afritechx@gmail.com\n📞 +233 245 171 589\n📞 +233 209 624 647\nOr fill out the contact form and we\'ll get back to you.',
-  'support': 'Our support team is available 24/7. You can:\n📧 Email: afritechx@gmail.com\n📞 Call: +233 245 171 589\n📞 Alt: +233 209 624 647\nWe\'ll respond within 2 hours.',
-  'hello': 'Hello! Welcome to Afrixtech. How can I help you today? I can assist with project inquiries, pricing, booking a call, or technical support.',
-  'default': 'Thanks for reaching out! For the best assistance, please contact us directly:\n📧 afritechx@gmail.com\n📞 +233 245 171 589\n📞 +233 209 624 647\nOr try one of the quick options below.',
+  project: `Great! We'd love to help with your project. Email us at ${CONTACT.email} or call ${CONTACT.phones[0].display}. You can also use the quote form on our website.`,
+  pricing: `Our ${PACKAGES[0].name} package is ${PACKAGES[0].price} flat, with a free domain name and 1 year of hosting. Online stores start at ${PACKAGES.find((p) => p.id === 'starter-store')?.price}. See all packages and prices in the Packages section on the homepage (/#packages), or message us on WhatsApp.`,
+  call: `We'd be happy to talk! Reach us at:\n📧 ${CONTACT.email}\n${phoneLines}`,
+  support: `For help, you can reach us at:\n📧 ${CONTACT.email}\n${phoneLines}`,
+  hello: 'Hello! Welcome to Afrixtech. I can help with project inquiries, packages and pricing, or how to reach us.',
+  default: `Thanks for reaching out! For the best help, contact us directly:\n📧 ${CONTACT.email}\n${phoneLines}\nOr try one of the quick options below.`,
 };
 
 function getBotResponse(message: string): string {
@@ -98,7 +101,7 @@ export default function Chatbot() {
       {/* Floating button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 shadow-lg ${
+        className={`fixed bottom-24 right-6 z-50 w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 shadow-lg ${
           isOpen
             ? 'bg-surface border border-line-strong text-ink'
             : 'bg-primary-strong text-white hover:bg-primary'
@@ -112,7 +115,7 @@ export default function Chatbot() {
 
       {/* Chat window */}
       <div
-        className={`fixed bottom-24 right-6 z-50 w-[360px] max-w-[calc(100vw-2rem)] transition-all duration-300 origin-bottom-right ${
+        className={`fixed bottom-44 right-6 z-50 w-[360px] max-w-[calc(100vw-3rem)] transition-all duration-300 origin-bottom-right ${
           isOpen
             ? 'scale-100 opacity-100 translate-y-0'
             : 'scale-95 opacity-0 translate-y-4 pointer-events-none'

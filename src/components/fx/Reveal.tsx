@@ -2,7 +2,10 @@
 
 import { useEffect, useRef, type ReactNode } from 'react';
 
-/** Fades and lifts content in as it scrolls into view. Content stays visible without JS. */
+/**
+ * Fades and lifts content in as it scrolls into view. Content is visible without JS.
+ * Uses only an IntersectionObserver (no layout reads), so it adds no cost to first paint.
+ */
 export default function Reveal({
   children, className = '', delay = 0,
 }: { children: ReactNode; className?: string; delay?: number }) {
@@ -11,17 +14,23 @@ export default function Reveal({
   useEffect(() => {
     const el = ref.current;
     if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (el.getBoundingClientRect().top < window.innerHeight * 0.95) return; // already on screen
-    el.classList.add('rv-hide');
-    el.style.transitionDelay = `${delay}ms`;
+    let first = true;
     const io = new IntersectionObserver(
       ([e]) => {
+        if (first) {
+          first = false;
+          // Already on screen at load: leave it visible. Otherwise hide it until it scrolls in.
+          if (e.isIntersecting) { io.disconnect(); return; }
+          el.style.transitionDelay = `${delay}ms`;
+          el.classList.add('rv-hide');
+          return;
+        }
         if (e.isIntersecting) {
           el.classList.remove('rv-hide');
           io.disconnect();
         }
       },
-      { threshold: 0, rootMargin: "0px 0px -10% 0px" },
+      { threshold: 0, rootMargin: '0px 0px -10% 0px' },
     );
     io.observe(el);
     return () => io.disconnect();

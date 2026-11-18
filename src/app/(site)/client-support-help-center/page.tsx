@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { IconTile, PageHero, Section } from '@/components/ui';
+import { CONTACT } from '@/data/site';
 
 export const metadata = {
+  robots: { index: false, follow: false },
   title: 'Help Center',
   description: 'Find answers, documentation and support for your Afrixtech project.',
 };
@@ -40,7 +42,7 @@ export default function HelpCenterPage() {
             <p className="mt-1 text-sm text-ink-muted">Our support team is here to help you resolve issues quickly.</p>
           </div>
           <div className="flex gap-3">
-            <a href="mailto:afritechx@gmail.com" className="btn btn-secondary">Email support</a>
+            <a href={`mailto:${CONTACT.email}`} className="btn btn-secondary">Email support</a>
             <Link href="/contact-global-offices" className="btn btn-primary">Contact us</Link>
           </div>
         </div>
