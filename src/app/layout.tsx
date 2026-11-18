@@ -1,21 +1,32 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { CONTACT, SITE } from "@/data/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  preload: false, // body text paints in a size-matched fallback first, so fonts never delay the CSS
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  preload: false,
 });
 
 const serif = Newsreader({
   variable: "--font-serif-display",
   subsets: ["latin"],
-  style: ["normal", "italic"],
+});
+
+// Italic is used once (the hero tagline), so it loads without blocking the first paint.
+const serifItalic = Newsreader({
+  variable: "--font-serif-italic",
+  subsets: ["latin"],
+  style: ["italic"],
+  preload: false,
 });
 
 export const viewport: Viewport = {
@@ -26,29 +37,27 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://afrixtech.com'),
+  metadataBase: new URL(SITE.url),
   title: {
-    template: '%s | Afrixtech',
-    default: 'Afrixtech | Enterprise Digital Solutions',
+    template: "%s | Afrixtech",
+    default: SITE.title,
   },
-  description: "Afrixtech delivers cutting-edge digital transformation through Artificial Intelligence, Cloud Computing, and bespoke software development for global enterprises.",
-  keywords: ["Enterprise Software", "Cloud Infrastructure", "Afrixtech", "Digital Transformation", "Custom Software Development", "AI Solutions"],
-  authors: [{ name: "Afrixtech Engineering", url: "https://afrixtech.com" }],
+  description: SITE.description,
+  authors: [{ name: "Afrixtech", url: SITE.url }],
   creator: "Afrixtech",
   publisher: "Afrixtech",
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://afrixtech.com",
+    locale: "en_GH",
+    url: SITE.url,
     siteName: "Afrixtech",
-    title: "Afrixtech | Enterprise Digital Solutions",
-    description: "Cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development.",
+    title: SITE.title,
+    description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Afrixtech | Enterprise Digital Solutions",
-    description: "Cutting-edge digital transformation through AI, Cloud Computing, and bespoke software development.",
-    creator: "@afrixtech",
+    title: SITE.title,
+    description: SITE.description,
   },
   robots: {
     index: true,
@@ -56,14 +65,41 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
 
 const themeInit = `try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark')}catch(e){}`;
+
+/** LocalBusiness structured data for local search. Values come from src/data/site.ts. */
+const localBusiness = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: SITE.name,
+  url: SITE.url,
+  email: CONTACT.email,
+  telephone: CONTACT.phones[0].e164,
+  description: SITE.description,
+  image: `${SITE.url}/opengraph-image`,
+  priceRange: "From GH₵999",
+  areaServed: { "@type": "Country", name: CONTACT.address.country },
+  address: {
+    "@type": "PostalAddress",
+    ...(CONTACT.address.street ? { streetAddress: CONTACT.address.street } : {}),
+    addressLocality: CONTACT.address.locality,
+    addressRegion: CONTACT.address.region,
+    addressCountry: CONTACT.address.countryCode,
+  },
+  contactPoint: CONTACT.phones.map((p) => ({
+    "@type": "ContactPoint",
+    contactType: p.label.toLowerCase(),
+    telephone: p.e164,
+    email: CONTACT.email,
+  })),
+};
 
 export default function RootLayout({
   children,
@@ -71,13 +107,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${serif.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${serif.variable} ${serifItalic.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
         <link rel="preload" href="/fonts/material-symbols.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-canvas font-sans text-ink [overflow-x:clip]`}>
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );

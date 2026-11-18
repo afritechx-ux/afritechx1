@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import prisma from '@/lib/prisma';
 import { getPortalUser, money } from '@/lib/portal';
 import { PageHeader, StatusBadge } from '@/components/ui';
+import { CONTACT } from '@/data/site';
 
 export const metadata = { title: 'Invoice' };
 export const dynamic = 'force-dynamic';
@@ -48,7 +49,7 @@ export default async function InvoicePage({ searchParams }: { searchParams: Prom
         </div>
         <p className="mt-6 text-sm text-ink-muted">
           To pay by wire transfer, include the invoice number in the payment reference, or contact{' '}
-          <a href="mailto:afritechx@gmail.com" className="font-medium text-primary hover:underline">afritechx@gmail.com</a>.
+          <a href={`mailto:${CONTACT.email}`} className="font-medium text-primary hover:underline">{CONTACT.email}</a>.
         </p>
       </section>
     </>

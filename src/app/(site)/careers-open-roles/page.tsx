@@ -1,6 +1,8 @@
 import { CtaBanner, IconTile, PageHero, Section } from '@/components/ui';
+import { CONTACT } from '@/data/site';
 
 export const metadata = {
+  robots: { index: false, follow: false },
   title: 'Careers',
   description: 'Join the Afrixtech team. Explore open engineering, design and data science roles.',
 };
@@ -48,7 +50,7 @@ export default function CareersPage() {
                 <p className="mt-1 text-sm text-ink-muted">{r.team} · {r.type}</p>
               </div>
               <a
-                href={`mailto:afritechx@gmail.com?subject=${encodeURIComponent('Application: ' + r.title)}`}
+                href={`mailto:${CONTACT.email}?subject=${encodeURIComponent('Application: ' + r.title)}`}
                 className="btn btn-secondary shrink-0"
               >
                 Apply by email
@@ -56,7 +58,7 @@ export default function CareersPage() {
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-sm text-ink-muted">Don&apos;t see your role? Send your CV to afritechx@gmail.com and tell us how you&apos;d contribute.</p>
+        <p className="mt-6 text-sm text-ink-muted">Don&apos;t see your role? Send your CV to {CONTACT.email} and tell us how you&apos;d contribute.</p>
       </Section>
 
       <CtaBanner title="Not ready to apply?" description="Learn more about how we work and the problems we're solving." primary={{ label: 'About Afrixtech', href: '/about-team-profile' }} secondary={{ label: 'Read our insights', href: '/tech-insights-blog-hub' }} />

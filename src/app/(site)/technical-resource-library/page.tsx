@@ -1,6 +1,8 @@
 import { CtaBanner, PageHero, Section } from '@/components/ui';
+import { CONTACT } from '@/data/site';
 
 export const metadata = {
+  robots: { index: false, follow: false },
   title: 'Resources',
   description: 'Technical guides, whitepapers and strategic insights from Afrixtech experts.',
 };
@@ -29,7 +31,7 @@ export default function ResourcesPage() {
               <h3 className="mt-4 text-lg font-semibold tracking-tight">{r.title}</h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{r.text}</p>
               <a
-                href={`mailto:afritechx@gmail.com?subject=${encodeURIComponent('Resource request: ' + r.title)}`}
+                href={`mailto:${CONTACT.email}?subject=${encodeURIComponent('Resource request: ' + r.title)}`}
                 className="btn btn-secondary mt-5 self-start"
               >
                 Request this resource

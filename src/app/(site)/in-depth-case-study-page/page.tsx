@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { CtaBanner, Icon, PageHero, Section } from '@/components/ui';
 
 export const metadata = {
+  robots: { index: false, follow: false },
   title: 'Case Study: Next-Gen Fintech Ecosystem',
   description: 'How Afrixtech rebuilt a legacy financial platform as a scalable, cloud-native microservices ecosystem.',
 };

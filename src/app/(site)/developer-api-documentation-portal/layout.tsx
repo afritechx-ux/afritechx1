@@ -1,4 +1,5 @@
 export const metadata = {
+  robots: { index: false, follow: false },
   title: 'API Documentation',
   description: 'Developer documentation for the Afrixtech API.',
 };

@@ -2,6 +2,7 @@ import { LogoMark } from '@/components/Logo';
 import LoginForm from './LoginForm';
 
 export const metadata = {
+  robots: { index: false, follow: false },
     title: 'Client Portal Sign In',
     description: 'Sign in to the Afrixtech Client Portal.',
 };

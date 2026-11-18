@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Chatbot from "@/components/Chatbot";
+import Chatbot from "@/components/LazyChatbot";
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
   return (

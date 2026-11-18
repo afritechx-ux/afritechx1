@@ -43,7 +43,7 @@
     --primary: #0f5a3c;
     --primary-strong: #0b4a31;
     --success: #2e7d32;
-    --warning: #a8560b;
+    --warning: #8a4508;
     --danger: #b3261e;
     --grid: transparent;
     --hover: #e8e3d7;
@@ -100,6 +100,7 @@
     --animate-gradient-x: gradient-x 15s ease infinite;
     --animate-spotlight: spotlight 2s ease .75s 1 forwards;
     --animate-border-spin: border-spin 3s linear infinite;
+    --animate-rise: rise .7s cubic-bezier(.16, 1, .3, 1) both;
     --animate-fade-up: fade-up .6s cubic-bezier(.16, 1, .3, 1) both;
 }
 
@@ -122,6 +123,11 @@
 
 @keyframes border-spin {
     100% { transform: rotate(-360deg); }
+}
+
+@keyframes rise {
+    from { transform: translateY(14px); }
+    to { transform: translateY(0); }
 }
 
 @keyframes fade-up {
@@ -231,6 +237,16 @@ body {
         transition: border-color .2s, background-color .2s;
     }
     .card-hover:hover { border-color: var(--color-line-strong); background: var(--color-surface-raised); }
+}
+
+/* Skip layout and paint for sections far below the viewport until they are near it. */
+.cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 800px;
+}
+.font-serif-italic {
+    font-family: var(--font-serif-italic), var(--font-serif), serif;
+    font-style: italic;
 }
 
 /* ── Motion ──────────────────────────────────────────────────── */

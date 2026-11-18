@@ -2,15 +2,15 @@
 
 import { useRef } from 'react';
 import Image from 'next/image';
-import type { CaseStudy } from '@/app/(site)/case-studies-portfolio/data';
+import type { Project } from '@/data/site';
 
 const spans = ['md:col-span-7', 'md:col-span-5', 'md:col-span-5', 'md:col-span-7'];
 
 /** Asymmetric project grid. A label follows the pointer over each tile. */
-export default function WorkGrid({ studies }: { studies: CaseStudy[] }) {
+export default function WorkGrid({ projects }: { projects: Project[] }) {
   return (
     <ul className="grid gap-x-8 gap-y-14 md:grid-cols-12">
-      {studies.map((c, i) => (
+      {projects.map((c, i) => (
         <li key={c.id} className={spans[i % spans.length]}>
           <Tile c={c} />
         </li>
@@ -19,7 +19,7 @@ export default function WorkGrid({ studies }: { studies: CaseStudy[] }) {
   );
 }
 
-function Tile({ c }: { c: CaseStudy }) {
+function Tile({ c }: { c: Project }) {
   const label = useRef<HTMLSpanElement>(null);
 
   const move = (e: React.PointerEvent<HTMLDivElement>) => {
@@ -37,8 +37,9 @@ function Tile({ c }: { c: CaseStudy }) {
       >
         <Image
           src={c.image}
-          alt={`${c.title} website`}
+          alt={`Screenshot of the ${c.title} website`}
           fill
+          loading="lazy"
           sizes="(max-width: 768px) 100vw, 60vw"
           className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         />
@@ -55,7 +56,8 @@ function Tile({ c }: { c: CaseStudy }) {
         <h3 className="font-serif text-3xl tracking-tight">{c.title}</h3>
         <span className="eyebrow shrink-0">{c.category}</span>
       </div>
-      <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">{c.description}</p>
+      <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-muted">{c.summary}</p>
+      <p className="mt-2 font-mono text-xs text-ink-subtle">{c.liveLabel}</p>
     </a>
   );
 }

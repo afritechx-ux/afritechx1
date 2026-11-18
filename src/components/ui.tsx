@@ -31,11 +31,11 @@ export function PageHero({
     <section className="border-b border-line pt-32 pb-14 lg:pt-44 lg:pb-20">
       <div className={`container-x ${center ? 'text-center' : ''}`}>
         <div className={center ? 'mx-auto max-w-4xl' : 'max-w-4xl'}>
-          {eyebrow && <p className="eyebrow animate-fade-up">{eyebrow}</p>}
-          <h1 className="h-display mt-5 animate-fade-up text-5xl sm:text-6xl lg:text-7xl" style={{ animationDelay: '90ms' }}>{title}</h1>
-          {description && <p className="mt-6 max-w-2xl animate-fade-up text-lg leading-relaxed text-ink-muted" style={{ animationDelay: '200ms' }}>{description}</p>}
+          {eyebrow && <p className="eyebrow animate-rise">{eyebrow}</p>}
+          <h1 className="h-display mt-5 animate-rise text-5xl sm:text-6xl lg:text-7xl" style={{ animationDelay: '90ms' }}>{title}</h1>
+          {description && <p className="mt-6 max-w-2xl animate-rise text-lg leading-relaxed text-ink-muted" style={{ animationDelay: '200ms' }}>{description}</p>}
           {(primary || secondary) && (
-            <div className={`mt-8 flex animate-fade-up flex-col gap-3 sm:flex-row ${center ? 'justify-center' : ''}`} style={{ animationDelay: '300ms' }}>
+            <div className={`mt-8 flex animate-rise flex-col gap-3 sm:flex-row ${center ? 'justify-center' : ''}`} style={{ animationDelay: '300ms' }}>
               {primary && <Link href={primary.href} className="btn btn-primary h-12 px-6">{primary.label}</Link>}
               {secondary && <Link href={secondary.href} className="btn btn-secondary h-12 px-6">{secondary.label}</Link>}
             </div>
@@ -96,7 +96,7 @@ export function StatRow({ items }: { items: { value: string; label: string }[] }
 
 export function CtaBanner({
   title = 'Ready to modernize your infrastructure?',
-  description = 'Tell us about your project. A senior engineer will respond within one business day.',
+  description = 'Tell us about your project and we will get back to you with next steps.',
   primary = { label: 'Request a quote', href: '/request-a-quote' },
   secondary = { label: 'Read case studies', href: '/case-studies-portfolio' },
 }: { title?: string; description?: string; primary?: Cta; secondary?: Cta }) {

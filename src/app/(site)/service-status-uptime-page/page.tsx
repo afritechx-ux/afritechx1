@@ -1,6 +1,8 @@
 import { Icon, PageHero, Section } from '@/components/ui';
+import { CONTACT } from '@/data/site';
 
 export const metadata = {
+  robots: { index: false, follow: false },
   title: 'Service Status',
   description: 'Current operational status of Afrixtech services.',
 };
@@ -33,7 +35,7 @@ export default function StatusPage() {
           ))}
         </ul>
         <p className="mt-6 text-sm text-ink-muted">
-          Need help? Email <a href="mailto:afritechx@gmail.com" className="font-medium text-primary hover:underline">afritechx@gmail.com</a>.
+          Need help? Email <a href={`mailto:${CONTACT.email}`} className="font-medium text-primary hover:underline">{CONTACT.email}</a>.
         </p>
       </Section>
     </>

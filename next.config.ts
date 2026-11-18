@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 // Retired mockup / duplicate pages now point at their canonical page.
 const retired: Record<string, string> = {
+  'blog-post-article-view': '/tech-insights-blog-hub',
   'mobile-homepage-landing-page': '/',
   'mobile-light-mode-homepage': '/',
   'homepage-light-mode': '/',

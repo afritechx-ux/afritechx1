@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { CONTACT } from '@/data/site';
 
 const esc = (v: unknown) => String(v ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -16,14 +17,14 @@ export async function POST(req: NextRequest) {
     const transporter = nodemailer.createTransport({
       service: 'gmail', // You can use other services here
       auth: {
-        user: process.env.EMAIL_USER || 'afritechx@gmail.com',
+        user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS, // This needs to be a Gmail App Password
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'afritechx@gmail.com', // Sender address (your authenticated email)
-      to: 'afritechx@gmail.com', // The destination email where you want to receive inquiries
+      from: process.env.EMAIL_USER, // Sender: the authenticated mailbox set in EMAIL_USER
+      to: process.env.CONTACT_TO || CONTACT.email, // Where inquiries are delivered (set CONTACT_TO to override)
       replyTo: email, // The customer's email
       subject: `New Contact Form Inquiry: ${subject} - from ${firstName} ${lastName}`,
       html: `

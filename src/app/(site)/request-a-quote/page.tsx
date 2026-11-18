@@ -12,7 +12,7 @@ export default function RequestQuotePage() {
       <PageHero
         eyebrow="Request a quote"
         title="Tell us what you're building"
-        description="Three short steps. We'll review your request and reply with next steps within one business day."
+        description="Three short steps. We'll review your request and reply with next steps."
       />
       <section className="section-y">
         <div className="container-x">
