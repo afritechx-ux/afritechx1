@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from 'react';
+import { LogoMark } from './Logo';
 
 /* ── Chatbot Data ──────────────────────────────────────────────── */
 
@@ -51,6 +52,7 @@ export default function Chatbot() {
   ]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const nextId = useRef(2);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -65,7 +67,7 @@ export default function Chatbot() {
     if (!text.trim()) return;
 
     const userMsg: Message = {
-      id: Date.now(),
+      id: nextId.current++,
       text: text.trim(),
       sender: 'user',
       timestamp: new Date(),
@@ -76,14 +78,14 @@ export default function Chatbot() {
 
     setTimeout(() => {
       const botMsg: Message = {
-        id: Date.now() + 1,
+        id: nextId.current++,
         text: getBotResponse(text),
         sender: 'bot',
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, botMsg]);
       setIsTyping(false);
-    }, 1000 + Math.random() * 500);
+    }, 1200);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -96,10 +98,10 @@ export default function Chatbot() {
       {/* Floating button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 shadow-lg ${
+        className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 shadow-lg ${
           isOpen
-            ? 'bg-white/10 backdrop-blur-xl border border-white/10 text-white rotate-0'
-            : 'bg-primary text-black shadow-primary/30 hover:shadow-primary/50 hover:scale-105'
+            ? 'bg-surface border border-line-strong text-ink'
+            : 'bg-primary-strong text-white hover:bg-primary'
         }`}
         aria-label={isOpen ? 'Close chat' : 'Open chat'}
       >
@@ -116,24 +118,24 @@ export default function Chatbot() {
             : 'scale-95 opacity-0 translate-y-4 pointer-events-none'
         }`}
       >
-        <div className="rounded-2xl border border-white/10 bg-[#050505]/95 backdrop-blur-xl shadow-2xl shadow-black/50 overflow-hidden flex flex-col" style={{ height: '480px' }}>
+        <div className="rounded-xl border border-line bg-surface shadow-2xl shadow-black/20 overflow-hidden flex flex-col" style={{ height: '480px' }}>
 
           {/* Header */}
-          <div className="px-5 py-4 border-b border-white/5 bg-black/50 shrink-0">
+          <div className="px-5 py-4 border-b border-line bg-surface-raised shrink-0">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center text-primary border border-primary/20">
-                <span className="material-symbols-outlined text-lg">smart_toy</span>
+                <LogoMark className="size-5" />
               </div>
               <div className="flex-1">
-                <h3 className="text-white font-bold text-sm">Afrixtech Assistant</h3>
+                <h3 className="text-ink font-semibold text-sm">Afrixtech Assistant</h3>
                 <div className="flex items-center gap-1.5">
-                  <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-[10px] text-emerald-400 font-medium">Online Now</span>
+                  <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
+                  <span className="text-[10px] text-success font-medium">Online Now</span>
                 </div>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
-                className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-slate-500 hover:text-white hover:bg-white/10 transition-all"
+                className="w-8 h-8 rounded-lg bg-surface-raised flex items-center justify-center text-ink-subtle hover:text-ink transition-all"
               >
                 <span className="material-symbols-outlined text-sm">remove</span>
               </button>
@@ -148,10 +150,10 @@ export default function Chatbot() {
                 className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-line ${
+                  className={`max-w-[85%] rounded-xl px-4 py-3 text-sm leading-relaxed whitespace-pre-line ${
                     msg.sender === 'user'
-                      ? 'bg-primary text-black font-medium rounded-br-md'
-                      : 'bg-white/5 text-slate-300 border border-white/5 rounded-bl-md'
+                      ? 'bg-primary-strong text-white font-medium rounded-br-md'
+                      : 'bg-surface-raised text-ink border border-line rounded-bl-md'
                   }`}
                 >
                   {msg.text}
@@ -161,10 +163,10 @@ export default function Chatbot() {
 
             {isTyping && (
               <div className="flex justify-start">
-                <div className="bg-white/5 border border-white/5 rounded-2xl rounded-bl-md px-4 py-3 flex items-center gap-1.5">
-                  <div className="w-2 h-2 rounded-full bg-slate-500 animate-bounce" style={{ animationDelay: '0ms' }} />
-                  <div className="w-2 h-2 rounded-full bg-slate-500 animate-bounce" style={{ animationDelay: '150ms' }} />
-                  <div className="w-2 h-2 rounded-full bg-slate-500 animate-bounce" style={{ animationDelay: '300ms' }} />
+                <div className="bg-surface-raised border border-line rounded-xl rounded-bl-md px-4 py-3 flex items-center gap-1.5">
+                  <div className="w-2 h-2 rounded-full bg-ink-subtle animate-bounce" style={{ animationDelay: '0ms' }} />
+                  <div className="w-2 h-2 rounded-full bg-ink-subtle animate-bounce" style={{ animationDelay: '150ms' }} />
+                  <div className="w-2 h-2 rounded-full bg-ink-subtle animate-bounce" style={{ animationDelay: '300ms' }} />
                 </div>
               </div>
             )}
@@ -189,7 +191,7 @@ export default function Chatbot() {
           {/* Input */}
           <form
             onSubmit={handleSubmit}
-            className="px-4 py-3 border-t border-white/5 bg-black/30 shrink-0"
+            className="px-4 py-3 border-t border-line bg-surface shrink-0"
           >
             <div className="flex items-center gap-2">
               <input
@@ -197,12 +199,12 @@ export default function Chatbot() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Type a message..."
-                className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-slate-600 focus:outline-none focus:border-primary/40 focus:ring-1 focus:ring-primary/20 transition-all"
+                className="flex-1 bg-canvas border border-line-strong rounded-lg px-4 py-2.5 text-sm text-ink placeholder:text-ink-subtle focus:outline-none focus:border-primary/40 focus:ring-1 focus:ring-primary/20 transition-all"
               />
               <button
                 type="submit"
                 disabled={!input.trim()}
-                className="w-10 h-10 rounded-xl bg-primary text-black flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-primary/90 transition-all shrink-0"
+                className="w-10 h-10 rounded-xl bg-primary-strong text-white flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:bg-primary transition-all shrink-0"
               >
                 <span className="material-symbols-outlined text-lg">send</span>
               </button>

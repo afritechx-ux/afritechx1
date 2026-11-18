@@ -1,85 +1,98 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Logo from './Logo';
+
+const columns = [
+    {
+        title: 'Solutions',
+        links: [
+            { label: 'Enterprise Software', href: '/services-solutions' },
+            { label: 'Cloud & DevOps', href: '/services-solutions' },
+            { label: 'AI & Machine Learning', href: '/services-solutions' },
+            { label: 'Technology Stack', href: '/technology-stack-expertise' },
+        ],
+    },
+    {
+        title: 'Resources',
+        links: [
+            { label: 'Case Studies', href: '/case-studies-portfolio' },
+            { label: 'Insights', href: '/tech-insights-blog-hub' },
+            { label: 'API Documentation', href: '/developer-api-documentation-portal' },
+            { label: 'Help Center', href: '/client-support-help-center' },
+        ],
+    },
+    {
+        title: 'Company',
+        links: [
+            { label: 'About', href: '/about-team-profile' },
+            { label: 'Careers', href: '/careers-open-roles' },
+            { label: 'Contact', href: '/contact-global-offices' },
+            { label: 'Request a quote', href: '/request-a-quote' },
+            { label: 'Service Status', href: '/service-status-uptime-page' },
+        ],
+    },
+];
 
 export default function Footer() {
     return (
-        <footer className="relative mt-32 border-t border-white/10 bg-black pt-20 pb-12 overflow-hidden selection:bg-white selection:text-black">
-            {/* Grid background matching global */}
-            <div className="absolute inset-0 z-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-
-            {/* Glowing top scanline */}
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-50"></div>
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-[1px] bg-gradient-to-r from-transparent via-white to-transparent blur-[2px]"></div>
-
-            <div className="mx-auto max-w-7xl px-6 relative z-10 flex flex-col">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8 border-b border-white/10 pb-16">
-                    <div className="col-span-1 md:col-span-2 flex flex-col items-start gap-4">
-                        <div className="flex items-center gap-3 text-white mb-4">
-                            <div className="relative size-10 overflow-hidden rounded-md shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                                <Image 
-                                    src="/logo.png" 
-                                    alt="Afrixtech Logo" 
-                                    fill
-                                    className="object-cover object-center"
-                                    sizes="40px"
-                                />
-                            </div>
-                            <span className="text-xl font-bold tracking-tighter">AFRIXTECH Platform</span>
-                        </div>
-                        <p className="text-sm text-slate-400 leading-relaxed max-w-sm tracking-wide">
-                            The infrastructure layer for modern enterprises. We construct deterministic, high-performance digital ecosystems designed to handle limitless complexity.
+        <footer className="border-t border-line bg-canvas">
+            <div className="container-x py-14 lg:py-16">
+                <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
+                    <div className="max-w-sm">
+                        <Link href="/" className="inline-flex items-center gap-2.5" aria-label="Afrixtech home">
+                            <Logo />
+                        </Link>
+                        <p className="mt-4 text-sm leading-relaxed text-ink-muted">
+                            Software engineering, cloud and AI for enterprises that need systems built to last.
                         </p>
-
-                        {/* Contact info */}
-                        <div className="flex flex-col gap-2 mt-4">
-                            <a href="mailto:afritechx@gmail.com" className="text-base md:text-sm text-slate-400 hover:text-primary transition-colors flex items-center gap-2 py-1">
-                                <span className="material-symbols-outlined text-[18px] md:text-[16px]">mail</span>
-                                afritechx@gmail.com
-                            </a>
-                            <a href="tel:+233245171589" className="text-base md:text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2 py-1">
-                                <span className="material-symbols-outlined text-[18px] md:text-[16px]">call</span>
-                                +233 245 171 589
-                            </a>
-                            <a href="tel:+233209624647" className="text-base md:text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2 py-1">
-                                <span className="material-symbols-outlined text-[18px] md:text-[16px]">call</span>
-                                +233 209 624 647
-                            </a>
-                        </div>
-
-                        <div className="flex gap-4 mt-4">
-                            <Link className="text-slate-500 hover:text-white transition-colors" href="/services-solutions"><span className="material-symbols-outlined">hub</span></Link>
-                        </div>
+                        <ul className="mt-6 space-y-2 text-sm text-ink-muted">
+                            <li>
+                                <a href="mailto:afritechx@gmail.com" className="inline-flex items-center gap-2 py-1 hover:text-ink">
+                                    <span className="material-symbols-outlined text-[18px]" aria-hidden="true">mail</span>
+                                    afritechx@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+233245171589" className="inline-flex items-center gap-2 py-1 hover:text-ink">
+                                    <span className="material-symbols-outlined text-[18px]" aria-hidden="true">call</span>
+                                    +233 245 171 589
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+233209624647" className="inline-flex items-center gap-2 py-1 hover:text-ink">
+                                    <span className="material-symbols-outlined text-[18px]" aria-hidden="true">call</span>
+                                    +233 209 624 647
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div className="flex flex-col gap-6">
-                        <h4 className="text-sm md:text-xs font-bold text-white tracking-widest uppercase mb-2">Infrastructure</h4>
-                        <div className="flex flex-col gap-4 md:gap-3">
-                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/services-solutions">Edge Computing</Link>
-                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/enterprise-tech-architecture">Global Database</Link>
-                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/case-studies-portfolio">Security Layer</Link>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col gap-6">
-                        <h4 className="text-sm md:text-xs font-bold text-white tracking-widest uppercase mb-2">Company</h4>
-                        <div className="flex flex-col gap-4 md:gap-3">
-                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/about-team-profile">About</Link>
-                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/careers-open-roles">Careers</Link>
-                            <Link className="text-base md:text-sm text-slate-400 hover:text-white transition-colors w-fit" href="/contact-global-offices">Contact</Link>
-                        </div>
-                    </div>
+                    <nav aria-label="Footer" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+                        {columns.map((col) => (
+                            <div key={col.title}>
+                                <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-ink">{col.title}</h2>
+                                <ul className="mt-4 space-y-1">
+                                    {col.links.map((l) => (
+                                        <li key={l.label}>
+                                            <Link href={l.href} className="inline-block py-1.5 text-sm text-ink-muted transition-colors hover:text-ink">
+                                                {l.label}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </nav>
                 </div>
 
-                <div className="pt-10 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-6">
-                    <div className="flex items-center gap-4">
-                        <div className="size-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.8)] animate-pulse"></div>
-                        <span className="text-xs md:text-xs font-mono text-slate-400 tracking-wide uppercase">All Systems Operational</span>
-                    </div>
-                    <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 md:gap-6">
-                        <Link className="text-sm md:text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Privacy Policy</Link>
-                        <Link className="text-sm md:text-xs text-slate-500 hover:text-white transition-colors" href="/about-team-profile">Terms of Service</Link>
-                        <span className="text-sm md:text-xs text-slate-600 font-mono tracking-widest w-full text-center md:w-auto">© 2026 AFRIXTECH</span>
-                    </div>
+                <div className="mt-12 flex flex-col gap-4 border-t border-line pt-6 text-xs text-ink-subtle sm:flex-row sm:items-center sm:justify-between">
+                    <p>© {new Date().getFullYear()} Afrixtech. All rights reserved.</p>
+                    <Link href="/service-status-uptime-page" className="inline-flex items-center gap-2 hover:text-ink-muted">
+                        <span className="relative flex size-2" aria-hidden="true">
+                            <span className="absolute inline-flex size-full animate-ping rounded-full bg-success opacity-60" />
+                            <span className="relative inline-flex size-2 rounded-full bg-success" />
+                        </span>
+                        All systems operational
+                    </Link>
                 </div>
             </div>
         </footer>

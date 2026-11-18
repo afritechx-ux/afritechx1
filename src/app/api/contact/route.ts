@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+const esc = (v: unknown) => String(v ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
 export async function POST(req: NextRequest) {
   try {
     const { firstName, lastName, email, subject, message } = await req.json();
@@ -27,11 +29,11 @@ export async function POST(req: NextRequest) {
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
           <h2 style="color: #333; border-bottom: 2px solid #0056b3; padding-bottom: 10px;">New Inquiry via Afrixtech Contact Form</h2>
-          <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-          <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
-          <p><strong>Subject Area:</strong> <span style="text-transform: capitalize;">${subject}</span></p>
+          <p><strong>Name:</strong> ${esc(firstName)} ${esc(lastName)}</p>
+          <p><strong>Email:</strong> <a href="mailto:${esc(email)}">${esc(email)}</a></p>
+          <p><strong>Subject Area:</strong> <span style="text-transform: capitalize;">${esc(subject)}</span></p>
           <div style="background-color: #f9f9f9; padding: 15px; border-left: 4px solid #0056b3; margin-top: 20px; border-radius: 4px;">
-            <p style="margin: 0; white-space: pre-wrap; font-size: 16px; color: #444;">${message}</p>
+            <p style="margin: 0; white-space: pre-wrap; font-size: 16px; color: #444;">${esc(message)}</p>
           </div>
           <p style="margin-top: 30px; font-size: 12px; color: #888;">This email was automatically generated from the Contact page on afrixtech.com.</p>
         </div>
